@@ -29,7 +29,7 @@ def main():
 
 
     while True:
-        time = time.strftime("%H:%M:%S")
+        #        vreme = time.strftime("%H:%M:%S")
         degrees = sensor.read_temperature()
         pascals = sensor.read_pressure()
         hectopascals = pascals / 100
