@@ -38,7 +38,7 @@ def main():
         ret = client1.publish("sensors/dewpoint", "%0.3f" % (dew_point))
         ret = client1.publish("sensors/uv", "%0.3f" % (uv))
         ret = client1.publish("sensors/uv_raw", "%0.3f" % (uv_raw))
-        ret = client1.publish("sensors/dust_particles", "0.3f" % dust_particles)
+        ret = client1.publish("sensors/dust_particles", "%0.3f" % dust_particles)
 
         time.sleep(1)
 
