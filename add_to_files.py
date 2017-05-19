@@ -49,10 +49,6 @@ def main():
         file_h.write("%s" % vreme + " %0.3f" % humidity + "\n")
         file_uv.write("%s" % vreme + " %0.3f" % uv + "\n")
 
-        file_t.close()
-        file_p.close()
-        file_h.close()
-        file_uv.close()
 
         time.sleep(3)
 
