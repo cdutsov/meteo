@@ -50,6 +50,11 @@ def main():
     data = {}
 
     data_list = []
+    if os.path.exists(filename):
+        with open(filename, "rb") as data_file:
+            data_list = pickle.load(data_file)
+    for data in data_list:
+        publish_data(data)
 
     while True:
         vreme = time.strftime("%H:%M:%S")
