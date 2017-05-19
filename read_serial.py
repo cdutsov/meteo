@@ -10,11 +10,21 @@ ser = serial.Serial(
 
 print("connected to: " + ser.portstr)
 count = 1
+# this will store the line
+line = []
 
 while True:
-    line = ser.readline()
-    print line
-    # print str(count) + str(': ') + line
-    count = count + 1
+    for c in ser.read():
+        line.append(c)
+        if c == '\n':
+            print("Line: " + line)
+            line = []
+            break
+
+# while True:
+#    line = str(ser.readline())
+#    print line
+#    # print str(count) + str(': ') + line
+#    count = count + 1
 
 ser.close()
