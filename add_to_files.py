@@ -1,5 +1,7 @@
 import os
 
+import datetime
+
 from Adafruit_BME280 import *
 import paho.mqtt.client as paho
 import veml6070
@@ -50,14 +52,14 @@ def main():
     data = {}
 
     data_list = []
-    if os.path.exists(filename):
-        with open(filename, "rb") as data_file:
-            data_list = pickle.load(data_file)
-    for data in data_list:
-        publish_data(client=client1, data=data)
+    # if os.path.exists(filename):
+    #     with open(filename, "rb") as data_file:
+    #         data_list = pickle.load(data_file)
+    # for data in data_list:
+    #     publish_data(client=client1, data=data)
 
     while True:
-        vreme = time.strftime("%H:%M:%S")
+        data["datetime"] = datetime.datetime.now()
         data["temperature"] = sensor.read_temperature()
         pascals = sensor.read_pressure()
         data["pressure"] = pascals / 100
