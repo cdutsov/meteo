@@ -40,5 +40,4 @@ with serial.Serial('/dev/ttyS0', 19200, timeout=1) as ser:
 #            seq = []
 #            count += 1
 #            break
-
 ser.close()
