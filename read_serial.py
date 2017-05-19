@@ -13,8 +13,9 @@ count = 1
 
 while True:
     for line in ser.readline():
-        print line
-        # print str(count) + str(': ') + line
-        count = count + 1
+        if line:
+            print line
+            # print str(count) + str(': ') + line
+            count = count + 1
 
 ser.close()
