@@ -30,7 +30,7 @@ def publish_data(client, data):
 def append_data(data):
     if os.path.exists(filename):
         with open(filename, "rb") as data_file:
-            data_list = list(pickle.load(data_file))
+            data_list = pickle.load(data_file)
             data_list.append(data)
         with open(filename, "wb") as data_file:
             pickle.dump(data_list, data_file)
