@@ -2,6 +2,7 @@ from Adafruit_BME280 import *
 import paho.mqtt.client as paho
 import veml6070
 import time
+import os, sys
 
 broker = "127.0.0.1"
 port = 1883
