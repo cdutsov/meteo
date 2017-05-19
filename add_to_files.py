@@ -14,7 +14,7 @@ def on_publish(client, userdata, result):  # create function for callback
 
 def main():
     sensor = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
-    #    tstart = time.time()
+    tstart = time.time()
     client1 = paho.Client("control1")  # create client object
     client1.on_publish = on_publish  # assign function to callback
     client1.connect(broker, port)  # establish connection
