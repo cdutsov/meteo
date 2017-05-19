@@ -45,9 +45,9 @@ def main():
         ret = client1.publish("sensors/uv_raw", "%0.3f" % (uv_raw))
 
         file_t.write("%s" % vreme + " %0.3f" % degrees + "\n")
-        file_p.write(time.strftime("%H:%M:%S"), hectopascals)
-        file_h.write(time.strftime("%H:%M:%S"), humidity)
-        file_uv.write(time.strftime("%H:%M:%S"), uv)
+        file_p.write("%s" % vreme + " %0.3f" % hectopascals + "\n")
+        file_h.write("%s" % vreme + " %0.3f" % humidity + "\n")
+        file_uv.write("%s" % vreme + " %0.3f" % uv + "\n")
 
         file_t.close()
         file_p.close()
