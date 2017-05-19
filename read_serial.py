@@ -3,13 +3,13 @@ import time
 import signal
 import sys
 
-ser = serial.Serial(
-    port='/dev/ttyS0',
-    baudrate=9600,
-    parity=serial.PARITY_NONE,
-    stopbits=serial.STOPBITS_ONE,
-    bytesize=serial.EIGHTBITS,
-    timeout=0)
+# ser = serial.Serial(
+#     port='/dev/ttyS0',
+#     baudrate=9600,
+#     parity=serial.PARITY_NONE,
+#     stopbits=serial.STOPBITS_ONE,
+#     bytesize=serial.EIGHTBITS,
+#     timeout=0)
 
 
 def signal_handler(signal, frame):
@@ -20,24 +20,12 @@ def signal_handler(signal, frame):
 
 signal.signal(signal.SIGINT, signal_handler)
 
-print("connected to: " + ser.portstr)
+# print("connected to: " + ser.portstr)
 
 # this will store the line
-seq = []
-count = 1
+# seq = []
+# count = 1
 
-with serial.Serial('/dev/ttyS0', 19200, timeout=1) as ser:
-    x = ser.read()  # read one byte
-    line = ser.readline()  # read a '\n' terminated line
-    print line
-# while True:
-#    for mee in ser.read():
-#        seq.append(chr(mee))
-#        joined_seq = ''.join(str(v) for v in seq)
-
-#        if chr(mee) == '\n':
-#            print("Line " + str(count) + ': ' + joined_seq)
-#            seq = []
-#            count += 1
-#            break
-ser.close()
+while True:
+    with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
+        line = ser.readline()
