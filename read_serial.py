@@ -29,3 +29,4 @@ signal.signal(signal.SIGINT, signal_handler)
 while True:
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
         line = ser.readline()
+        print line
