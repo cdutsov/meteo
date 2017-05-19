@@ -2,6 +2,8 @@ from Adafruit_BME280 import *
 import paho.mqtt.client as paho
 import veml6070
 
+from read_serial import get_dust_particles
+
 broker = "127.0.0.1"
 port = 1883
 
@@ -28,12 +30,17 @@ def main():
         dew_point = sensor.read_dewpoint()
         uv_raw = veml.get_uva_light_intensity_raw()
         uv = veml.get_uva_light_intensity()
+        dust_particles = get_dust_particles()
+
         ret = client1.publish("sensors/temperature", "%0.3f" % (degrees))
         ret = client1.publish("sensors/pressure", "%0.3f" % (hectopascals))
         ret = client1.publish("sensors/humidity", "%0.3f" % (humidity))
         ret = client1.publish("sensors/dewpoint", "%0.3f" % (dew_point))
         ret = client1.publish("sensors/uv", "%0.3f" % (uv))
         ret = client1.publish("sensors/uv_raw", "%0.3f" % (uv_raw))
+        if dust_particles:
+            ret = client1.publish("sensors/dust_particles", "0.3f" % dust_particles)
+
         time.sleep(1)
 
 
