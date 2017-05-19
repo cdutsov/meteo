@@ -9,16 +9,20 @@ ser = serial.Serial(
     timeout=0)
 
 print("connected to: " + ser.portstr)
-count = 1
+
 # this will store the line
-line = []
+seq = []
+count = 1
 
 while True:
     for c in ser.read():
-        line.append(c)
-        if c == '\n':
-            print("Line: " + line)
-            line = []
+        seq.append(chr(c))  # convert from ANSII
+        joined_seq = ''.join(str(v) for v in seq)  # Make a string from array
+
+        if chr(c) == '\n':
+            print("Line " + str(count) + ': ' + joined_seq)
+            seq = []
+            count += 1
             break
 
 ser.close()
