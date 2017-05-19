@@ -21,10 +21,6 @@ def main():
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
 
-    file_t = open("temperature.txt", "w")
-    file_p = open("pressure.txt", "w")
-    file_h = open("humidity.txt", "w")
-    file_uv = open("uv.txt", "w")
 
 
 
@@ -44,10 +40,20 @@ def main():
         ret = client1.publish("sensors/uv", "%0.3f" % (uv))
         ret = client1.publish("sensors/uv_raw", "%0.3f" % (uv_raw))
 
+        file_t = open("temperature.txt", "w")
+        file_p = open("pressure.txt", "w")
+        file_h = open("humidity.txt", "w")
+        file_uv = open("uv.txt", "w")
+
         file_t.write("%s" % vreme + " %0.3f" % degrees + "\n")
         file_p.write("%s" % vreme + " %0.3f" % hectopascals + "\n")
         file_h.write("%s" % vreme + " %0.3f" % humidity + "\n")
         file_uv.write("%s" % vreme + " %0.3f" % uv + "\n")
+
+        file_t.close()
+        file_p.close()
+        file_h.close()
+        file_uv.close()
 
 
         time.sleep(3)
