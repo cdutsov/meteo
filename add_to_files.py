@@ -2,7 +2,9 @@ from Adafruit_BME280 import *
 import paho.mqtt.client as paho
 import veml6070
 import time
-
+# !/usr/local/bin/python
+# coding: latin-1
+import os, sys
 broker = "127.0.0.1"
 port = 1883
 
@@ -21,6 +23,7 @@ def main():
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
 
+    file_t = open(“tem”, ”w”)
     file_p = open(“pressure.txt”, ”w”)
     file_h = open(“humidity.txt”, ”w”)
     file_uv = open(“uv.txt”, ”w”)
@@ -43,7 +46,7 @@ def main():
         ret = client1.publish("sensors/uv", "%0.3f" % (uv))
         ret = client1.publish("sensors/uv_raw", "%0.3f" % (uv_raw))
 
-        #        file.write(time.strftime("%H:%M:%S"), degrees)
+        file_t.write(time.strftime("%H:%M:%S"), degrees)
         file_p.write(time.strftime("%H:%M:%S"), hectopascals)
         file_h.write(time.strftime("%H:%M:%S"), humidity)
         file_uv.write(time.strftime("%H:%M:%S"), uv)
