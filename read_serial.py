@@ -14,6 +14,10 @@ count = 1
 line = []
 
 while True:
+    line = ser.readline()
+    print line
+
+while True:
     for c in ser.read():
         line.append(c)
         if c == '\n':
