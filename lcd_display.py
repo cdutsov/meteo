@@ -232,3 +232,8 @@ if __name__ == '__main__':
     print "im here"
     lcd.clear()
     lcd.message("  Adafruit 16x2\n  Standard LCD")
+
+lcd = Lcd()
+print "im here"
+lcd.clear()
+lcd.message("  Adafruit 16x2\n  Standard LCD")
