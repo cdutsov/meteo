@@ -21,7 +21,7 @@ def main():
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
 
-    #    file_t = open(“temp.txt”, ”w”)
+    file_t = open(“tem”, ”w”)
     file_p = open(“pressure.txt”, ”w”)
     file_h = open(“humidity.txt”, ”w”)
     file_uv = open(“uv.txt”, ”w”)
