@@ -229,6 +229,6 @@ class Lcd:
 
 if __name__ == '__main__':
     lcd = Lcd()
-
+    print "im here"
     lcd.clear()
     lcd.message("  Adafruit 16x2\n  Standard LCD")
