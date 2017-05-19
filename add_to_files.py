@@ -21,10 +21,10 @@ def main():
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
 
-    file_t = open("temperature.txt", "rw")
-    file_p = open("pressure.txt", "rw")
-    file_h = open("humidity.txt", "rw")
-    file_uv = open("uv.txt", "rw")
+    file_t = open("temperature.txt", "w")
+    file_p = open("pressure.txt", "w")
+    file_h = open("humidity.txt", "w")
+    file_uv = open("uv.txt", "w")
 
     while True:
         vreme = time.strftime("%H:%M:%S")
