@@ -26,15 +26,19 @@ print("connected to: " + ser.portstr)
 seq = []
 count = 1
 
-while True:
-    for mee in ser.read():
-        seq.append(chr(mee))
-        joined_seq = ''.join(str(v) for v in seq)
+with serial.Serial('/dev/ttyS0', 19200, timeout=1) as ser:
+    x = ser.read()  # read one byte
+    line = ser.readline()  # read a '\n' terminated line
+    print line
+# while True:
+#    for mee in ser.read():
+#        seq.append(chr(mee))
+#        joined_seq = ''.join(str(v) for v in seq)
 
-        if chr(mee) == '\n':
-            print("Line " + str(count) + ': ' + joined_seq)
-            seq = []
-            count += 1
-            break
+#        if chr(mee) == '\n':
+#            print("Line " + str(count) + ': ' + joined_seq)
+#            seq = []
+#            count += 1
+#            break
 
 ser.close()
