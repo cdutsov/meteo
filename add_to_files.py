@@ -71,7 +71,7 @@ def main():
 
         data_list.append(data)
         publish_data(client=client1, data=data)
-        append_data(data)
+        # append_data(data)
 
         with open("/home/pi/temperature.txt", "aw") as file_t:
             file_t.write("%s" % vreme + " %0.3f" % data["temperature"] + "\n")
