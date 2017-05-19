@@ -37,13 +37,13 @@ def main():
         ret = client1.publish("sensors/uv", "%0.3f" % (uv))
         ret = client1.publish("sensors/uv_raw", "%0.3f" % (uv_raw))
 
-        with open("temperature.txt", "aw") as file_t:
+        with open("/home/pi/temperature.txt", "aw") as file_t:
             file_t.write("%s" % vreme + " %0.3f" % degrees + "\n")
-        with open("pressure.txt", "aw") as file_p:
+        with open("/home/pi/pressure.txt", "aw") as file_p:
             file_p.write("%s" % vreme + " %0.3f" % hectopascals + "\n")
-        with open("humidity.txt", "aw") as file_h:
+        with open("/home/pi/humidity.txt", "aw") as file_h:
             file_h.write("%s" % vreme + " %0.3f" % humidity + "\n")
-        with open("uv.txt", "aw") as file_uv:
+        with open("/home/pi/uv.txt", "aw") as file_uv:
             file_uv.write("%s" % vreme + " %0.3f" % uv + "\n")
 
         file_t.close()
