@@ -34,6 +34,9 @@ def append_data(data):
             data_list.append(data)
         with open(filename, "wb") as data_file:
             pickle.dump(data_list, data_file)
+    else:
+        with open(filename, "wb") as data_file:
+            pickle.dump([], data_file)
 
 
 def main():
