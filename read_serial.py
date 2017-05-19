@@ -15,11 +15,11 @@ seq = []
 count = 1
 
 while True:
-    for c in ser.read():
-        seq.append(chr(c))  # convert from ANSII
-        joined_seq = ''.join(str(v) for v in seq)  # Make a string from array
+    for mee in ser.read():
+        seq.append(chr(mee))
+        joined_seq = ''.join(str(v) for v in seq)
 
-        if chr(c) == '\n':
+        if chr(mee) == '\n':
             print("Line " + str(count) + ': ' + joined_seq)
             seq = []
             count += 1
