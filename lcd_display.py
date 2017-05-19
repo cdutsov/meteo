@@ -10,7 +10,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 
 
-class lcd:
+class Lcd:
     # commands
     LCD_CLEARDISPLAY = 0x01
     LCD_RETURNHOME = 0x02
@@ -228,7 +228,7 @@ class lcd:
 
 
 if __name__ == '__main__':
-    lcd = Adafruit_CharLCD()
+    lcd = Lcd()
 
     lcd.clear()
     lcd.message("  Adafruit 16x2\n  Standard LCD")
