@@ -14,21 +14,11 @@ count = 1
 line = []
 
 while True:
-    line = ser.readline()
-    print line
-
-while True:
     for c in ser.read():
         line.append(c)
         if c == '\n':
             print("Line: " + line)
             line = []
             break
-
-# while True:
-#    line = str(ser.readline())
-#    print line
-#    # print str(count) + str(': ') + line
-#    count = count + 1
 
 ser.close()
