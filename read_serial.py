@@ -12,7 +12,7 @@ print("connected to: " + ser.portstr)
 count = 1
 
 while True:
-    for line in ser.readline():
+    for line in ser:
             print line
             # print str(count) + str(': ') + line
             count = count + 1
