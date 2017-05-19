@@ -38,7 +38,8 @@ def main():
         ret = client1.publish("sensors/dewpoint", "%0.3f" % (dew_point))
         ret = client1.publish("sensors/uv", "%0.3f" % (uv))
         ret = client1.publish("sensors/uv_raw", "%0.3f" % (uv_raw))
-        client1.publish("sensors/dust_particles", "0.3f" % (dust_particles))
+        if dust_particles:
+            client1.publish("sensors/dust_particles", "0.3f" % (dust_particles))
 
         with open("/home/pi/temperature.txt", "aw") as file_t:
             file_t.write("%s" % vreme + " %0.3f" % degrees + "\n")
