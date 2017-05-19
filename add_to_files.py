@@ -54,7 +54,7 @@ def main():
         with open(filename, "rb") as data_file:
             data_list = pickle.load(data_file)
     for data in data_list:
-        publish_data(data)
+        publish_data(client=client1, data=data)
 
     while True:
         vreme = time.strftime("%H:%M:%S")
