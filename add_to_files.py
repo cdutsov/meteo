@@ -1,16 +1,39 @@
+import os
+
 from Adafruit_BME280 import *
 import paho.mqtt.client as paho
 import veml6070
 import time
 from read_serial import get_dust_particles
+import pickle
 
 broker = "127.0.0.1"
 port = 1883
+filename = "datalist.dat"
 
 
 def on_publish(client, userdata, result):  # create function for callback
     print("data published \n")
     pass
+
+
+def publish_data(client, data):
+    client.publish("sensors/temperature", "%0.3f" % (data["temperature"]), retain=True)
+    client.publish("sensors/pressure", "%0.3f" % data["pressure"])
+    client.publish("sensors/humidity", "%0.3f" % data["humidity"])
+    client.publish("sensors/dewpoint", "%0.3f" % data["dew_point"])
+    client.publish("sensors/uv", "%0.3f" % data["uv"])
+    client.publish("sensors/uv_raw", "%0.3f" % data["uv_raw"])
+    client.publish("sensors/dust_particles", "%0.3f" % data["dust_particles"])
+
+
+def append_data(data):
+    if os.path.exists(filename):
+        with open(filename, "rb") as data_file:
+            data_list = pickle.load(data_file)
+            data_list.append(data)
+        with open(filename, "wb") as data_file:
+            pickle.dump(data_list, data_file)
 
 
 def main():
@@ -21,35 +44,33 @@ def main():
     client1.connect(broker, port)  # establish connection
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
+    data = {}
+
+    data_list = []
 
     while True:
         vreme = time.strftime("%H:%M:%S")
-        degrees = sensor.read_temperature()
+        data["temperature"] = sensor.read_temperature()
         pascals = sensor.read_pressure()
-        hectopascals = pascals / 100
-        humidity = sensor.read_humidity()
-        dew_point = sensor.read_dewpoint()
-        uv_raw = veml.get_uva_light_intensity_raw()
-        uv = veml.get_uva_light_intensity()
-        dust_particles = (get_dust_particles() - 0.5)*0.227*1000
-        ret = client1.publish("sensors/temperature", "%0.3f" % (degrees), retain=True)
-        ret = client1.publish("sensors/pressure", "%0.3f" % (hectopascals))
-        ret = client1.publish("sensors/humidity", "%0.3f" % (humidity))
-        ret = client1.publish("sensors/dewpoint", "%0.3f" % (dew_point))
-        ret = client1.publish("sensors/uv", "%0.3f" % (uv))
-        ret = client1.publish("sensors/uv_raw", "%0.3f" % (uv_raw))
-        ret = client1.publish("sensors/dust_particles", "%0.3f" % dust_particles)
+        data["pressure"] = pascals / 100
+        data["humidity"] = sensor.read_humidity()
+        data["dew_point"] = sensor.read_dewpoint()
+        data["uv_raw"] = veml.get_uva_light_intensity_raw()
+        data["uv"] = veml.get_uva_light_intensity()
+        data["dust_particles"] = (get_dust_particles() - 0.8) * 0.227 * 1000
 
-
+        data_list.append(data)
+        publish_data(client=client1, data=data)
+        append_data(data)
 
         with open("/home/pi/temperature.txt", "aw") as file_t:
-            file_t.write("%s" % vreme + " %0.3f" % degrees + "\n")
+            file_t.write("%s" % vreme + " %0.3f" % data["temperature"] + "\n")
         with open("/home/pi/pressure.txt", "aw") as file_p:
-            file_p.write("%s" % vreme + " %0.3f" % hectopascals + "\n")
+            file_p.write("%s" % vreme + " %0.3f" % data["pressure"] + "\n")
         with open("/home/pi/humidity.txt", "aw") as file_h:
-            file_h.write("%s" % vreme + " %0.3f" % humidity + "\n")
+            file_h.write("%s" % vreme + " %0.3f" % data["humidity"] + "\n")
         with open("/home/pi/uv.txt", "aw") as file_uv:
-            file_uv.write("%s" % vreme + " %0.3f" % uv + "\n")
+            file_uv.write("%s" % vreme + " %0.3f" % data["uv"] + "\n")
 
         file_t.close()
         file_p.close()
