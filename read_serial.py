@@ -6,7 +6,7 @@ def get_dust_particles():
         dat = 0.
         try:
             dat = float(ser.readline().rsplit(',')[1])
-        finally:
+        except:
             dat = False
         return dat
 
