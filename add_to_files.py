@@ -44,7 +44,7 @@ def main():
         ret = client1.publish("sensors/uv", "%0.3f" % (uv))
         ret = client1.publish("sensors/uv_raw", "%0.3f" % (uv_raw))
 
-        file_t.write( % vreme
+        file_t.write("%s" % vreme
         "%0.3f" % (degrees))
         file_p.write(time.strftime("%H:%M:%S"), hectopascals)
         file_h.write(time.strftime("%H:%M:%S"), humidity)
