@@ -1,4 +1,7 @@
 import serial
+import time
+import signal
+import sys
 
 ser = serial.Serial(
     port='/dev/ttyS0',
@@ -7,6 +10,15 @@ ser = serial.Serial(
     stopbits=serial.STOPBITS_ONE,
     bytesize=serial.EIGHTBITS,
     timeout=0)
+
+
+def signal_handler(signal, frame):
+    ser.close()
+    print('Serial closed!')
+    sys.exit(0)
+
+
+signal.signal(signal.SIGINT, signal_handler)
 
 print("connected to: " + ser.portstr)
 
