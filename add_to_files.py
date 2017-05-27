@@ -59,7 +59,7 @@ def main():
     #         data_list = pickle.load(data_file)
     # for data in data_list:
     #     publish_data(client=client1, data=data)
-
+    i = 0
     while True:
         data["datetime"] = datetime.datetime.now()
         data["temperature"] = sensor.read_temperature()
@@ -70,10 +70,11 @@ def main():
         data["uv_raw"] = veml.get_uva_light_intensity_raw()
         data["uv"] = veml.get_uva_light_intensity()
         data["dust_particles"] = round((get_dust_particles() - 0.55) * 0.227 * 1000, 0)
-        particles_mean.append(int(data["dust_particles"]))
+        i += 1
+        particles_mean.append(i)
         if len(particles_mean) > 9:
             del particles_mean[0]
-        particles_set = particles_mean
+        particles_set = list(particles_mean)
         particles_set.sort()
         print particles_set
         print particles_set[len(particles_set)//2]
