@@ -53,6 +53,7 @@ def main():
 
     data_list = []
     particles_mean = []
+    particles_set = set()
     # if os.path.exists(filename):
     #     with open(filename, "rb") as data_file:
     #         data_list = pickle.load(data_file)
@@ -72,9 +73,9 @@ def main():
         particles_mean.append(int(data["dust_particles"]))
         if len(particles_mean) > 9:
             del particles_mean[0]
-        particles_mean = list(set(particles_mean))
-        print particles_mean
-        print particles_mean[len(particles_mean)//2]
+        particles_set = set(particles_mean)
+        print particles_set
+        print list(particles_set)[len(particles_set)//2]
         print data["dust_particles"]
 
         data_list.append(data)
