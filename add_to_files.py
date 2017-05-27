@@ -86,7 +86,7 @@ def main():
         file_p.close()
         file_h.close()
         file_uv.close()
-        time.sleep(3)
+        time.sleep(1)
 
 
 main()
