@@ -67,7 +67,7 @@ def main():
         data["dew_point"] = sensor.read_dewpoint()
         data["uv_raw"] = veml.get_uva_light_intensity_raw()
         data["uv"] = veml.get_uva_light_intensity()
-        data["dust_particles"] = (get_dust_particles() - 0.75) * 0.227 * 1000
+        data["dust_particles"] = (get_dust_particles() - 0.55) * 0.227 * 1000
         print data["dust_particles"]
 
         data_list.append(data)
