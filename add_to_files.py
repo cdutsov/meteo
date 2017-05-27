@@ -15,7 +15,7 @@ filename = "datalist.dat"
 
 
 def on_publish(client, userdata, result):  # create function for callback
-    print("data published \n")
+    # print("data published \n")
     pass
 
 
@@ -74,13 +74,13 @@ def main():
         # append_data(data)
 
         with open("/home/pi/temperature.txt", "aw") as file_t:
-            file_t.write("%s" % vreme + " %0.3f" % data["temperature"] + "\n")
+            file_t.write("%s" % data["datetime"] + " %0.3f" % data["temperature"] + "\n")
         with open("/home/pi/pressure.txt", "aw") as file_p:
-            file_p.write("%s" % vreme + " %0.3f" % data["pressure"] + "\n")
+            file_p.write("%s" % data["datetime"] + " %0.3f" % data["pressure"] + "\n")
         with open("/home/pi/humidity.txt", "aw") as file_h:
-            file_h.write("%s" % vreme + " %0.3f" % data["humidity"] + "\n")
+            file_h.write("%s" % data["datetime"] + " %0.3f" % data["humidity"] + "\n")
         with open("/home/pi/uv.txt", "aw") as file_uv:
-            file_uv.write("%s" % vreme + " %0.3f" % data["uv"] + "\n")
+            file_uv.write("%s" % data["datetime"] + " %0.3f" % data["uv"] + "\n")
 
         file_t.close()
         file_p.close()
