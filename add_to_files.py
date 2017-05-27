@@ -72,8 +72,9 @@ def main():
         particles_mean.append(data["dust_particles"])
         if len(particles_mean) > 9:
             del particles_mean[0]
-        print set(particles_mean)
-        print set(particles_mean)[len(particles_mean)//2]
+        particles_mean = set(particles_mean)
+        print particles_mean
+        print list(particles_mean)[len(particles_mean)//2]
         print data["dust_particles"]
 
         data_list.append(data)
