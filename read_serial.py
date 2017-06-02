@@ -3,7 +3,8 @@ import serial
 
 def get_dust_particles():
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
-        print ser.readline()
+        sentence = ser.readline()
+        return sentence
         dat = 0.
         # try:
         #     dat = float(ser.readline().rsplit(',')[1])
