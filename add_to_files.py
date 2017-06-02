@@ -68,7 +68,8 @@ def main():
         data["dew_point"] = sensor.read_dewpoint()
         data["uv_raw"] = veml.get_uva_light_intensity_raw()
         data["uv"] = veml.get_uva_light_intensity()
-        data["dust_particles"] = round((get_dust_particles() - 0.55) * 0.227 * 1000, 0)
+        # data["dust_particles"] = round((get_dust_particles() - 0.55) * 0.227 * 1000, 0)
+        data["dust_particles"] = 0
         particles_mean.append(data["dust_particles"])
         if len(particles_mean) > 9:
             del particles_mean[0]
