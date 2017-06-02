@@ -3,12 +3,13 @@ import serial
 
 def get_dust_particles():
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
+        print ser.readline()
         dat = 0.
-        try:
-            dat = float(ser.readline().rsplit(',')[1])
-        except:
-            dat = False
-        return dat
+        # try:
+        #     dat = float(ser.readline().rsplit(',')[1])
+        # except:
+        #     dat = False
+        # return dat
 
 
 # while True:
