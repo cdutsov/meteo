@@ -16,7 +16,8 @@ def get_gps():
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
         sentence = ser.readline().split('$', 1)
         if len(sentence) > 1:
-            print pynmea2.parse(sentence[1])
+            msg = pynmea2.parse(sentence[1])
+            return msg
 
 # while True:
 #     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
