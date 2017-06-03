@@ -25,6 +25,19 @@ def on_publish(client, userdata, result):  # create function for callback
     pass
 
 
+def new_gpx_file():
+    # gpx file
+    gpx = gpxpy.gpx.GPX()
+    gpx_track = gpxpy.gpx.GPXTrack()
+    gpx.tracks.append(gpx_track)
+    # gpx.extensions = "temp"
+
+    # Create first segment in our GPX track:
+    gpx_segment = gpxpy.gpx.GPXTrackSegment()
+    gpx_track.segments.append(gpx_segment)
+    return gpx, gpx_segment
+
+
 def publish_data(client, data):
     client.publish("sensors/temperature", "%0.3f" % (data["temperature"]), retain=True)
     client.publish("sensors/pressure", "%0.3f" % data["pressure"])
@@ -57,15 +70,8 @@ def main():
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
 
-    #gpx file
-    gpx = gpxpy.gpx.GPX()
-    gpx_track = gpxpy.gpx.GPXTrack()
-    gpx.tracks.append(gpx_track)
-    # gpx.extensions = "temp"
-
-    # Create first segment in our GPX track:
-    gpx_segment = gpxpy.gpx.GPXTrackSegment()
-    gpx_track.segments.append(gpx_segment)
+    # gpx file
+    gpx, gpx_segment = new_gpx_file()
 
     data_list = []
     particles_mean = []
@@ -99,15 +105,17 @@ def main():
 
         # Create points:
         point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
-                                data["longitude"],
-                                elevation=data["altitude"],
-                                time=datetime.datetime.now())
+                                        data["longitude"],
+                                        elevation=data["altitude"],
+                                        time=datetime.datetime.now())
         point.extensions = data
         gpx_segment.points.append(point)
-        if(datetime.datetime.now() - start_time) > datetime.timedelta(seconds=10):
+        if (datetime.datetime.now() - start_time) > datetime.timedelta(seconds=10):
             start_time = datetime.datetime.now()
-            with open("track" + datetime.datetime.now().isoformat(), "w") as f:
+            with open("tracks/track" + datetime.datetime.now().isoformat(), "w") as f:
                 print "GPX file printed!"
                 f.write(gpx.to_xml(version="1.1"))
+        gpx, gpx_segment = new_gpx_file()
+
 
 main()
