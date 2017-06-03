@@ -2,6 +2,8 @@ import os
 
 import datetime
 
+import gpxpy
+
 from Adafruit_BME280 import *
 import paho.mqtt.client as paho
 import veml6070
@@ -52,6 +54,15 @@ def main():
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
 
+    #gpx file
+    gpx = gpxpy.gpx.GPX()
+    gpx_track = gpxpy.gpx.GPXTrack()
+    gpx.tracks.append(gpx_track)
+
+    # Create first segment in our GPX track:
+    gpx_segment = gpxpy.gpx.GPXTrackSegment()
+    gpx_track.segments.append(gpx_segment)
+
     data_list = []
     particles_mean = []
     particles_set = set()
@@ -83,6 +94,12 @@ def main():
         print data
         data_list.append(data)
         publish_data(client=client1, data=data)
+
+        # Create points:
+        gpx_segment.points.append(gpxpy.gpx.GPXTrackPoint(data["latitude"],
+                                                          data["longitude"],
+                                                          elevation=data["altitude"]))
+        print gpx.to_xml()
         # append_data(data)
 
         # with open("/home/pi/temperature.txt", "aw") as file_t:
