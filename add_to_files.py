@@ -93,7 +93,8 @@ def main():
             del particles_mean[0]
         particles_set = list(particles_mean)
         particles_set.sort()
-        data["dust_particles"] = particles_set[len(particles_set) // 2]
+        particles = particles_set[len(particles_set) // 2]
+        data["dust_particles"] = particles if particles else 0
 
         gps_dat = get_gps()
         if gps_dat:
