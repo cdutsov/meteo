@@ -3,6 +3,7 @@ import os
 import datetime
 
 import gpxpy
+import gpxpy.gpx
 
 from Adafruit_BME280 import *
 import paho.mqtt.client as paho
