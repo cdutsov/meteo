@@ -17,12 +17,17 @@ def get_gps():
     sentence = ''
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
         while 'RMC' not in sentence:
-            sentence = ser.readline().split('$', 1)[1]
+            sentence = ser.readline().split('$', 1)
+            if len(sentence) == 2:
+                sentence = sentence[1]
+            else:
+                sentence = ''
+
             print sentence
-        if len(sentence) > 1:
-            msg = pynmea2.parse(sentence)
-            print msg
-            return msg
+
+        msg = pynmea2.parse(sentence)
+        print msg
+        return msg
 
 
 latlon = get_gps()
