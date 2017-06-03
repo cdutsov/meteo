@@ -98,13 +98,16 @@ def main():
         post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
 
         # Create points:
-        gpx_segment.points.append(gpxpy.gpx.GPXTrackPoint(data["latitude"],
-                                                          data["longitude"],
-                                                          elevation=data["altitude"]))
-        if(datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
+        point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
+                                data["longitude"],
+                                elevation=data["altitude"],
+                                time=datetime.datetime.now().isoformat())
+        point.extensions = data
+        gpx_segment.points.append(point)
+        if(datetime.datetime.now() - start_time) > datetime.timedelta(seconds=10):
             start_time = datetime.datetime.now()
             with open("track" + datetime.datetime.now().isoformat(), "w") as f:
                 print "GPX file printed!"
-                f.write(gpx.to_xml())
+                f.write(gpx.to_xml(version="1.1"))
 
 main()
