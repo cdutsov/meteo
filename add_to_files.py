@@ -42,7 +42,7 @@ def append_data(data):
 
 
 def main():
-    sensor = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
+    # sensor = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
     tstart = time.time()
     client1 = paho.Client("control1")  # create client object
     client1.on_publish = on_publish  # assign function to callback
@@ -61,11 +61,11 @@ def main():
     #     publish_data(client=client1, data=data)
     while True:
         data["datetime"] = datetime.datetime.now()
-        data["temperature"] = sensor.read_temperature()
+        # data["temperature"] = sensor.read_temperature()
         pascals = sensor.read_pressure()
         data["pressure"] = pascals / 100
-        data["humidity"] = sensor.read_humidity()
-        data["dew_point"] = sensor.read_dewpoint()
+        # data["humidity"] = sensor.read_humidity()
+        # data["dew_point"] = sensor.read_dewpoint()
         data["uv_raw"] = veml.get_uva_light_intensity_raw()
         data["uv"] = veml.get_uva_light_intensity()
         # data["dust_particles"] = round((get_dust_particles() - 0.55) * 0.227 * 1000, 0)
