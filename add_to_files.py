@@ -102,7 +102,10 @@ def main():
         gps_dat = get_gps()
         if gps_dat:
             data.update(gps_dat)
-            post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
+            try:
+                post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
+            except:
+                print "No route to host"
 
             # Create points:
             point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
