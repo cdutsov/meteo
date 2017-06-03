@@ -20,7 +20,7 @@ def get_gps():
                 sentence = sentence[1]
             else:
                 sentence = ''
-
+            print sentence
             if 'RMC' in sentence:
                 msg = pynmea2.parse(sentence)
                 lat = msg.latitude
