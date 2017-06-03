@@ -100,7 +100,7 @@ def main():
         publish_data(client=client1, data=data)
 
         gps_dat = get_gps()
-        if gps_dat:
+        if gps_dat and not gps_dat["latitude"] == 0:
             data.update(gps_dat)
             try:
                 post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
