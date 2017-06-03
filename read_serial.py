@@ -19,6 +19,9 @@ def get_gps():
             msg = pynmea2.parse(sentence[1])
             return msg
 
+
+latlon = get_gps()
+print latlon
 # while True:
 #     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
 #         line = ser.readline()
