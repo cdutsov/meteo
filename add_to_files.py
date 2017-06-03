@@ -101,7 +101,7 @@ def main():
         point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
                                 data["longitude"],
                                 elevation=data["altitude"],
-                                time=datetime.datetime.now().isoformat())
+                                time=datetime.datetime.now())
         point.extensions = data
         gpx_segment.points.append(point)
         if(datetime.datetime.now() - start_time) > datetime.timedelta(seconds=10):
