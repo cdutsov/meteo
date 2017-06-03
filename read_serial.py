@@ -3,14 +3,10 @@ import pynmea2
 
 
 def get_dust_particles():
-    with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
+    with serial.Serial('/dev/ttyUSB0', 9600, timeout=1) as ser:
         sentence = ser.readline()
-        dat = 0.
-        try:
-            dat = float(sentence.rsplit(',')[1])
-        except:
-            dat = False
-        return dat
+        return int(sentence) * 11 * 3.3 / 4096.0 * 172 - 0.01
+
 
 
 def get_gps():

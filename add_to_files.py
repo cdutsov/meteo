@@ -42,7 +42,7 @@ def append_data(data):
 
 
 def main():
-    #config bme sensor
+    # config bme sensor
     sensor = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
     tstart = time.time()
     client1 = paho.Client("control1")  # create client object
@@ -77,7 +77,7 @@ def main():
         particles_set = list(particles_mean)
         particles_set.sort()
         print particles_set
-        print particles_set[len(particles_set)//2]
+        print particles_set[len(particles_set) // 2]
         print data["dust_particles"]
 
         data_list.append(data)
