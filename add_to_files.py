@@ -11,7 +11,7 @@ import pickle
 
 broker = "127.0.0.1"
 port = 1883
-filename = "datalist.dat"
+filename = datetime.datetime.now().isoformat() + ".log"
 data = {}
 
 
@@ -30,11 +30,11 @@ def publish_data(client, data):
     client.publish("sensors/dust_particles", "%0.3f" % data["dust_particles"])
 
 
-def append_data(data):
+def append_data(d):
     if os.path.exists(filename):
         with open(filename, "rb") as data_file:
             data_list = pickle.load(data_file)
-            data_list.append(data)
+            data_list.append(d)
         with open(filename, "wb") as data_file:
             pickle.dump(data_list, data_file)
     else:
@@ -62,13 +62,13 @@ def main():
     #     publish_data(client=client1, data=data)
     while True:
         data["datetime"] = datetime.datetime.now()
-        data["temperature"] = sensor.read_temperature()
-        data["pressure"] = sensor.read_pressure() / 100
-        data["humidity"] = sensor.read_humidity()
-        data["dew_point"] = sensor.read_dewpoint()
-        data["uv_raw"] = veml.get_uva_light_intensity_raw()
-        data["uv"] = veml.get_uva_light_intensity()
-        data["dust_particles"] = get_dust_particles()
+        data["temperature"] = round(sensor.read_temperature(), 2)
+        data["pressure"] = round(sensor.read_pressure() / 100, 3)
+        data["humidity"] = round(sensor.read_humidity(), 2)
+        data["dew_point"] = round(sensor.read_dewpoint(), 2)
+        data["uv_raw"] = round(veml.get_uva_light_intensity_raw(), 3)
+        data["uv"] = round(veml.get_uva_light_intensity(), 3)
+        data["dust_particles"] = round(get_dust_particles(), 2)
         # data["dust_particles"] = 0
         particles_mean.append(data["dust_particles"])
         if len(particles_mean) > 9:
@@ -98,7 +98,7 @@ def main():
         # file_p.close()
         # file_h.close()
         # file_uv.close()
-        time.sleep(3)
+        # time.sleep(3)
 
 
 main()
