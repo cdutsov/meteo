@@ -12,6 +12,7 @@ import pickle
 broker = "127.0.0.1"
 port = 1883
 filename = "datalist.dat"
+data = {}
 
 
 def on_publish(client, userdata, result):  # create function for callback
@@ -50,7 +51,6 @@ def main():
     client1.connect(broker, port)  # establish connection
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
-    data = {}
 
     data_list = []
     particles_mean = []
@@ -63,8 +63,7 @@ def main():
     while True:
         data["datetime"] = datetime.datetime.now()
         data["temperature"] = sensor.read_temperature()
-        pascals = sensor.read_pressure()
-        data["pressure"] = pascals / 100
+        data["pressure"] = sensor.read_pressure() / 100
         data["humidity"] = sensor.read_humidity()
         data["dew_point"] = sensor.read_dewpoint()
         data["uv_raw"] = veml.get_uva_light_intensity_raw()

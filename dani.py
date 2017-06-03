@@ -11,4 +11,4 @@ import pickle
 import json
 
 with open("/home/pi/dani.json", "aw") as fp:
-    json.dump(data, fp)
+    write
