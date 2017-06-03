@@ -26,11 +26,14 @@ def get_gps():
                 lat = msg.latitude
                 lon = msg.longitude
                 no_spd = False
+                print "rmc got"
                 # speed = msg.speed
             elif 'GGA' in sentence:
                 msg = pynmea2.parse(sentence)
                 alt = msg.altitude
                 no_alt = True
+                print "gga got"
+
         return lon, lat, alt, speed
 
 # while True:
