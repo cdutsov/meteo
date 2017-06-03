@@ -1,3 +1,4 @@
+import datetime
 import serial
 import pynmea2
 
@@ -10,7 +11,9 @@ def get_dust_particles():
 
 def get_gps():
     sentence = ''
+    time = datetime.time(00, 00, 00)
     lat, lon, alt, speed = 0, 0, 0, 0
+    gps_dat = {}
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
         no_spd = True
         no_alt = True
@@ -20,21 +23,19 @@ def get_gps():
                 sentence = sentence[1]
             else:
                 sentence = ''
-            print sentence
             if 'RMC' in sentence:
                 msg = pynmea2.parse(sentence)
-                lat = msg.latitude
-                lon = msg.longitude
+                gps_dat["latitude"] = msg.latitude
+                gps_dat["longitude"] = msg.longitude
+                gps_dat["timestamp"] = msg.timestamp
                 no_spd = False
-                print "rmc got"
                 # speed = msg.speed
             elif 'GGA' in sentence:
                 msg = pynmea2.parse(sentence)
-                alt = msg.altitude
+                gps_dat["altitude"] = msg.altitude
                 no_alt = False
-                print "gga got"
 
-        return lon, lat, alt, speed
+        return gps_dat
 
 # while True:
 #     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:

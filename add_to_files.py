@@ -77,9 +77,10 @@ def main():
         particles_set.sort()
         data["dust_particles"] = particles_set[len(particles_set) // 2]
 
-        coordinates = {}
-        raw_coord = get_gps()
-
+        gps_dat = get_gps()
+        if gps_dat:
+            data.update(gps_dat)
+        print data
         data_list.append(data)
         publish_data(client=client1, data=data)
         # append_data(data)
