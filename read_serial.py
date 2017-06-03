@@ -17,10 +17,10 @@ def get_gps():
     sentence = ''
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
         while 'RMC' not in sentence:
-            sentence = ser.readline().split('$', 1)
+            sentence = ser.readline().split('$', 1)[1]
             print sentence
         if len(sentence) > 1:
-            msg = pynmea2.parse(sentence[1])
+            msg = pynmea2.parse(sentence)
             print msg
             return msg
 
