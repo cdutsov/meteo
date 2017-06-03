@@ -115,7 +115,7 @@ def main():
             with open("tracks/track" + datetime.datetime.now().isoformat(), "w") as f:
                 print "GPX file printed!"
                 f.write(gpx.to_xml(version="1.1"))
-        gpx, gpx_segment = new_gpx_file()
+            gpx, gpx_segment = new_gpx_file()
 
 
 main()
