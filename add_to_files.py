@@ -98,7 +98,6 @@ def main():
         gps_dat = get_gps()
         if gps_dat:
             data.update(gps_dat)
-        print data
         data_list.append(data)
         publish_data(client=client1, data=data)
         post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
