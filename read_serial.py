@@ -18,11 +18,12 @@ def get_gps():
                 sentence = sentence[1]
             else:
                 sentence = ''
+            print sentence
             msg = pynmea2.parse(sentence)
             lat = msg.latitude
             lon = msg.longitude
             # speed = msg.speed
-        while 'GPGGA' not in sentence:
+        while 'GGA' not in sentence:
             sentence = ser.readline().split('$', 1)
             if len(sentence) == 2:
                 sentence = sentence[1]
