@@ -16,29 +16,21 @@ def get_gps():
         no_alt = True
         while no_alt or no_spd:
             sentence = ser.readline().split('$', 1)
+            if len(sentence) == 2:
+                sentence = sentence[1]
+            else:
+                sentence = ''
+
             if 'RMC' in sentence:
-                if len(sentence) == 2:
-                    sentence = sentence[1]
-                else:
-                    sentence = ''
-                print sentence
                 msg = pynmea2.parse(sentence)
                 lat = msg.latitude
                 lon = msg.longitude
                 no_spd = False
-                print "got spd"
                 # speed = msg.speed
             elif 'GGA' in sentence:
-                sentence = ser.readline().split('$', 1)
-                if len(sentence) == 2:
-                    sentence = sentence[1]
-                else:
-                    sentence = ''
                 msg = pynmea2.parse(sentence)
                 alt = msg.altitude
                 no_alt = True
-                print "got alt"
-
         return lon, lat, alt, speed
 
 # while True:
