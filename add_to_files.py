@@ -111,7 +111,7 @@ def main():
                                             time=datetime.datetime.now())
             point.extensions = data
             gpx_segment.points.append(point)
-            if (datetime.datetime.now() - start_time) > datetime.timedelta(seconds=10):
+            if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
                 start_time = datetime.datetime.now()
                 with open("tracks/track" + datetime.datetime.now().isoformat(), "w") as f:
                     print "GPX file printed!"
