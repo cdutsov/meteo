@@ -20,10 +20,10 @@ def on_publish(client, userdata, result):  # create function for callback
 
 
 def publish_data(client, data):
-    client.publish("sensors/temperature", "%0.3f" % (data["temperature"]), retain=True)
-    client.publish("sensors/pressure", "%0.3f" % data["pressure"])
-    client.publish("sensors/humidity", "%0.3f" % data["humidity"])
-    client.publish("sensors/dewpoint", "%0.3f" % data["dew_point"])
+    # client.publish("sensors/temperature", "%0.3f" % (data["temperature"]), retain=True)
+    # client.publish("sensors/pressure", "%0.3f" % data["pressure"])
+    # client.publish("sensors/humidity", "%0.3f" % data["humidity"])
+    # client.publish("sensors/dewpoint", "%0.3f" % data["dew_point"])
     client.publish("sensors/uv", "%0.3f" % data["uv"])
     client.publish("sensors/uv_raw", "%0.3f" % data["uv_raw"])
     client.publish("sensors/dust_particles", "%0.3f" % data["dust_particles"])
