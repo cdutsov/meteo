@@ -59,6 +59,7 @@ def main():
     gpx = gpxpy.gpx.GPX()
     gpx_track = gpxpy.gpx.GPXTrack()
     gpx.tracks.append(gpx_track)
+    # gpx.extensions = "temp"
 
     # Create first segment in our GPX track:
     gpx_segment = gpxpy.gpx.GPXTrackSegment()
@@ -66,12 +67,9 @@ def main():
 
     data_list = []
     particles_mean = []
-    particles_set = set()
-    # if os.path.exists(filename):
-    #     with open(filename, "rb") as data_file:
-    #         data_list = pickle.load(data_file)
-    # for data in data_list:
-    #     publish_data(client=client1, data=data)
+
+    start_time = datetime.datetime.now()
+
     while True:
         data["datetime"] = datetime.datetime.now()
         data["temperature"] = round(sensor.read_temperature(), 2)
@@ -100,23 +98,9 @@ def main():
         gpx_segment.points.append(gpxpy.gpx.GPXTrackPoint(data["latitude"],
                                                           data["longitude"],
                                                           elevation=data["altitude"]))
-        print gpx.to_xml()
-        # append_data(data)
-
-        # with open("/home/pi/temperature.txt", "aw") as file_t:
-        #     file_t.write("%s" % data["datetime"] + " %0.3f" % data["temperature"] + "\n")
-        # with open("/home/pi/pressure.txt", "aw") as file_p:
-        #     file_p.write("%s" % data["datetime"] + " %0.3f" % data["pressure"] + "\n")
-        # with open("/home/pi/humidity.txt", "aw") as file_h:
-        #     file_h.write("%s" % data["datetime"] + " %0.3f" % data["humidity"] + "\n")
-        # with open("/home/pi/uv.txt", "aw") as file_uv:
-        #     file_uv.write("%s" % data["datetime"] + " %0.3f" % data["uv"] + "\n")
-        #
-        # file_t.close()
-        # file_p.close()
-        # file_h.close()
-        # file_uv.close()
-        # time.sleep(3)
-
+        if(datetime.datetime.now() - start_time) > datetime.timedelta(minutes=1):
+            start_time = datetime.datetime.now()
+            with open("track" + datetime.datetime.now().isoformat(), "w") as f:
+                f.write(gpx.to_xml())
 
 main()
