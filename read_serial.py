@@ -22,16 +22,11 @@ def get_gps():
                 sentence = sentence[1]
             else:
                 sentence = ''
-
-            print sentence
-
-        msg = pynmea2.parse(sentence)
-        print msg
-        return msg
+        return pynmea2.parse(sentence)
 
 
-latlon = get_gps()
-print latlon
+msg = get_gps()
+print msg.latitude, msg.longitude
 # while True:
 #     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
 #         line = ser.readline()
