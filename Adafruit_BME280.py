@@ -185,12 +185,23 @@ class BME280(object):
         print 'dig_H6 = {0:d}'.format (self.dig_H6)
         '''
 
+    def wait_until_timeout(self, timeout, interval, condition):
+        t = 0
+        while condition:
+            time.sleep(interval)
+            t += interval
+            if t > timeout:
+                return
+
     def read_raw_temp(self):
         """Waits for reading to become available on device."""
         """Does a single burst read of all data values from device."""
         """Returns the raw (uncompensated) temperature from the sensor."""
-        while (self._device.readU8(BME280_REGISTER_STATUS) & 0x08):    # Wait for conversion to complete (TODO : add timeout)
-            time.sleep(0.002)
+        self.wait_until_timeout(timeout=5,
+                                interval=0.002,
+                                condition=(self._device.readU8(BME280_REGISTER_STATUS) & 0x08))
+        # while (self._device.readU8(BME280_REGISTER_STATUS) & 0x08):    # Wait for conversion to complete (TODO : add timeout)
+        #     time.sleep(0.002)
         self.BME280Data = self._device.readList(BME280_REGISTER_DATA, 8)
         raw = ((self.BME280Data[3] << 16) | (self.BME280Data[4] << 8) | self.BME280Data[5]) >> 4
         return raw

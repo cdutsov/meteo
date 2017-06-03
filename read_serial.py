@@ -8,7 +8,6 @@ def get_dust_particles():
         return int(sentence) * 11 * 3.3 / 4096.0 * 172 - 0.01
 
 
-
 def get_gps():
     sentence = ''
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
