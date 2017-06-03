@@ -9,6 +9,8 @@ from Adafruit_BME280 import *
 import paho.mqtt.client as paho
 import veml6070
 import time
+
+from dani import post_update
 from read_serial import get_dust_particles, get_gps
 import pickle
 
@@ -93,14 +95,16 @@ def main():
         print data
         data_list.append(data)
         publish_data(client=client1, data=data)
+        post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
 
         # Create points:
         gpx_segment.points.append(gpxpy.gpx.GPXTrackPoint(data["latitude"],
                                                           data["longitude"],
                                                           elevation=data["altitude"]))
-        if(datetime.datetime.now() - start_time) > datetime.timedelta(minutes=1):
+        if(datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
             start_time = datetime.datetime.now()
             with open("track" + datetime.datetime.now().isoformat(), "w") as f:
+                print "GPX file printed!"
                 f.write(gpx.to_xml())
 
 main()

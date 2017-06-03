@@ -1,14 +1,23 @@
-import serial
-import pynmea2
-import os
-from Adafruit_BME280 import *
-import paho.mqtt.client as paho
-import veml6070
-import time
-from read_serial import *
-from add_to_files import *
-import pickle
-import json
+import datetime
+from dateutil import tz
+import requests
 
-with open("/home/pi/dani.json", "aw") as fp:
-    write
+TRACKER_URL = "http://192.168.43.20:5000/api/tracker-sessions/create"
+API_KEY = "789g2465543fudois"
+
+tzinfo = tz.tzoffset(None, datetime.timedelta(seconds=10800))
+
+
+def post_update(latitude, longitude, timestamp):
+    start_ts = end_ts = timestamp.replace(tzinfo=tzinfo)
+
+    requests.post(TRACKER_URL, json={
+        'tracker_id': 2,
+        'start_ts': str(start_ts),
+        'end_ts': str(end_ts),
+        'sessions': [{
+            'latitude': latitude,
+            'longitude': longitude
+        }],
+        'api_key': API_KEY
+    })
