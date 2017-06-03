@@ -6,7 +6,7 @@ from Adafruit_BME280 import *
 import paho.mqtt.client as paho
 import veml6070
 import time
-from read_serial import get_dust_particles
+from read_serial import get_dust_particles, get_gps
 import pickle
 
 broker = "127.0.0.1"
@@ -68,34 +68,35 @@ def main():
         data["dew_point"] = sensor.read_dewpoint()
         data["uv_raw"] = veml.get_uva_light_intensity_raw()
         data["uv"] = veml.get_uva_light_intensity()
-        data["dust_particles"] = get_dust_particles()
+        # data["dust_particles"] = get_dust_particles()
         # data["dust_particles"] = 0
         particles_mean.append(data["dust_particles"])
         if len(particles_mean) > 9:
             del particles_mean[0]
         particles_set = list(particles_mean)
         particles_set.sort()
-        print particles_set
-        print particles_set[len(particles_set) // 2]
-        print data["dust_particles"]
+        data["dust_particles"] = particles_set[len(particles_set) // 2]
+
+        coordinates = {}
+        raw_coord = get_gps()
 
         data_list.append(data)
         publish_data(client=client1, data=data)
         # append_data(data)
 
-        with open("/home/pi/temperature.txt", "aw") as file_t:
-            file_t.write("%s" % data["datetime"] + " %0.3f" % data["temperature"] + "\n")
-        with open("/home/pi/pressure.txt", "aw") as file_p:
-            file_p.write("%s" % data["datetime"] + " %0.3f" % data["pressure"] + "\n")
-        with open("/home/pi/humidity.txt", "aw") as file_h:
-            file_h.write("%s" % data["datetime"] + " %0.3f" % data["humidity"] + "\n")
-        with open("/home/pi/uv.txt", "aw") as file_uv:
-            file_uv.write("%s" % data["datetime"] + " %0.3f" % data["uv"] + "\n")
-
-        file_t.close()
-        file_p.close()
-        file_h.close()
-        file_uv.close()
+        # with open("/home/pi/temperature.txt", "aw") as file_t:
+        #     file_t.write("%s" % data["datetime"] + " %0.3f" % data["temperature"] + "\n")
+        # with open("/home/pi/pressure.txt", "aw") as file_p:
+        #     file_p.write("%s" % data["datetime"] + " %0.3f" % data["pressure"] + "\n")
+        # with open("/home/pi/humidity.txt", "aw") as file_h:
+        #     file_h.write("%s" % data["datetime"] + " %0.3f" % data["humidity"] + "\n")
+        # with open("/home/pi/uv.txt", "aw") as file_uv:
+        #     file_uv.write("%s" % data["datetime"] + " %0.3f" % data["uv"] + "\n")
+        #
+        # file_t.close()
+        # file_p.close()
+        # file_h.close()
+        # file_uv.close()
         time.sleep(3)
 
 

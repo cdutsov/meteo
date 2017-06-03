@@ -10,6 +10,7 @@ def get_dust_particles():
 
 def get_gps():
     sentence = ''
+    lat, lon, alt, speed = 0, 0, 0, 0
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
         while 'RMC' not in sentence:
             sentence = ser.readline().split('$', 1)
@@ -17,11 +18,20 @@ def get_gps():
                 sentence = sentence[1]
             else:
                 sentence = ''
-        return pynmea2.parse(sentence)
+            msg= pynmea2.parse(sentence)
+            lat = msg.latitude
+            lon = msg.longitude
+            # speed = msg_sp.speed
+        while 'RMC' not in sentence:
+            sentence = ser.readline().split('$', 1)
+            if len(sentence) == 2:
+                sentence = sentence[1]
+            else:
+                sentence = ''
+            msg = pynmea2.parse(sentence)
+            alt = msg.altitude
+        return lon, lat, alt, speed
 
-
-msg = get_gps()
-print msg.latitude, msg.longitude
 # while True:
 #     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
 #         line = ser.readline()
