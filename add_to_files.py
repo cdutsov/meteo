@@ -63,7 +63,7 @@ def main():
         data["datetime"] = datetime.datetime.now()
         # data["temperature"] = sensor.read_temperature()
         # pascals = sensor.read_pressure()
-        data["pressure"] = pascals / 100
+        # data["pressure"] = pascals / 100
         # data["humidity"] = sensor.read_humidity()
         # data["dew_point"] = sensor.read_dewpoint()
         data["uv_raw"] = veml.get_uva_light_intensity_raw()
