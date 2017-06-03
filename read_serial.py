@@ -12,9 +12,9 @@ def get_gps():
     sentence = ''
     lat, lon, alt, speed = 0, 0, 0, 0
     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
-        got_spd = False
-        got_alt = False
-        while not got_alt or not got_spd:
+        no_spd = True
+        no_alt = True
+        while no_alt or no_spd:
             sentence = ser.readline().split('$', 1)
             if 'RMC' in sentence:
                 if len(sentence) == 2:
@@ -25,7 +25,8 @@ def get_gps():
                 msg = pynmea2.parse(sentence)
                 lat = msg.latitude
                 lon = msg.longitude
-                got_spd = True
+                no_spd = False
+                print "got spd"
                 # speed = msg.speed
             elif 'GGA' in sentence:
                 sentence = ser.readline().split('$', 1)
@@ -35,7 +36,9 @@ def get_gps():
                     sentence = ''
                 msg = pynmea2.parse(sentence)
                 alt = msg.altitude
-                got_alt = True
+                no_alt = True
+                print "got alt"
+
         return lon, lat, alt, speed
 
 # while True:
