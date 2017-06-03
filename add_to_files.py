@@ -96,26 +96,27 @@ def main():
         particles = particles_set[len(particles_set) // 2]
         data["dust_particles"] = particles if particles else 0
 
+        data_list.append(data)
+        publish_data(client=client1, data=data)
+
         gps_dat = get_gps()
         if gps_dat:
             data.update(gps_dat)
-        data_list.append(data)
-        publish_data(client=client1, data=data)
-        post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
+            post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
 
-        # Create points:
-        point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
-                                        data["longitude"],
-                                        elevation=data["altitude"],
-                                        time=datetime.datetime.now())
-        point.extensions = data
-        gpx_segment.points.append(point)
-        if (datetime.datetime.now() - start_time) > datetime.timedelta(seconds=10):
-            start_time = datetime.datetime.now()
-            with open("tracks/track" + datetime.datetime.now().isoformat(), "w") as f:
-                print "GPX file printed!"
-                f.write(gpx.to_xml(version="1.1"))
-            gpx, gpx_segment = new_gpx_file()
+            # Create points:
+            point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
+                                            data["longitude"],
+                                            elevation=data["altitude"],
+                                            time=datetime.datetime.now())
+            point.extensions = data
+            gpx_segment.points.append(point)
+            if (datetime.datetime.now() - start_time) > datetime.timedelta(seconds=10):
+                start_time = datetime.datetime.now()
+                with open("tracks/track" + datetime.datetime.now().isoformat(), "w") as f:
+                    print "GPX file printed!"
+                    f.write(gpx.to_xml(version="1.1"))
+                gpx, gpx_segment = new_gpx_file()
 
 
 main()
