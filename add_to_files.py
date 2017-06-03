@@ -112,7 +112,7 @@ def main():
                                             data["longitude"],
                                             elevation=data["altitude"],
                                             time=datetime.datetime.now())
-            point.extensions = data
+            point.extensions = dict(data)
             gpx_segment.points.append(point)
             if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
                 start_time = datetime.datetime.now()
