@@ -62,7 +62,7 @@ def main():
     while True:
         data["datetime"] = datetime.datetime.now()
         # data["temperature"] = sensor.read_temperature()
-        pascals = sensor.read_pressure()
+        # pascals = sensor.read_pressure()
         data["pressure"] = pascals / 100
         # data["humidity"] = sensor.read_humidity()
         # data["dew_point"] = sensor.read_dewpoint()
