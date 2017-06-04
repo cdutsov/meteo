@@ -39,8 +39,6 @@ def post_internet(json_data):
             requests.post(TRACKER_URL, json=feed)
             print "posting... %s" % i
         os.remove(DATA_FILE)
-    else:
-        raise "no data file"
     requests.post(TRACKER_URL, json=json_data)
     print "internet posted!"
 
