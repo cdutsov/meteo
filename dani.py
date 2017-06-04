@@ -9,13 +9,14 @@ API_KEY = "789g2465543fudois"
 
 tzinfo = tz.tzoffset(None, datetime.timedelta(seconds=10800))
 
-
 DATA_FILE = 'dump.json'
 
+
 def init_file():
-    if os.path.isfile(DATA_FILE):
+    if not os.path.isfile(DATA_FILE):
         with open(DATA_FILE, mode='w', encoding='utf-8') as f:
             json.dump([], f)
+
 
 def save_to_file(json_data):
     init_file()

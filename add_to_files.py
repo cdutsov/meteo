@@ -10,7 +10,7 @@ import paho.mqtt.client as paho
 import veml6070
 import time
 
-from dani import post_update
+from dani import post_update, TRACKER_URL
 from read_serial import get_dust_particles, get_gps
 import pickle
 
@@ -75,8 +75,10 @@ def main():
 
     data_list = []
     particles_mean = []
+    gps_dat = None
 
     start_time = datetime.datetime.now()
+    data_published_time = datetime.datetime.now()
 
     while True:
         data["datetime"] = datetime.datetime.now()
@@ -97,15 +99,25 @@ def main():
         data["dust_particles"] = particles if particles else 0
 
         data_list.append(data)
+
         publish_data(client=client1, data=data)
 
-        gps_dat = get_gps()
+        tmp_gps_dat = get_gps()
+        if not tmp_gps_dat["latitude"] == 0:
+            gps_dat = tmp_gps_dat
         if gps_dat and not gps_dat["latitude"] == 0:
             data.update(gps_dat)
-            try:
-                post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
-            except:
-                print "No route to host"
+            if gps_dat["speed"] > 0.5:
+                update_interval = 20
+            else:
+                update_interval = 120
+
+            if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
+                data_published_time = datetime.datetime.now()
+                try:
+                    post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
+                except:
+                    print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
 
             # Create points:
             point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
@@ -116,8 +128,9 @@ def main():
             gpx_segment.points.append(point)
             if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
                 start_time = datetime.datetime.now()
-                with open("tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx", "w") as f:
-                    print "GPX file printed!"
+                fname = "tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
+                with open(fname, "w") as f:
+                    print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
                     f.write(gpx.to_xml(version="1.1"))
                 gpx, gpx_segment = new_gpx_file()
 
