@@ -114,10 +114,11 @@ def main():
             data.update(gps_dat)
             publish_template(client=client1,
                              template=str(data["latitude"] + data["longitude"] + data["speed"] + data["altitude"]))
+            print "template printed"
             if gps_dat["speed"] > 0.5:
-                update_interval = 10
+                update_interval = 20
             else:
-                update_interval = 10
+                update_interval = 120
 
             if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
                 data_published_time = datetime.datetime.now()
