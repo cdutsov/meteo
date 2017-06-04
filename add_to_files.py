@@ -66,8 +66,10 @@ def append_data(d):
 
 
 def generate_template(gps_dat):
-    return "Longitude: %d <br> Latitude: %d <br> Speed over ground: %d <br> Altitude: %d <br>".format(
-        gps_dat["longitude"], gps_dat["latitude"], gps_dat["speed"], gps_dat["altitude"])
+    return "Longitude: " + str(gps_dat["longitude"]) + \
+           "<br> Latitude: " + str(gps_dat["latitude"]) + \
+           "<br> Speed over ground: " + str(gps_dat["speed"]) + \
+           "<br> Altitude: " + str(gps_dat["altitude"]) + "<br>"
 
 
 def main():
