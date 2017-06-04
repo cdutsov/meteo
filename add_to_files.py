@@ -122,7 +122,6 @@ def main():
             data.update(gps_dat)
             publish_template(client=client1,
                              template=generate_template(gps_dat))
-            print "template printed"
             if gps_dat["speed"] > 0.5:
                 update_interval = 20
             else:
@@ -130,7 +129,6 @@ def main():
 
             if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
                 data_published_time = datetime.datetime.now()
-                print "trying to publish data"
                 try:
                     post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
                     print "data posted to: " + TRACKER_URL
