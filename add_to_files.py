@@ -46,7 +46,11 @@ def publish_data(client, data):
     client.publish("sensors/uv", "%0.3f" % data["uv"])
     client.publish("sensors/uv_raw", "%0.3f" % data["uv_raw"])
     client.publish("sensors/dust_particles", "%0.3f" % data["dust_particles"])
-    client.publish("template/html_template", "<div ng-bind-html=\"msg.payload\"> Hi!</div>")
+
+
+def publish_template(client, template):
+    client.publish("template/html_template", "<div ng-bind-html=\"msg.payload\"> "
+                   + template + "</div>")
 
 
 def append_data(d):
@@ -108,6 +112,8 @@ def main():
             gps_dat = tmp_gps_dat
         if gps_dat and not gps_dat["latitude"] == 0:
             data.update(gps_dat)
+            publish_template(client=client1,
+                             template=str(data["latitude"] + data["longitude"] + data["speed"] + data["altitude"]))
             if gps_dat["speed"] > 0.5:
                 update_interval = 10
             else:
