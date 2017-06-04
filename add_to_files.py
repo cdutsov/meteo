@@ -94,7 +94,7 @@ def main():
 
     while True:
         data["datetime"] = datetime.datetime.now()
-        data["temperature"] = round(sensor.read_temperature(), 2)
+        data["temperature"] = round(sensor.read_temperature() - 6, 2)
         data["pressure"] = round(sensor.read_pressure() / 100, 3)
         data["humidity"] = round(sensor.read_humidity(), 2)
         data["dew_point"] = round(sensor.read_dewpoint(), 2)
