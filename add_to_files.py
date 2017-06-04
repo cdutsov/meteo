@@ -116,6 +116,7 @@ def main():
 
             if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
                 data_published_time = datetime.datetime.now()
+                print "trying to publish data"
                 try:
                     post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
                     print "data posted to: " + TRACKER_URL
