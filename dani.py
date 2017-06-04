@@ -9,7 +9,7 @@ API_KEY = "fyu789gf75h46gs"
 
 tzinfo = tz.tzoffset(None, datetime.timedelta(seconds=10800))
 
-DATA_FILE = 'dump.json'
+DATA_FILE = '/home/pi/meteo/src/dump.json'
 
 
 def init_file():
