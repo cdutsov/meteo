@@ -80,8 +80,6 @@ def main():
     start_time = datetime.datetime.now()
     data_published_time = datetime.datetime.now()
 
-    exit(1)
-
     while True:
         data["datetime"] = datetime.datetime.now()
         data["temperature"] = round(sensor.read_temperature(), 2)
