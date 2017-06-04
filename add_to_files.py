@@ -109,9 +109,9 @@ def main():
         if gps_dat and not gps_dat["latitude"] == 0:
             data.update(gps_dat)
             if gps_dat["speed"] > 0.5:
-                update_interval = 10
+                update_interval = 20
             else:
-                update_interval = 10
+                update_interval = 120
 
             if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
                 data_published_time = datetime.datetime.now()
