@@ -38,7 +38,7 @@ def get_gps():
                     msg = pynmea2.parse(sentence)
                     gps_dat["altitude"] = msg.altitude
                     no_alt = False
-            print gps_dat
+            print "gps dat is " + gps_dat
             return gps_dat
     except:
         return None

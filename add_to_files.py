@@ -106,7 +106,6 @@ def main():
         tmp_gps_dat = get_gps()
         if tmp_gps_dat and not tmp_gps_dat["latitude"] == 0:
             gps_dat = tmp_gps_dat
-        print tmp_gps_dat
         if gps_dat and not gps_dat["latitude"] == 0:
             data.update(gps_dat)
             if gps_dat["speed"] > 0.5:
