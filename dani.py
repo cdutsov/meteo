@@ -30,12 +30,16 @@ def save_to_file(json_data):
 
 def post_internet(json_data):
     if os.path.isfile(DATA_FILE):
+        print "data file exists"
         with open(DATA_FILE, mode='r', encoding='utf-8') as f:
             feeds = json.load(f)
-        for feed in feeds:
+        print "len is: %s" % len(feeds)
+        for i, feed in enumerate(feeds):
             requests.post(TRACKER_URL, json=feed)
+            print "posting... %s" % i
         os.remove(DATA_FILE)
     requests.post(TRACKER_URL, json=json_data)
+    print "internet posted!"
 
 
 def post_update(latitude, longitude, timestamp):
