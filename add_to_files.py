@@ -65,6 +65,11 @@ def append_data(d):
             pickle.dump([], data_file)
 
 
+def generate_template(gps_dat):
+    return "Longitude: %d <br> Latitude: %d <br> Speed over ground: %d <br> Altitude: %d <br>".format(
+        gps_dat["longitude"], gps_dat["latitude"], gps_dat["speed"], gps_dat["altitude"])
+
+
 def main():
     # config bme sensor
     sensor = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
@@ -114,7 +119,7 @@ def main():
         if gps_dat and not gps_dat["latitude"] == 0:
             data.update(gps_dat)
             publish_template(client=client1,
-                             template=str(data["latitude"] + data["longitude"] + data["speed"] + data["altitude"]))
+                             template=generate_template(gps_dat))
             print "template printed"
             if gps_dat["speed"] > 0.5:
                 update_interval = 20
