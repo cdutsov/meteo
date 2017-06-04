@@ -46,7 +46,8 @@ def publish_data(client, data):
     client.publish("sensors/uv", "%0.3f" % data["uv"])
     client.publish("sensors/uv_raw", "%0.3f" % data["uv_raw"])
     client.publish("sensors/dust_particles", "%0.3f" % data["dust_particles"])
-    client.publish("template/html_template", "<div ng-bind-html=\"msg.payload\">asdf</div>")
+    client.publish("template/html_template", "<div ng-bind-html=\"msg.payload\"> " +
+                   data["longitude"] + " " + data["latitude"] + "</div>")
 
 
 def append_data(d):
