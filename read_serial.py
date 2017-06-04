@@ -32,6 +32,7 @@ def get_gps():
                 gps_dat["latitude"] = msg.latitude
                 gps_dat["longitude"] = msg.longitude
                 gps_dat["timestamp"] = msg.timestamp
+                print msg
                 no_spd = False
                 gps_dat["speed"] = msg.speed
             elif 'GGA' in sentence:
