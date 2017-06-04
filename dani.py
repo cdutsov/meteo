@@ -14,6 +14,7 @@ DATA_FILE = '/home/pi/meteo/src/dump.json'
 
 def init_file():
     if not os.path.isfile(DATA_FILE):
+        print "file initialized..."
         with open(DATA_FILE, mode='w', encoding='utf-8') as f:
             json.dump([], f)
 
