@@ -104,7 +104,6 @@ def main():
         publish_data(client=client1, data=data)
 
         tmp_gps_dat = get_gps()
-        print tmp_gps_dat
         if tmp_gps_dat and not tmp_gps_dat["latitude"] == 0:
             gps_dat = tmp_gps_dat
         if gps_dat and not gps_dat["latitude"] == 0:
