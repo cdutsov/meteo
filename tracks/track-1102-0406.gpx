@@ -1,0 +1,3916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+<metadata>
+<author>
+<link ></link></author>
+<copyright ></copyright>
+<link ></link></metadata>
+<trk>
+<link ></link>
+<trkseg>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:52:59Z</time>
+<link ></link>
+<extensions>
+<uv_raw>431.0</uv_raw>
+<temperature>43.92</temperature>
+<dew_point>29.08</dew_point>
+<timestamp>07:52:59</timestamp>
+<altitude>588.3</altitude>
+<uv>24.3</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.8</humidity>
+<pressure>950.138</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:52:51.756572</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:01Z</time>
+<link ></link>
+<extensions>
+<uv_raw>449.0</uv_raw>
+<temperature>43.93</temperature>
+<dew_point>29.09</dew_point>
+<timestamp>07:53:01</timestamp>
+<altitude>588.3</altitude>
+<uv>25.538</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.79</humidity>
+<pressure>950.155</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:52:59.452439</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:03Z</time>
+<link ></link>
+<extensions>
+<uv_raw>467.0</uv_raw>
+<temperature>43.95</temperature>
+<dew_point>29.11</dew_point>
+<timestamp>07:53:03</timestamp>
+<altitude>588.3</altitude>
+<uv>26.494</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.79</humidity>
+<pressure>950.172</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:01.427017</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:05Z</time>
+<link ></link>
+<extensions>
+<uv_raw>488.0</uv_raw>
+<temperature>44.0</temperature>
+<dew_point>29.13</dew_point>
+<timestamp>07:53:05</timestamp>
+<altitude>588.3</altitude>
+<uv>27.45</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.65</humidity>
+<pressure>950.18</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:03.436739</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:06Z</time>
+<link ></link>
+<extensions>
+<uv_raw>503.0</uv_raw>
+<temperature>44.05</temperature>
+<dew_point>29.17</dew_point>
+<timestamp>07:53:06</timestamp>
+<altitude>588.3</altitude>
+<uv>28.294</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.58</humidity>
+<pressure>950.179</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:05.437993</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:08Z</time>
+<link ></link>
+<extensions>
+<uv_raw>506.0</uv_raw>
+<temperature>44.09</temperature>
+<dew_point>29.2</dew_point>
+<timestamp>07:53:08</timestamp>
+<altitude>588.3</altitude>
+<uv>28.575</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.56</humidity>
+<pressure>950.182</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:06.429019</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:10Z</time>
+<link ></link>
+<extensions>
+<uv_raw>509.0</uv_raw>
+<temperature>44.17</temperature>
+<dew_point>29.26</dew_point>
+<timestamp>07:53:10</timestamp>
+<altitude>588.3</altitude>
+<uv>28.688</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.44</humidity>
+<pressure>950.188</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:08.439207</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:12Z</time>
+<link ></link>
+<extensions>
+<uv_raw>501.0</uv_raw>
+<temperature>44.25</temperature>
+<dew_point>29.32</dew_point>
+<timestamp>07:53:12</timestamp>
+<altitude>588.3</altitude>
+<uv>27.956</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.35</humidity>
+<pressure>950.196</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:10.444375</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:20Z</time>
+<link ></link>
+<extensions>
+<uv_raw>477.0</uv_raw>
+<temperature>44.44</temperature>
+<dew_point>29.44</dew_point>
+<timestamp>07:53:20</timestamp>
+<altitude>588.3</altitude>
+<uv>26.719</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.03</humidity>
+<pressure>950.207</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:12.435693</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:22Z</time>
+<link ></link>
+<extensions>
+<uv_raw>486.0</uv_raw>
+<temperature>44.47</temperature>
+<dew_point>29.49</dew_point>
+<timestamp>07:53:22</timestamp>
+<altitude>588.3</altitude>
+<uv>27.394</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.09</humidity>
+<pressure>950.205</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:20.427732</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:24Z</time>
+<link ></link>
+<extensions>
+<uv_raw>493.0</uv_raw>
+<temperature>44.5</temperature>
+<dew_point>29.59</dew_point>
+<timestamp>07:53:22</timestamp>
+<altitude>588.3</altitude>
+<uv>27.788</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.48</humidity>
+<pressure>950.205</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:22.457600</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:26Z</time>
+<link ></link>
+<extensions>
+<uv_raw>501.0</uv_raw>
+<temperature>44.47</temperature>
+<dew_point>29.55</dew_point>
+<timestamp>07:53:22</timestamp>
+<altitude>588.3</altitude>
+<uv>28.294</uv>
+<longitude>23.3526166667</longitude>
+<humidity>25.41</humidity>
+<pressure>950.2</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:24.279211</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:33Z</time>
+<link ></link>
+<extensions>
+<uv_raw>515.0</uv_raw>
+<temperature>44.67</temperature>
+<dew_point>29.65</dew_point>
+<timestamp>07:53:33</timestamp>
+<altitude>588.3</altitude>
+<uv>29.025</uv>
+<longitude>23.3526166667</longitude>
+<humidity>24.9</humidity>
+<pressure>950.217</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:26.433443</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:35Z</time>
+<link ></link>
+<extensions>
+<uv_raw>522.0</uv_raw>
+<temperature>44.73</temperature>
+<dew_point>29.7</dew_point>
+<timestamp>07:53:35</timestamp>
+<altitude>588.3</altitude>
+<uv>29.194</uv>
+<longitude>23.3526166667</longitude>
+<humidity>24.87</humidity>
+<pressure>950.224</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:33.448798</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:37Z</time>
+<link ></link>
+<extensions>
+<uv_raw>525.0</uv_raw>
+<temperature>44.8</temperature>
+<dew_point>29.77</dew_point>
+<timestamp>07:53:37</timestamp>
+<altitude>588.3</altitude>
+<uv>29.588</uv>
+<longitude>23.3526166667</longitude>
+<humidity>24.86</humidity>
+<pressure>950.233</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:35.427376</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:38Z</time>
+<link ></link>
+<extensions>
+<uv_raw>531.0</uv_raw>
+<temperature>44.88</temperature>
+<dew_point>29.85</dew_point>
+<timestamp>07:53:38</timestamp>
+<altitude>588.3</altitude>
+<uv>29.981</uv>
+<longitude>23.3526166667</longitude>
+<humidity>24.84</humidity>
+<pressure>950.243</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:37.426391</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:40Z</time>
+<link ></link>
+<extensions>
+<uv_raw>537.0</uv_raw>
+<temperature>44.92</temperature>
+<dew_point>29.88</dew_point>
+<timestamp>07:53:40</timestamp>
+<altitude>588.3</altitude>
+<uv>30.206</uv>
+<longitude>23.3526166667</longitude>
+<humidity>24.78</humidity>
+<pressure>950.248</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:38.441352</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666916667" lon="23.3526166667">
+<ele>588.3</ele>
+<time>2017-06-04T10:53:42Z</time>
+<link ></link>
+<extensions>
+<uv_raw>541.0</uv_raw>
+<temperature>45.0</temperature>
+<dew_point>29.93</dew_point>
+<timestamp>07:53:42</timestamp>
+<altitude>588.3</altitude>
+<uv>30.488</uv>
+<longitude>23.3526166667</longitude>
+<humidity>24.66</humidity>
+<pressure>950.248</pressure>
+<latitude>42.6666916667</latitude>
+<datetime>2017-06-04 10:53:40.429321</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666733333" lon="23.3526366667">
+<ele>589.8</ele>
+<time>2017-06-04T10:53:49Z</time>
+<link ></link>
+<extensions>
+<uv_raw>554.0</uv_raw>
+<temperature>44.27</temperature>
+<dew_point>29.47</dew_point>
+<timestamp>07:53:49</timestamp>
+<altitude>589.8</altitude>
+<uv>31.106</uv>
+<longitude>23.3526366667</longitude>
+<humidity>25.99</humidity>
+<pressure>950.262</pressure>
+<latitude>42.6666733333</latitude>
+<datetime>2017-06-04 10:53:42.440200</datetime>
+<speed>0.82304</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666633333" lon="23.35265">
+<ele>588.7</ele>
+<time>2017-06-04T10:53:56Z</time>
+<link ></link>
+<extensions>
+<uv_raw>552.0</uv_raw>
+<temperature>42.99</temperature>
+<dew_point>28.4</dew_point>
+<timestamp>07:53:56</timestamp>
+<altitude>588.7</altitude>
+<uv>31.106</uv>
+<longitude>23.35265</longitude>
+<humidity>27.06</humidity>
+<pressure>950.292</pressure>
+<latitude>42.6666633333</latitude>
+<datetime>2017-06-04 10:53:49.434637</datetime>
+<speed>0.54012</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666733333" lon="23.3526416667">
+<ele>589.4</ele>
+<time>2017-06-04T10:54:03Z</time>
+<link ></link>
+<extensions>
+<uv_raw>533.0</uv_raw>
+<temperature>42.41</temperature>
+<dew_point>27.87</dew_point>
+<timestamp>07:54:03</timestamp>
+<altitude>589.4</altitude>
+<uv>29.869</uv>
+<longitude>23.3526416667</longitude>
+<humidity>27.31</humidity>
+<pressure>950.281</pressure>
+<latitude>42.6666733333</latitude>
+<datetime>2017-06-04 10:53:56.428333</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:10Z</time>
+<link ></link>
+<extensions>
+<uv_raw>535.0</uv_raw>
+<temperature>41.86</temperature>
+<dew_point>27.39</dew_point>
+<timestamp>07:54:10</timestamp>
+<altitude>589.3</altitude>
+<uv>30.319</uv>
+<longitude>23.35264</longitude>
+<humidity>27.65</humidity>
+<pressure>950.285</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:03.451220</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:17Z</time>
+<link ></link>
+<extensions>
+<uv_raw>540.0</uv_raw>
+<temperature>41.8</temperature>
+<dew_point>27.32</dew_point>
+<timestamp>07:54:17</timestamp>
+<altitude>589.3</altitude>
+<uv>30.262</uv>
+<longitude>23.35264</longitude>
+<humidity>27.66</humidity>
+<pressure>950.282</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:10.444431</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:19Z</time>
+<link ></link>
+<extensions>
+<uv_raw>538.0</uv_raw>
+<temperature>41.73</temperature>
+<dew_point>27.29</dew_point>
+<timestamp>07:54:19</timestamp>
+<altitude>589.3</altitude>
+<uv>30.206</uv>
+<longitude>23.35264</longitude>
+<humidity>27.81</humidity>
+<pressure>950.287</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:17.450257</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:21Z</time>
+<link ></link>
+<extensions>
+<uv_raw>542.0</uv_raw>
+<temperature>41.65</temperature>
+<dew_point>27.25</dew_point>
+<timestamp>07:54:21</timestamp>
+<altitude>589.3</altitude>
+<uv>30.375</uv>
+<longitude>23.35264</longitude>
+<humidity>27.98</humidity>
+<pressure>950.297</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:19.460125</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:23Z</time>
+<link ></link>
+<extensions>
+<uv_raw>542.0</uv_raw>
+<temperature>41.43</temperature>
+<dew_point>27.09</dew_point>
+<timestamp>07:54:23</timestamp>
+<altitude>589.3</altitude>
+<uv>30.656</uv>
+<longitude>23.35264</longitude>
+<humidity>28.28</humidity>
+<pressure>950.306</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:21.447236</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:25Z</time>
+<link ></link>
+<extensions>
+<uv_raw>546.0</uv_raw>
+<temperature>41.27</temperature>
+<dew_point>26.93</dew_point>
+<timestamp>07:54:25</timestamp>
+<altitude>589.3</altitude>
+<uv>30.656</uv>
+<longitude>23.35264</longitude>
+<humidity>28.33</humidity>
+<pressure>950.315</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:23.451260</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:26Z</time>
+<link ></link>
+<extensions>
+<uv_raw>547.0</uv_raw>
+<temperature>41.1</temperature>
+<dew_point>26.81</dew_point>
+<timestamp>07:54:26</timestamp>
+<altitude>589.3</altitude>
+<uv>30.881</uv>
+<longitude>23.35264</longitude>
+<humidity>28.52</humidity>
+<pressure>950.322</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:25.442353</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:28Z</time>
+<link ></link>
+<extensions>
+<uv_raw>548.0</uv_raw>
+<temperature>41.03</temperature>
+<dew_point>26.75</dew_point>
+<timestamp>07:54:28</timestamp>
+<altitude>589.3</altitude>
+<uv>30.881</uv>
+<longitude>23.35264</longitude>
+<humidity>28.57</humidity>
+<pressure>950.323</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:26.443053</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:30Z</time>
+<link ></link>
+<extensions>
+<uv_raw>548.0</uv_raw>
+<temperature>40.94</temperature>
+<dew_point>26.65</dew_point>
+<timestamp>07:54:30</timestamp>
+<altitude>589.3</altitude>
+<uv>30.881</uv>
+<longitude>23.35264</longitude>
+<humidity>28.55</humidity>
+<pressure>950.317</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:28.450915</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:32Z</time>
+<link ></link>
+<extensions>
+<uv_raw>547.0</uv_raw>
+<temperature>40.89</temperature>
+<dew_point>26.61</dew_point>
+<timestamp>07:54:32</timestamp>
+<altitude>589.3</altitude>
+<uv>30.825</uv>
+<longitude>23.35264</longitude>
+<humidity>28.59</humidity>
+<pressure>950.315</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:30.453554</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:34Z</time>
+<link ></link>
+<extensions>
+<uv_raw>549.0</uv_raw>
+<temperature>40.87</temperature>
+<dew_point>26.58</dew_point>
+<timestamp>07:54:34</timestamp>
+<altitude>589.3</altitude>
+<uv>30.881</uv>
+<longitude>23.35264</longitude>
+<humidity>28.55</humidity>
+<pressure>950.31</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:32.322239</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:41Z</time>
+<link ></link>
+<extensions>
+<uv_raw>553.0</uv_raw>
+<temperature>41.03</temperature>
+<dew_point>26.69</dew_point>
+<timestamp>07:54:41</timestamp>
+<altitude>589.3</altitude>
+<uv>31.163</uv>
+<longitude>23.35264</longitude>
+<humidity>28.28</humidity>
+<pressure>950.288</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:34.444372</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:48Z</time>
+<link ></link>
+<extensions>
+<uv_raw>559.0</uv_raw>
+<temperature>41.33</temperature>
+<dew_point>26.95</dew_point>
+<timestamp>07:54:48</timestamp>
+<altitude>589.3</altitude>
+<uv>31.387</uv>
+<longitude>23.35264</longitude>
+<humidity>28.09</humidity>
+<pressure>950.29</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:41.453772</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:50Z</time>
+<link ></link>
+<extensions>
+<uv_raw>559.0</uv_raw>
+<temperature>41.38</temperature>
+<dew_point>26.99</dew_point>
+<timestamp>07:54:50</timestamp>
+<altitude>589.3</altitude>
+<uv>31.444</uv>
+<longitude>23.35264</longitude>
+<humidity>28.01</humidity>
+<pressure>950.292</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:48.433088</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:52Z</time>
+<link ></link>
+<extensions>
+<uv_raw>561.0</uv_raw>
+<temperature>41.46</temperature>
+<dew_point>27.05</dew_point>
+<timestamp>07:54:52</timestamp>
+<altitude>589.3</altitude>
+<uv>31.556</uv>
+<longitude>23.35264</longitude>
+<humidity>27.93</humidity>
+<pressure>950.291</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:50.451035</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:54Z</time>
+<link ></link>
+<extensions>
+<uv_raw>560.0</uv_raw>
+<temperature>41.55</temperature>
+<dew_point>27.11</dew_point>
+<timestamp>07:54:54</timestamp>
+<altitude>589.3</altitude>
+<uv>31.5</uv>
+<longitude>23.35264</longitude>
+<humidity>27.83</humidity>
+<pressure>950.294</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:52.439564</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:56Z</time>
+<link ></link>
+<extensions>
+<uv_raw>562.0</uv_raw>
+<temperature>41.64</temperature>
+<dew_point>27.18</dew_point>
+<timestamp>07:54:56</timestamp>
+<altitude>589.3</altitude>
+<uv>31.725</uv>
+<longitude>23.35264</longitude>
+<humidity>27.73</humidity>
+<pressure>950.286</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:54.451267</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:54:58Z</time>
+<link ></link>
+<extensions>
+<uv_raw>565.0</uv_raw>
+<temperature>41.72</temperature>
+<dew_point>27.26</dew_point>
+<timestamp>07:54:58</timestamp>
+<altitude>589.3</altitude>
+<uv>31.613</uv>
+<longitude>23.35264</longitude>
+<humidity>27.68</humidity>
+<pressure>950.276</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:56.328613</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:05Z</time>
+<link ></link>
+<extensions>
+<uv_raw>566.0</uv_raw>
+<temperature>42.21</temperature>
+<dew_point>27.66</dew_point>
+<timestamp>07:55:05</timestamp>
+<altitude>589.3</altitude>
+<uv>31.838</uv>
+<longitude>23.35264</longitude>
+<humidity>27.25</humidity>
+<pressure>950.272</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:54:58.425165</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:07Z</time>
+<link ></link>
+<extensions>
+<uv_raw>568.0</uv_raw>
+<temperature>42.31</temperature>
+<dew_point>27.77</dew_point>
+<timestamp>07:55:07</timestamp>
+<altitude>589.3</altitude>
+<uv>31.838</uv>
+<longitude>23.35264</longitude>
+<humidity>27.32</humidity>
+<pressure>950.274</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:05.458580</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:09Z</time>
+<link ></link>
+<extensions>
+<uv_raw>568.0</uv_raw>
+<temperature>42.4</temperature>
+<dew_point>27.86</dew_point>
+<timestamp>07:55:09</timestamp>
+<altitude>589.3</altitude>
+<uv>31.838</uv>
+<longitude>23.35264</longitude>
+<humidity>27.29</humidity>
+<pressure>950.268</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:07.430223</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:11Z</time>
+<link ></link>
+<extensions>
+<uv_raw>569.0</uv_raw>
+<temperature>42.48</temperature>
+<dew_point>27.93</dew_point>
+<timestamp>07:55:11</timestamp>
+<altitude>589.3</altitude>
+<uv>32.006</uv>
+<longitude>23.35264</longitude>
+<humidity>27.25</humidity>
+<pressure>950.267</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:09.333591</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:13Z</time>
+<link ></link>
+<extensions>
+<uv_raw>570.0</uv_raw>
+<temperature>42.56</temperature>
+<dew_point>28.0</dew_point>
+<timestamp>07:55:13</timestamp>
+<altitude>589.3</altitude>
+<uv>32.063</uv>
+<longitude>23.35264</longitude>
+<humidity>27.17</humidity>
+<pressure>950.258</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:11.435368</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:15Z</time>
+<link ></link>
+<extensions>
+<uv_raw>571.0</uv_raw>
+<temperature>42.67</temperature>
+<dew_point>28.08</dew_point>
+<timestamp>07:55:15</timestamp>
+<altitude>589.3</altitude>
+<uv>32.063</uv>
+<longitude>23.35264</longitude>
+<humidity>27.02</humidity>
+<pressure>950.246</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:13.436326</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:17Z</time>
+<link ></link>
+<extensions>
+<uv_raw>569.0</uv_raw>
+<temperature>42.8</temperature>
+<dew_point>28.18</dew_point>
+<timestamp>07:55:17</timestamp>
+<altitude>589.3</altitude>
+<uv>32.006</uv>
+<longitude>23.35264</longitude>
+<humidity>26.9</humidity>
+<pressure>950.239</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:15.417427</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:19Z</time>
+<link ></link>
+<extensions>
+<uv_raw>570.0</uv_raw>
+<temperature>42.93</temperature>
+<dew_point>28.29</dew_point>
+<timestamp>07:55:19</timestamp>
+<altitude>589.3</altitude>
+<uv>32.006</uv>
+<longitude>23.35264</longitude>
+<humidity>26.78</humidity>
+<pressure>950.238</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:17.426461</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:21Z</time>
+<link ></link>
+<extensions>
+<uv_raw>569.0</uv_raw>
+<temperature>43.06</temperature>
+<dew_point>28.4</dew_point>
+<timestamp>07:55:21</timestamp>
+<altitude>589.3</altitude>
+<uv>32.006</uv>
+<longitude>23.35264</longitude>
+<humidity>26.67</humidity>
+<pressure>950.237</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:19.439565</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:23Z</time>
+<link ></link>
+<extensions>
+<uv_raw>567.0</uv_raw>
+<temperature>43.19</temperature>
+<dew_point>28.5</dew_point>
+<timestamp>07:55:23</timestamp>
+<altitude>589.3</altitude>
+<uv>32.119</uv>
+<longitude>23.35264</longitude>
+<humidity>26.55</humidity>
+<pressure>950.237</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:21.443334</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:26Z</time>
+<link ></link>
+<extensions>
+<uv_raw>563.0</uv_raw>
+<temperature>43.27</temperature>
+<dew_point>28.55</dew_point>
+<timestamp>07:55:26</timestamp>
+<altitude>589.3</altitude>
+<uv>31.613</uv>
+<longitude>23.35264</longitude>
+<humidity>26.39</humidity>
+<pressure>950.239</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:23.440467</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:27Z</time>
+<link ></link>
+<extensions>
+<uv_raw>554.0</uv_raw>
+<temperature>43.37</temperature>
+<dew_point>28.64</dew_point>
+<timestamp>07:55:27</timestamp>
+<altitude>589.3</altitude>
+<uv>30.938</uv>
+<longitude>23.35264</longitude>
+<humidity>26.37</humidity>
+<pressure>950.243</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:26.310349</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:34Z</time>
+<link ></link>
+<extensions>
+<uv_raw>444.0</uv_raw>
+<temperature>43.1</temperature>
+<dew_point>28.43</dew_point>
+<timestamp>07:55:34</timestamp>
+<altitude>589.3</altitude>
+<uv>24.637</uv>
+<longitude>23.35264</longitude>
+<humidity>26.67</humidity>
+<pressure>950.234</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:27.456975</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:41Z</time>
+<link ></link>
+<extensions>
+<uv_raw>257.0</uv_raw>
+<temperature>42.93</temperature>
+<dew_point>27.78</dew_point>
+<timestamp>07:55:41</timestamp>
+<altitude>589.3</altitude>
+<uv>14.175</uv>
+<longitude>23.35264</longitude>
+<humidity>26.85</humidity>
+<pressure>950.233</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:34.451537</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:43Z</time>
+<link ></link>
+<extensions>
+<uv_raw>233.0</uv_raw>
+<temperature>42.08</temperature>
+<dew_point>27.61</dew_point>
+<timestamp>07:55:43</timestamp>
+<altitude>589.3</altitude>
+<uv>13.05</uv>
+<longitude>23.35264</longitude>
+<humidity>27.63</humidity>
+<pressure>950.179</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:41.458928</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:45Z</time>
+<link ></link>
+<extensions>
+<uv_raw>221.0</uv_raw>
+<temperature>41.86</temperature>
+<dew_point>27.42</dew_point>
+<timestamp>07:55:45</timestamp>
+<altitude>589.3</altitude>
+<uv>12.375</uv>
+<longitude>23.35264</longitude>
+<humidity>27.82</humidity>
+<pressure>950.166</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:43.450165</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:47Z</time>
+<link ></link>
+<extensions>
+<uv_raw>216.0</uv_raw>
+<temperature>41.68</temperature>
+<dew_point>27.28</dew_point>
+<timestamp>07:55:47</timestamp>
+<altitude>589.3</altitude>
+<uv>12.15</uv>
+<longitude>23.35264</longitude>
+<humidity>28.0</humidity>
+<pressure>950.153</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:45.457052</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:49Z</time>
+<link ></link>
+<extensions>
+<uv_raw>215.0</uv_raw>
+<temperature>41.51</temperature>
+<dew_point>27.16</dew_point>
+<timestamp>07:55:49</timestamp>
+<altitude>589.3</altitude>
+<uv>12.094</uv>
+<longitude>23.35264</longitude>
+<humidity>28.22</humidity>
+<pressure>950.14</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:47.441401</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.35264">
+<ele>589.3</ele>
+<time>2017-06-04T10:55:51Z</time>
+<link ></link>
+<extensions>
+<uv_raw>213.0</uv_raw>
+<temperature>41.41</temperature>
+<dew_point>27.06</dew_point>
+<timestamp>07:55:51</timestamp>
+<altitude>589.3</altitude>
+<uv>12.037</uv>
+<longitude>23.35264</longitude>
+<humidity>28.26</humidity>
+<pressure>950.136</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:55:49.325493</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.66664" lon="23.3526066667">
+<ele>589.1</ele>
+<time>2017-06-04T10:55:53Z</time>
+<link ></link>
+<extensions>
+<uv_raw>211.0</uv_raw>
+<temperature>41.27</temperature>
+<dew_point>26.95</dew_point>
+<timestamp>07:55:53</timestamp>
+<altitude>589.1</altitude>
+<uv>11.813</uv>
+<longitude>23.3526066667</longitude>
+<humidity>28.38</humidity>
+<pressure>950.142</pressure>
+<latitude>42.66664</latitude>
+<datetime>2017-06-04 10:55:51.457457</datetime>
+<speed>0.637856</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:00Z</time>
+<link ></link>
+<extensions>
+<uv_raw>194.0</uv_raw>
+<temperature>41.19</temperature>
+<dew_point>26.67</dew_point>
+<timestamp>07:56:00</timestamp>
+<altitude>589.5</altitude>
+<uv>10.912</uv>
+<longitude>23.3526166667</longitude>
+<humidity>28.5</humidity>
+<pressure>950.148</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:55:53.451163</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:02Z</time>
+<link ></link>
+<extensions>
+<uv_raw>193.0</uv_raw>
+<temperature>40.84</temperature>
+<dew_point>26.62</dew_point>
+<timestamp>07:56:02</timestamp>
+<altitude>589.5</altitude>
+<uv>10.856</uv>
+<longitude>23.3526166667</longitude>
+<humidity>28.91</humidity>
+<pressure>950.179</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:00.462633</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:04Z</time>
+<link ></link>
+<extensions>
+<uv_raw>194.0</uv_raw>
+<temperature>40.65</temperature>
+<dew_point>26.47</dew_point>
+<timestamp>07:56:04</timestamp>
+<altitude>589.5</altitude>
+<uv>10.912</uv>
+<longitude>23.3526166667</longitude>
+<humidity>29.08</humidity>
+<pressure>950.186</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:02.471927</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:06Z</time>
+<link ></link>
+<extensions>
+<uv_raw>200.0</uv_raw>
+<temperature>40.41</temperature>
+<dew_point>26.27</dew_point>
+<timestamp>07:56:06</timestamp>
+<altitude>589.5</altitude>
+<uv>11.138</uv>
+<longitude>23.3526166667</longitude>
+<humidity>29.29</humidity>
+<pressure>950.192</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:04.448267</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:08Z</time>
+<link ></link>
+<extensions>
+<uv_raw>204.0</uv_raw>
+<temperature>40.17</temperature>
+<dew_point>26.09</dew_point>
+<timestamp>07:56:08</timestamp>
+<altitude>589.5</altitude>
+<uv>11.644</uv>
+<longitude>23.3526166667</longitude>
+<humidity>29.57</humidity>
+<pressure>950.198</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:06.450581</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:10Z</time>
+<link ></link>
+<extensions>
+<uv_raw>208.0</uv_raw>
+<temperature>39.97</temperature>
+<dew_point>25.93</dew_point>
+<timestamp>07:56:10</timestamp>
+<altitude>589.5</altitude>
+<uv>11.756</uv>
+<longitude>23.3526166667</longitude>
+<humidity>29.82</humidity>
+<pressure>950.198</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:08.324811</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:12Z</time>
+<link ></link>
+<extensions>
+<uv_raw>213.0</uv_raw>
+<temperature>39.69</temperature>
+<dew_point>25.71</dew_point>
+<timestamp>07:56:10</timestamp>
+<altitude>589.5</altitude>
+<uv>12.037</uv>
+<longitude>23.3526166667</longitude>
+<humidity>30.09</humidity>
+<pressure>950.203</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:10.450530</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:16Z</time>
+<link ></link>
+<extensions>
+<uv_raw>212.0</uv_raw>
+<temperature>39.47</temperature>
+<dew_point>25.54</dew_point>
+<timestamp>07:56:16</timestamp>
+<altitude>589.5</altitude>
+<uv>11.869</uv>
+<longitude>23.3526166667</longitude>
+<humidity>30.36</humidity>
+<pressure>950.199</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:12.502321</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:18Z</time>
+<link ></link>
+<extensions>
+<uv_raw>193.0</uv_raw>
+<temperature>39.05</temperature>
+<dew_point>25.21</dew_point>
+<timestamp>07:56:18</timestamp>
+<altitude>589.5</altitude>
+<uv>10.744</uv>
+<longitude>23.3526166667</longitude>
+<humidity>30.81</humidity>
+<pressure>950.198</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:16.451142</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:25Z</time>
+<link ></link>
+<extensions>
+<uv_raw>169.0</uv_raw>
+<temperature>38.28</temperature>
+<dew_point>24.61</dew_point>
+<timestamp>07:56:25</timestamp>
+<altitude>589.5</altitude>
+<uv>9.563</uv>
+<longitude>23.3526166667</longitude>
+<humidity>31.65</humidity>
+<pressure>950.202</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:18.449545</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:32Z</time>
+<link ></link>
+<extensions>
+<uv_raw>170.0</uv_raw>
+<temperature>38.15</temperature>
+<dew_point>23.98</dew_point>
+<timestamp>07:56:32</timestamp>
+<altitude>589.5</altitude>
+<uv>9.563</uv>
+<longitude>23.3526166667</longitude>
+<humidity>31.74</humidity>
+<pressure>950.207</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:25.475267</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:34Z</time>
+<link ></link>
+<extensions>
+<uv_raw>170.0</uv_raw>
+<temperature>37.36</temperature>
+<dew_point>23.89</dew_point>
+<timestamp>07:56:34</timestamp>
+<altitude>589.5</altitude>
+<uv>9.563</uv>
+<longitude>23.3526166667</longitude>
+<humidity>32.63</humidity>
+<pressure>950.201</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:32.450506</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:36Z</time>
+<link ></link>
+<extensions>
+<uv_raw>171.0</uv_raw>
+<temperature>37.21</temperature>
+<dew_point>23.78</dew_point>
+<timestamp>07:56:36</timestamp>
+<altitude>589.5</altitude>
+<uv>9.619</uv>
+<longitude>23.3526166667</longitude>
+<humidity>32.86</humidity>
+<pressure>950.219</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:34.441194</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:38Z</time>
+<link ></link>
+<extensions>
+<uv_raw>172.0</uv_raw>
+<temperature>37.09</temperature>
+<dew_point>23.7</dew_point>
+<timestamp>07:56:38</timestamp>
+<altitude>589.5</altitude>
+<uv>9.675</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.07</humidity>
+<pressure>950.23</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:36.435121</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:45Z</time>
+<link ></link>
+<extensions>
+<uv_raw>178.0</uv_raw>
+<temperature>37.0</temperature>
+<dew_point>23.5</dew_point>
+<timestamp>07:56:45</timestamp>
+<altitude>589.5</altitude>
+<uv>10.013</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.16</humidity>
+<pressure>950.24</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:38.420188</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:47Z</time>
+<link ></link>
+<extensions>
+<uv_raw>179.0</uv_raw>
+<temperature>36.73</temperature>
+<dew_point>23.45</dew_point>
+<timestamp>07:56:47</timestamp>
+<altitude>589.5</altitude>
+<uv>10.125</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.58</humidity>
+<pressure>950.243</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:45.459961</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:49Z</time>
+<link ></link>
+<extensions>
+<uv_raw>180.0</uv_raw>
+<temperature>36.65</temperature>
+<dew_point>23.38</dew_point>
+<timestamp>07:56:49</timestamp>
+<altitude>589.5</altitude>
+<uv>10.069</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.65</humidity>
+<pressure>950.241</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:47.437077</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:51Z</time>
+<link ></link>
+<extensions>
+<uv_raw>178.0</uv_raw>
+<temperature>36.59</temperature>
+<dew_point>23.33</dew_point>
+<timestamp>07:56:51</timestamp>
+<altitude>589.5</altitude>
+<uv>10.013</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.74</humidity>
+<pressure>950.24</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:49.444264</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:53Z</time>
+<link ></link>
+<extensions>
+<uv_raw>177.0</uv_raw>
+<temperature>36.54</temperature>
+<dew_point>23.31</dew_point>
+<timestamp>07:56:53</timestamp>
+<altitude>589.5</altitude>
+<uv>9.956</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.84</humidity>
+<pressure>950.24</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:51.449407</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:55Z</time>
+<link ></link>
+<extensions>
+<uv_raw>176.0</uv_raw>
+<temperature>36.52</temperature>
+<dew_point>23.3</dew_point>
+<timestamp>07:56:55</timestamp>
+<altitude>589.5</altitude>
+<uv>9.956</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.88</humidity>
+<pressure>950.24</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:53.314494</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:57Z</time>
+<link ></link>
+<extensions>
+<uv_raw>177.0</uv_raw>
+<temperature>36.51</temperature>
+<dew_point>23.29</dew_point>
+<timestamp>07:56:57</timestamp>
+<altitude>589.5</altitude>
+<uv>9.9</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.91</humidity>
+<pressure>950.245</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:55.438165</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:56:59Z</time>
+<link ></link>
+<extensions>
+<uv_raw>177.0</uv_raw>
+<temperature>36.48</temperature>
+<dew_point>23.27</dew_point>
+<timestamp>07:56:59</timestamp>
+<altitude>589.5</altitude>
+<uv>9.956</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.91</humidity>
+<pressure>950.244</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:57.454517</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:01Z</time>
+<link ></link>
+<extensions>
+<uv_raw>179.0</uv_raw>
+<temperature>36.41</temperature>
+<dew_point>23.2</dew_point>
+<timestamp>07:57:01</timestamp>
+<altitude>589.5</altitude>
+<uv>10.069</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.97</humidity>
+<pressure>950.247</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:56:59.439993</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:03Z</time>
+<link ></link>
+<extensions>
+<uv_raw>182.0</uv_raw>
+<temperature>36.35</temperature>
+<dew_point>23.16</dew_point>
+<timestamp>07:57:03</timestamp>
+<altitude>589.5</altitude>
+<uv>10.238</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.06</humidity>
+<pressure>950.252</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:01.326649</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:05Z</time>
+<link ></link>
+<extensions>
+<uv_raw>183.0</uv_raw>
+<temperature>36.27</temperature>
+<dew_point>23.13</dew_point>
+<timestamp>07:57:05</timestamp>
+<altitude>589.5</altitude>
+<uv>10.35</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.31</humidity>
+<pressure>950.257</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:03.426120</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:07Z</time>
+<link ></link>
+<extensions>
+<uv_raw>188.0</uv_raw>
+<temperature>36.14</temperature>
+<dew_point>23.03</dew_point>
+<timestamp>07:57:07</timestamp>
+<altitude>589.5</altitude>
+<uv>10.519</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.47</humidity>
+<pressure>950.256</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:05.439145</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:09Z</time>
+<link ></link>
+<extensions>
+<uv_raw>191.0</uv_raw>
+<temperature>36.0</temperature>
+<dew_point>22.9</dew_point>
+<timestamp>07:57:09</timestamp>
+<altitude>589.5</altitude>
+<uv>10.744</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.51</humidity>
+<pressure>950.264</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:07.428690</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:16Z</time>
+<link ></link>
+<extensions>
+<uv_raw>206.0</uv_raw>
+<temperature>35.89</temperature>
+<dew_point>22.52</dew_point>
+<timestamp>07:57:16</timestamp>
+<altitude>589.5</altitude>
+<uv>11.588</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.51</humidity>
+<pressure>950.274</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:09.321142</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:18Z</time>
+<link ></link>
+<extensions>
+<uv_raw>208.0</uv_raw>
+<temperature>35.45</temperature>
+<dew_point>22.48</dew_point>
+<timestamp>07:57:18</timestamp>
+<altitude>589.5</altitude>
+<uv>11.7</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.14</humidity>
+<pressure>950.277</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:16.430366</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:20Z</time>
+<link ></link>
+<extensions>
+<uv_raw>213.0</uv_raw>
+<temperature>35.39</temperature>
+<dew_point>22.45</dew_point>
+<timestamp>07:57:20</timestamp>
+<altitude>589.5</altitude>
+<uv>11.925</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.27</humidity>
+<pressure>950.275</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:18.441957</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:22Z</time>
+<link ></link>
+<extensions>
+<uv_raw>216.0</uv_raw>
+<temperature>35.3</temperature>
+<dew_point>22.38</dew_point>
+<timestamp>07:57:22</timestamp>
+<altitude>589.5</altitude>
+<uv>12.206</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.44</humidity>
+<pressure>950.27</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:20.334587</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:24Z</time>
+<link ></link>
+<extensions>
+<uv_raw>223.0</uv_raw>
+<temperature>35.22</temperature>
+<dew_point>22.34</dew_point>
+<timestamp>07:57:24</timestamp>
+<altitude>589.5</altitude>
+<uv>12.488</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.59</humidity>
+<pressure>950.265</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:22.441312</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:26Z</time>
+<link ></link>
+<extensions>
+<uv_raw>229.0</uv_raw>
+<temperature>35.19</temperature>
+<dew_point>22.32</dew_point>
+<timestamp>07:57:26</timestamp>
+<altitude>589.5</altitude>
+<uv>12.994</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.63</humidity>
+<pressure>950.262</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:24.450471</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:28Z</time>
+<link ></link>
+<extensions>
+<uv_raw>239.0</uv_raw>
+<temperature>35.19</temperature>
+<dew_point>22.31</dew_point>
+<timestamp>07:57:28</timestamp>
+<altitude>589.5</altitude>
+<uv>13.444</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.63</humidity>
+<pressure>950.253</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:26.451560</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:30Z</time>
+<link ></link>
+<extensions>
+<uv_raw>248.0</uv_raw>
+<temperature>35.19</temperature>
+<dew_point>22.32</dew_point>
+<timestamp>07:57:30</timestamp>
+<altitude>589.5</altitude>
+<uv>14.006</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.66</humidity>
+<pressure>950.254</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:28.332782</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:32Z</time>
+<link ></link>
+<extensions>
+<uv_raw>257.0</uv_raw>
+<temperature>35.22</temperature>
+<dew_point>22.35</dew_point>
+<timestamp>07:57:32</timestamp>
+<altitude>589.5</altitude>
+<uv>14.513</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.64</humidity>
+<pressure>950.263</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:30.442856</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:34Z</time>
+<link ></link>
+<extensions>
+<uv_raw>262.0</uv_raw>
+<temperature>35.25</temperature>
+<dew_point>22.36</dew_point>
+<timestamp>07:57:34</timestamp>
+<altitude>589.5</altitude>
+<uv>14.85</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.57</humidity>
+<pressure>950.279</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:32.452238</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:36Z</time>
+<link ></link>
+<extensions>
+<uv_raw>268.0</uv_raw>
+<temperature>35.26</temperature>
+<dew_point>22.37</dew_point>
+<timestamp>07:57:36</timestamp>
+<altitude>589.5</altitude>
+<uv>15.075</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.53</humidity>
+<pressure>950.281</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:34.433576</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:38Z</time>
+<link ></link>
+<extensions>
+<uv_raw>270.0</uv_raw>
+<temperature>35.27</temperature>
+<dew_point>22.35</dew_point>
+<timestamp>07:57:38</timestamp>
+<altitude>589.5</altitude>
+<uv>15.188</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.41</humidity>
+<pressure>950.278</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:36.324508</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:40Z</time>
+<link ></link>
+<extensions>
+<uv_raw>271.0</uv_raw>
+<temperature>35.25</temperature>
+<dew_point>22.36</dew_point>
+<timestamp>07:57:40</timestamp>
+<altitude>589.5</altitude>
+<uv>15.356</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.55</humidity>
+<pressure>950.271</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:38.450235</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:42Z</time>
+<link ></link>
+<extensions>
+<uv_raw>274.0</uv_raw>
+<temperature>35.27</temperature>
+<dew_point>22.39</dew_point>
+<timestamp>07:57:42</timestamp>
+<altitude>589.5</altitude>
+<uv>15.412</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.6</humidity>
+<pressure>950.263</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:40.432519</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:44Z</time>
+<link ></link>
+<extensions>
+<uv_raw>277.0</uv_raw>
+<temperature>35.3</temperature>
+<dew_point>22.4</dew_point>
+<timestamp>07:57:44</timestamp>
+<altitude>589.5</altitude>
+<uv>15.638</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.5</humidity>
+<pressure>950.266</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:42.440114</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:46Z</time>
+<link ></link>
+<extensions>
+<uv_raw>282.0</uv_raw>
+<temperature>35.33</temperature>
+<dew_point>22.41</dew_point>
+<timestamp>07:57:46</timestamp>
+<altitude>589.5</altitude>
+<uv>15.863</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.38</humidity>
+<pressure>950.265</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:44.333741</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:48Z</time>
+<link ></link>
+<extensions>
+<uv_raw>289.0</uv_raw>
+<temperature>35.38</temperature>
+<dew_point>22.46</dew_point>
+<timestamp>07:57:48</timestamp>
+<altitude>589.5</altitude>
+<uv>16.313</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.37</humidity>
+<pressure>950.267</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:46.438989</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:50Z</time>
+<link ></link>
+<extensions>
+<uv_raw>299.0</uv_raw>
+<temperature>35.44</temperature>
+<dew_point>22.5</dew_point>
+<timestamp>07:57:50</timestamp>
+<altitude>589.5</altitude>
+<uv>16.875</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.3</humidity>
+<pressure>950.27</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:48.447395</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:52Z</time>
+<link ></link>
+<extensions>
+<uv_raw>309.0</uv_raw>
+<temperature>35.5</temperature>
+<dew_point>22.52</dew_point>
+<timestamp>07:57:52</timestamp>
+<altitude>589.5</altitude>
+<uv>17.494</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.1</humidity>
+<pressure>950.286</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:50.445707</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:54Z</time>
+<link ></link>
+<extensions>
+<uv_raw>321.0</uv_raw>
+<temperature>35.54</temperature>
+<dew_point>22.55</dew_point>
+<timestamp>07:57:54</timestamp>
+<altitude>589.5</altitude>
+<uv>18.281</uv>
+<longitude>23.3526166667</longitude>
+<humidity>35.01</humidity>
+<pressure>950.297</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:52.313255</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:56Z</time>
+<link ></link>
+<extensions>
+<uv_raw>339.0</uv_raw>
+<temperature>35.58</temperature>
+<dew_point>22.57</dew_point>
+<timestamp>07:57:56</timestamp>
+<altitude>589.5</altitude>
+<uv>19.181</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.95</humidity>
+<pressure>950.306</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:54.447183</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:57:58Z</time>
+<link ></link>
+<extensions>
+<uv_raw>360.0</uv_raw>
+<temperature>35.64</temperature>
+<dew_point>22.61</dew_point>
+<timestamp>07:57:58</timestamp>
+<altitude>589.5</altitude>
+<uv>20.194</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.87</humidity>
+<pressure>950.309</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:56.417815</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:00Z</time>
+<link ></link>
+<extensions>
+<uv_raw>376.0</uv_raw>
+<temperature>35.73</temperature>
+<dew_point>22.7</dew_point>
+<timestamp>07:58:00</timestamp>
+<altitude>589.5</altitude>
+<uv>21.206</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.82</humidity>
+<pressure>950.305</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:57:58.430623</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:07Z</time>
+<link ></link>
+<extensions>
+<uv_raw>411.0</uv_raw>
+<temperature>36.13</temperature>
+<dew_point>23.0</dew_point>
+<timestamp>07:58:07</timestamp>
+<altitude>589.5</altitude>
+<uv>23.119</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.37</humidity>
+<pressure>950.321</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:00.332680</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:09Z</time>
+<link ></link>
+<extensions>
+<uv_raw>413.0</uv_raw>
+<temperature>36.24</temperature>
+<dew_point>23.08</dew_point>
+<timestamp>07:58:09</timestamp>
+<altitude>589.5</altitude>
+<uv>23.231</uv>
+<longitude>23.3526166667</longitude>
+<humidity>34.2</humidity>
+<pressure>950.32</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:07.467029</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:16Z</time>
+<link ></link>
+<extensions>
+<uv_raw>410.0</uv_raw>
+<temperature>36.67</temperature>
+<dew_point>23.39</dew_point>
+<timestamp>07:58:16</timestamp>
+<altitude>589.5</altitude>
+<uv>23.006</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.59</humidity>
+<pressure>950.323</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:09.449480</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:18Z</time>
+<link ></link>
+<extensions>
+<uv_raw>407.0</uv_raw>
+<temperature>36.73</temperature>
+<dew_point>23.43</dew_point>
+<timestamp>07:58:18</timestamp>
+<altitude>589.5</altitude>
+<uv>22.894</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.49</humidity>
+<pressure>950.334</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:16.447023</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:20Z</time>
+<link ></link>
+<extensions>
+<uv_raw>407.0</uv_raw>
+<temperature>36.73</temperature>
+<dew_point>23.42</dew_point>
+<timestamp>07:58:20</timestamp>
+<altitude>589.5</altitude>
+<uv>22.894</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.46</humidity>
+<pressure>950.332</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:18.457549</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:22Z</time>
+<link ></link>
+<extensions>
+<uv_raw>408.0</uv_raw>
+<temperature>36.71</temperature>
+<dew_point>23.4</dew_point>
+<timestamp>07:58:22</timestamp>
+<altitude>589.5</altitude>
+<uv>22.838</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.45</humidity>
+<pressure>950.324</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:20.425413</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:24Z</time>
+<link ></link>
+<extensions>
+<uv_raw>406.0</uv_raw>
+<temperature>36.66</temperature>
+<dew_point>23.37</dew_point>
+<timestamp>07:58:24</timestamp>
+<altitude>589.5</altitude>
+<uv>22.838</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.53</humidity>
+<pressure>950.317</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:22.450314</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:26Z</time>
+<link ></link>
+<extensions>
+<uv_raw>410.0</uv_raw>
+<temperature>36.61</temperature>
+<dew_point>23.32</dew_point>
+<timestamp>07:58:26</timestamp>
+<altitude>589.5</altitude>
+<uv>23.063</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.51</humidity>
+<pressure>950.305</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:24.326474</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:28Z</time>
+<link ></link>
+<extensions>
+<uv_raw>416.0</uv_raw>
+<temperature>36.62</temperature>
+<dew_point>23.34</dew_point>
+<timestamp>07:58:28</timestamp>
+<altitude>589.5</altitude>
+<uv>23.4</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.57</humidity>
+<pressure>950.299</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:26.451292</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:30Z</time>
+<link ></link>
+<extensions>
+<uv_raw>426.0</uv_raw>
+<temperature>36.67</temperature>
+<dew_point>23.36</dew_point>
+<timestamp>07:58:30</timestamp>
+<altitude>589.5</altitude>
+<uv>24.131</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.47</humidity>
+<pressure>950.298</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:28.481060</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:32Z</time>
+<link ></link>
+<extensions>
+<uv_raw>439.0</uv_raw>
+<temperature>36.7</temperature>
+<dew_point>23.37</dew_point>
+<timestamp>07:58:32</timestamp>
+<altitude>589.5</altitude>
+<uv>24.75</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.35</humidity>
+<pressure>950.3</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:30.443304</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:34Z</time>
+<link ></link>
+<extensions>
+<uv_raw>447.0</uv_raw>
+<temperature>36.75</temperature>
+<dew_point>23.42</dew_point>
+<timestamp>07:58:34</timestamp>
+<altitude>589.5</altitude>
+<uv>25.2</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.35</humidity>
+<pressure>950.305</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:32.324712</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:41Z</time>
+<link ></link>
+<extensions>
+<uv_raw>465.0</uv_raw>
+<temperature>36.79</temperature>
+<dew_point>23.59</dew_point>
+<timestamp>07:58:41</timestamp>
+<altitude>589.5</altitude>
+<uv>26.1</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.42</humidity>
+<pressure>950.317</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:34.437300</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:43Z</time>
+<link ></link>
+<extensions>
+<uv_raw>465.0</uv_raw>
+<temperature>36.96</temperature>
+<dew_point>23.61</dew_point>
+<timestamp>07:58:43</timestamp>
+<altitude>589.5</altitude>
+<uv>26.213</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.24</humidity>
+<pressure>950.328</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:41.465214</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:45Z</time>
+<link ></link>
+<extensions>
+<uv_raw>467.0</uv_raw>
+<temperature>37.02</temperature>
+<dew_point>23.63</dew_point>
+<timestamp>07:58:45</timestamp>
+<altitude>589.5</altitude>
+<uv>26.325</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.06</humidity>
+<pressure>950.326</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:43.443714</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:47Z</time>
+<link ></link>
+<extensions>
+<uv_raw>469.0</uv_raw>
+<temperature>36.98</temperature>
+<dew_point>23.62</dew_point>
+<timestamp>07:58:47</timestamp>
+<altitude>589.5</altitude>
+<uv>26.381</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.22</humidity>
+<pressure>950.338</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:45.441826</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:49Z</time>
+<link ></link>
+<extensions>
+<uv_raw>470.0</uv_raw>
+<temperature>36.9</temperature>
+<dew_point>23.57</dew_point>
+<timestamp>07:58:49</timestamp>
+<altitude>589.5</altitude>
+<uv>26.438</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.35</humidity>
+<pressure>950.346</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:47.450649</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:50Z</time>
+<link ></link>
+<extensions>
+<uv_raw>470.0</uv_raw>
+<temperature>36.85</temperature>
+<dew_point>23.53</dew_point>
+<timestamp>07:58:50</timestamp>
+<altitude>589.5</altitude>
+<uv>26.438</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.4</humidity>
+<pressure>950.349</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:49.454628</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:52Z</time>
+<link ></link>
+<extensions>
+<uv_raw>468.0</uv_raw>
+<temperature>36.82</temperature>
+<dew_point>23.5</dew_point>
+<timestamp>07:58:52</timestamp>
+<altitude>589.5</altitude>
+<uv>26.381</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.4</humidity>
+<pressure>950.348</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:50.445573</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:54Z</time>
+<link ></link>
+<extensions>
+<uv_raw>466.0</uv_raw>
+<temperature>36.8</temperature>
+<dew_point>23.48</dew_point>
+<timestamp>07:58:54</timestamp>
+<altitude>589.5</altitude>
+<uv>26.156</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.39</humidity>
+<pressure>950.344</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:52.488178</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:56Z</time>
+<link ></link>
+<extensions>
+<uv_raw>463.0</uv_raw>
+<temperature>36.78</temperature>
+<dew_point>23.47</dew_point>
+<timestamp>07:58:56</timestamp>
+<altitude>589.5</altitude>
+<uv>26.044</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.43</humidity>
+<pressure>950.343</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:54.452799</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:58:58Z</time>
+<link ></link>
+<extensions>
+<uv_raw>465.0</uv_raw>
+<temperature>36.77</temperature>
+<dew_point>23.45</dew_point>
+<timestamp>07:58:58</timestamp>
+<altitude>589.5</altitude>
+<uv>26.269</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.44</humidity>
+<pressure>950.339</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:56.314307</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:00Z</time>
+<link ></link>
+<extensions>
+<uv_raw>476.0</uv_raw>
+<temperature>36.79</temperature>
+<dew_point>23.49</dew_point>
+<timestamp>07:59:00</timestamp>
+<altitude>589.5</altitude>
+<uv>26.775</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.48</humidity>
+<pressure>950.337</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:58:58.441735</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:02Z</time>
+<link ></link>
+<extensions>
+<uv_raw>486.0</uv_raw>
+<temperature>36.84</temperature>
+<dew_point>23.52</dew_point>
+<timestamp>07:59:00</timestamp>
+<altitude>589.5</altitude>
+<uv>27.394</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.39</humidity>
+<pressure>950.338</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:59:00.452578</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:10Z</time>
+<link ></link>
+<extensions>
+<uv_raw>530.0</uv_raw>
+<temperature>36.9</temperature>
+<dew_point>23.78</dew_point>
+<timestamp>07:59:10</timestamp>
+<altitude>589.5</altitude>
+<uv>29.813</uv>
+<longitude>23.3526166667</longitude>
+<humidity>33.25</humidity>
+<pressure>950.333</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:59:02.412483</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:12Z</time>
+<link ></link>
+<extensions>
+<uv_raw>533.0</uv_raw>
+<temperature>37.36</temperature>
+<dew_point>23.9</dew_point>
+<timestamp>07:59:12</timestamp>
+<altitude>589.5</altitude>
+<uv>30.038</uv>
+<longitude>23.3526166667</longitude>
+<humidity>32.68</humidity>
+<pressure>950.335</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:59:10.334751</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:13Z</time>
+<link ></link>
+<extensions>
+<uv_raw>536.0</uv_raw>
+<temperature>37.53</temperature>
+<dew_point>24.02</dew_point>
+<timestamp>07:59:13</timestamp>
+<altitude>589.5</altitude>
+<uv>30.094</uv>
+<longitude>23.3526166667</longitude>
+<humidity>32.47</humidity>
+<pressure>950.327</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:59:12.324925</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:15Z</time>
+<link ></link>
+<extensions>
+<uv_raw>533.0</uv_raw>
+<temperature>37.61</temperature>
+<dew_point>24.09</dew_point>
+<timestamp>07:59:15</timestamp>
+<altitude>589.5</altitude>
+<uv>29.981</uv>
+<longitude>23.3526166667</longitude>
+<humidity>32.39</humidity>
+<pressure>950.324</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:59:13.433990</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:17Z</time>
+<link ></link>
+<extensions>
+<uv_raw>536.0</uv_raw>
+<temperature>37.73</temperature>
+<dew_point>24.18</dew_point>
+<timestamp>07:59:17</timestamp>
+<altitude>589.5</altitude>
+<uv>30.206</uv>
+<longitude>23.3526166667</longitude>
+<humidity>32.28</humidity>
+<pressure>950.316</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:59:15.452051</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:19Z</time>
+<link ></link>
+<extensions>
+<uv_raw>542.0</uv_raw>
+<temperature>37.87</temperature>
+<dew_point>24.3</dew_point>
+<timestamp>07:59:17</timestamp>
+<altitude>589.5</altitude>
+<uv>30.375</uv>
+<longitude>23.3526166667</longitude>
+<humidity>32.13</humidity>
+<pressure>950.309</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:59:17.450982</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:21Z</time>
+<link ></link>
+<extensions>
+<uv_raw>543.0</uv_raw>
+<temperature>38.02</temperature>
+<dew_point>24.41</dew_point>
+<timestamp>07:59:21</timestamp>
+<altitude>589.5</altitude>
+<uv>30.488</uv>
+<longitude>23.3526166667</longitude>
+<humidity>31.92</humidity>
+<pressure>950.306</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:59:19.497380</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666366667" lon="23.3526166667">
+<ele>589.5</ele>
+<time>2017-06-04T10:59:22Z</time>
+<link ></link>
+<extensions>
+<uv_raw>547.0</uv_raw>
+<temperature>38.16</temperature>
+<dew_point>24.5</dew_point>
+<timestamp>07:59:22</timestamp>
+<altitude>589.5</altitude>
+<uv>30.881</uv>
+<longitude>23.3526166667</longitude>
+<humidity>31.73</humidity>
+<pressure>950.31</pressure>
+<latitude>42.6666366667</latitude>
+<datetime>2017-06-04 10:59:21.461109</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666766667" lon="23.3526583333">
+<ele>589.6</ele>
+<time>2017-06-04T10:59:24Z</time>
+<link ></link>
+<extensions>
+<uv_raw>550.0</uv_raw>
+<temperature>38.25</temperature>
+<dew_point>24.57</dew_point>
+<timestamp>07:59:24</timestamp>
+<altitude>589.6</altitude>
+<uv>31.05</uv>
+<longitude>23.3526583333</longitude>
+<humidity>31.63</humidity>
+<pressure>950.308</pressure>
+<latitude>42.6666766667</latitude>
+<datetime>2017-06-04 10:59:22.451680</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666833333" lon="23.352655">
+<ele>589.6</ele>
+<time>2017-06-04T10:59:31Z</time>
+<link ></link>
+<extensions>
+<uv_raw>560.0</uv_raw>
+<temperature>38.76</temperature>
+<dew_point>24.93</dew_point>
+<timestamp>07:59:31</timestamp>
+<altitude>589.6</altitude>
+<uv>31.387</uv>
+<longitude>23.352655</longitude>
+<humidity>30.86</humidity>
+<pressure>950.291</pressure>
+<latitude>42.6666833333</latitude>
+<datetime>2017-06-04 10:59:24.449199</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666833333" lon="23.352655">
+<ele>589.6</ele>
+<time>2017-06-04T10:59:32Z</time>
+<link ></link>
+<extensions>
+<uv_raw>553.0</uv_raw>
+<temperature>38.86</temperature>
+<dew_point>25.0</dew_point>
+<timestamp>07:59:32</timestamp>
+<altitude>589.6</altitude>
+<uv>31.05</uv>
+<longitude>23.352655</longitude>
+<humidity>30.72</humidity>
+<pressure>950.291</pressure>
+<latitude>42.6666833333</latitude>
+<datetime>2017-06-04 10:59:31.443561</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666833333" lon="23.352655">
+<ele>589.6</ele>
+<time>2017-06-04T10:59:34Z</time>
+<link ></link>
+<extensions>
+<uv_raw>551.0</uv_raw>
+<temperature>38.96</temperature>
+<dew_point>25.08</dew_point>
+<timestamp>07:59:34</timestamp>
+<altitude>589.6</altitude>
+<uv>30.825</uv>
+<longitude>23.352655</longitude>
+<humidity>30.62</humidity>
+<pressure>950.289</pressure>
+<latitude>42.6666833333</latitude>
+<datetime>2017-06-04 10:59:32.803468</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667" lon="23.3526616667">
+<ele>589.0</ele>
+<time>2017-06-04T10:59:36Z</time>
+<link ></link>
+<extensions>
+<uv_raw>543.0</uv_raw>
+<temperature>39.08</temperature>
+<dew_point>25.18</dew_point>
+<timestamp>07:59:36</timestamp>
+<altitude>589.0</altitude>
+<uv>30.488</uv>
+<longitude>23.3526616667</longitude>
+<humidity>30.5</humidity>
+<pressure>950.292</pressure>
+<latitude>42.6667</latitude>
+<datetime>2017-06-04 10:59:34.462031</datetime>
+<speed>0.504112</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667" lon="23.3526616667">
+<ele>589.0</ele>
+<time>2017-06-04T10:59:38Z</time>
+<link ></link>
+<extensions>
+<uv_raw>539.0</uv_raw>
+<temperature>39.21</temperature>
+<dew_point>25.29</dew_point>
+<timestamp>07:59:36</timestamp>
+<altitude>589.0</altitude>
+<uv>30.375</uv>
+<longitude>23.3526616667</longitude>
+<humidity>30.41</humidity>
+<pressure>950.299</pressure>
+<latitude>42.6667</latitude>
+<datetime>2017-06-04 10:59:36.371865</datetime>
+<speed>0.504112</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667066667" lon="23.352655">
+<ele>588.0</ele>
+<time>2017-06-04T10:59:40Z</time>
+<link ></link>
+<extensions>
+<uv_raw>536.0</uv_raw>
+<temperature>39.34</temperature>
+<dew_point>25.41</dew_point>
+<timestamp>07:59:40</timestamp>
+<altitude>588.0</altitude>
+<uv>30.262</uv>
+<longitude>23.352655</longitude>
+<humidity>30.33</humidity>
+<pressure>950.3</pressure>
+<latitude>42.6667066667</latitude>
+<datetime>2017-06-04 10:59:38.314511</datetime>
+<speed>0.426952</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666983333" lon="23.3526533333">
+<ele>588.9</ele>
+<time>2017-06-04T10:59:42Z</time>
+<link ></link>
+<extensions>
+<uv_raw>539.0</uv_raw>
+<temperature>39.49</temperature>
+<dew_point>25.53</dew_point>
+<timestamp>07:59:42</timestamp>
+<altitude>588.9</altitude>
+<uv>30.262</uv>
+<longitude>23.3526533333</longitude>
+<humidity>30.2</humidity>
+<pressure>950.298</pressure>
+<latitude>42.6666983333</latitude>
+<datetime>2017-06-04 10:59:40.465746</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667033333" lon="23.35265">
+<ele>588.9</ele>
+<time>2017-06-04T10:59:59Z</time>
+<link ></link>
+<extensions>
+<uv_raw>540.0</uv_raw>
+<temperature>39.64</temperature>
+<dew_point>25.65</dew_point>
+<timestamp>07:59:44</timestamp>
+<altitude>588.9</altitude>
+<uv>30.262</uv>
+<longitude>23.35265</longitude>
+<humidity>30.06</humidity>
+<pressure>950.302</pressure>
+<latitude>42.6667033333</latitude>
+<datetime>2017-06-04 10:59:42.443483</datetime>
+<speed>0.622424</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666833333" lon="23.3526433333">
+<ele>588.6</ele>
+<time>2017-06-04T11:00:11Z</time>
+<link ></link>
+<extensions>
+<uv_raw>588.0</uv_raw>
+<temperature>40.76</temperature>
+<dew_point>26.54</dew_point>
+<timestamp>08:00:02</timestamp>
+<altitude>588.6</altitude>
+<uv>33.075</uv>
+<longitude>23.3526433333</longitude>
+<humidity>28.9</humidity>
+<pressure>950.307</pressure>
+<latitude>42.6666833333</latitude>
+<datetime>2017-06-04 10:59:59.493381</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667066667" lon="23.352645">
+<ele>586.2</ele>
+<time>2017-06-04T11:00:15Z</time>
+<link ></link>
+<extensions>
+<uv_raw>599.0</uv_raw>
+<temperature>41.71</temperature>
+<dew_point>27.29</dew_point>
+<timestamp>08:00:14</timestamp>
+<altitude>586.2</altitude>
+<uv>33.469</uv>
+<longitude>23.352645</longitude>
+<humidity>27.91</humidity>
+<pressure>950.287</pressure>
+<latitude>42.6667066667</latitude>
+<datetime>2017-06-04 11:00:11.837492</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667066667" lon="23.352645">
+<ele>586.2</ele>
+<time>2017-06-04T11:00:17Z</time>
+<link ></link>
+<extensions>
+<uv_raw>599.0</uv_raw>
+<temperature>41.83</temperature>
+<dew_point>27.4</dew_point>
+<timestamp>08:00:17</timestamp>
+<altitude>586.2</altitude>
+<uv>33.638</uv>
+<longitude>23.352645</longitude>
+<humidity>27.84</humidity>
+<pressure>950.273</pressure>
+<latitude>42.6667066667</latitude>
+<datetime>2017-06-04 11:00:15.207229</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667066667" lon="23.352645">
+<ele>586.2</ele>
+<time>2017-06-04T11:00:19Z</time>
+<link ></link>
+<extensions>
+<uv_raw>601.0</uv_raw>
+<temperature>41.89</temperature>
+<dew_point>27.45</dew_point>
+<timestamp>08:00:19</timestamp>
+<altitude>586.2</altitude>
+<uv>33.806</uv>
+<longitude>23.352645</longitude>
+<humidity>27.79</humidity>
+<pressure>950.267</pressure>
+<latitude>42.6667066667</latitude>
+<datetime>2017-06-04 11:00:17.495535</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667066667" lon="23.352645">
+<ele>586.2</ele>
+<time>2017-06-04T11:00:21Z</time>
+<link ></link>
+<extensions>
+<uv_raw>599.0</uv_raw>
+<temperature>41.96</temperature>
+<dew_point>27.5</dew_point>
+<timestamp>08:00:21</timestamp>
+<altitude>586.2</altitude>
+<uv>33.863</uv>
+<longitude>23.352645</longitude>
+<humidity>27.73</humidity>
+<pressure>950.275</pressure>
+<latitude>42.6667066667</latitude>
+<datetime>2017-06-04 11:00:19.440830</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667066667" lon="23.352645">
+<ele>586.2</ele>
+<time>2017-06-04T11:00:23Z</time>
+<link ></link>
+<extensions>
+<uv_raw>602.0</uv_raw>
+<temperature>41.92</temperature>
+<dew_point>27.53</dew_point>
+<timestamp>08:00:21</timestamp>
+<altitude>586.2</altitude>
+<uv>33.863</uv>
+<longitude>23.352645</longitude>
+<humidity>28.05</humidity>
+<pressure>950.28</pressure>
+<latitude>42.6667066667</latitude>
+<datetime>2017-06-04 11:00:21.450018</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667066667" lon="23.352645">
+<ele>586.2</ele>
+<time>2017-06-04T11:00:26Z</time>
+<link ></link>
+<extensions>
+<uv_raw>601.0</uv_raw>
+<temperature>41.78</temperature>
+<dew_point>27.42</dew_point>
+<timestamp>08:00:26</timestamp>
+<altitude>586.2</altitude>
+<uv>33.863</uv>
+<longitude>23.352645</longitude>
+<humidity>28.23</humidity>
+<pressure>950.305</pressure>
+<latitude>42.6667066667</latitude>
+<datetime>2017-06-04 11:00:23.430984</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667066667" lon="23.352645">
+<ele>586.2</ele>
+<time>2017-06-04T11:00:28Z</time>
+<link ></link>
+<extensions>
+<uv_raw>601.0</uv_raw>
+<temperature>41.57</temperature>
+<dew_point>27.23</dew_point>
+<timestamp>08:00:28</timestamp>
+<altitude>586.2</altitude>
+<uv>33.919</uv>
+<longitude>23.352645</longitude>
+<humidity>28.32</humidity>
+<pressure>950.322</pressure>
+<latitude>42.6667066667</latitude>
+<datetime>2017-06-04 11:00:26.527893</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.66671" lon="23.3526583333">
+<ele>586.1</ele>
+<time>2017-06-04T11:00:30Z</time>
+<link ></link>
+<extensions>
+<uv_raw>602.0</uv_raw>
+<temperature>41.47</temperature>
+<dew_point>27.15</dew_point>
+<timestamp>08:00:30</timestamp>
+<altitude>586.1</altitude>
+<uv>33.863</uv>
+<longitude>23.3526583333</longitude>
+<humidity>28.4</humidity>
+<pressure>950.328</pressure>
+<latitude>42.66671</latitude>
+<datetime>2017-06-04 11:00:28.459096</datetime>
+<speed>0.452672</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.666705" lon="23.3526566667">
+<ele>586.2</ele>
+<time>2017-06-04T11:00:32Z</time>
+<link ></link>
+<extensions>
+<uv_raw>604.0</uv_raw>
+<temperature>41.34</temperature>
+<dew_point>27.04</dew_point>
+<timestamp>08:00:32</timestamp>
+<altitude>586.2</altitude>
+<uv>33.863</uv>
+<longitude>23.3526566667</longitude>
+<humidity>28.52</humidity>
+<pressure>950.334</pressure>
+<latitude>42.666705</latitude>
+<datetime>2017-06-04 11:00:30.431988</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.666705" lon="23.3526566667">
+<ele>586.2</ele>
+<time>2017-06-04T11:00:39Z</time>
+<link ></link>
+<extensions>
+<uv_raw>602.0</uv_raw>
+<temperature>41.22</temperature>
+<dew_point>26.58</dew_point>
+<timestamp>08:00:32</timestamp>
+<altitude>586.2</altitude>
+<uv>33.75</uv>
+<longitude>23.3526566667</longitude>
+<humidity>28.68</humidity>
+<pressure>950.34</pressure>
+<latitude>42.666705</latitude>
+<datetime>2017-06-04 11:00:32.333560</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667033333" lon="23.3526533333">
+<ele>586.4</ele>
+<time>2017-06-04T11:00:41Z</time>
+<link ></link>
+<extensions>
+<uv_raw>602.0</uv_raw>
+<temperature>40.56</temperature>
+<dew_point>26.42</dew_point>
+<timestamp>08:00:41</timestamp>
+<altitude>586.4</altitude>
+<uv>33.806</uv>
+<longitude>23.3526533333</longitude>
+<humidity>29.33</humidity>
+<pressure>950.36</pressure>
+<latitude>42.6667033333</latitude>
+<datetime>2017-06-04 11:00:39.877655</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667033333" lon="23.3526533333">
+<ele>586.4</ele>
+<time>2017-06-04T11:00:42Z</time>
+<link ></link>
+<extensions>
+<uv_raw>600.0</uv_raw>
+<temperature>40.43</temperature>
+<dew_point>26.31</dew_point>
+<timestamp>08:00:41</timestamp>
+<altitude>586.4</altitude>
+<uv>33.75</uv>
+<longitude>23.3526533333</longitude>
+<humidity>29.37</humidity>
+<pressure>950.358</pressure>
+<latitude>42.6667033333</latitude>
+<datetime>2017-06-04 11:00:41.451988</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667033333" lon="23.3526533333">
+<ele>586.4</ele>
+<time>2017-06-04T11:00:44Z</time>
+<link ></link>
+<extensions>
+<uv_raw>601.0</uv_raw>
+<temperature>40.38</temperature>
+<dew_point>26.26</dew_point>
+<timestamp>08:00:44</timestamp>
+<altitude>586.4</altitude>
+<uv>33.75</uv>
+<longitude>23.3526533333</longitude>
+<humidity>29.4</humidity>
+<pressure>950.357</pressure>
+<latitude>42.6667033333</latitude>
+<datetime>2017-06-04 11:00:42.428385</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666866667" lon="23.35265">
+<ele>586.5</ele>
+<time>2017-06-04T11:00:46Z</time>
+<link ></link>
+<extensions>
+<uv_raw>600.0</uv_raw>
+<temperature>40.26</temperature>
+<dew_point>26.15</dew_point>
+<timestamp>08:00:46</timestamp>
+<altitude>586.5</altitude>
+<uv>33.75</uv>
+<longitude>23.35265</longitude>
+<humidity>29.49</humidity>
+<pressure>950.353</pressure>
+<latitude>42.6666866667</latitude>
+<datetime>2017-06-04 11:00:44.451960</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666866667" lon="23.3526483333">
+<ele>586.5</ele>
+<time>2017-06-04T11:00:48Z</time>
+<link ></link>
+<extensions>
+<uv_raw>603.0</uv_raw>
+<temperature>40.19</temperature>
+<dew_point>26.09</dew_point>
+<timestamp>08:00:48</timestamp>
+<altitude>586.5</altitude>
+<uv>33.806</uv>
+<longitude>23.3526483333</longitude>
+<humidity>29.51</humidity>
+<pressure>950.348</pressure>
+<latitude>42.6666866667</latitude>
+<datetime>2017-06-04 11:00:46.446337</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666866667" lon="23.3526483333">
+<ele>586.5</ele>
+<time>2017-06-04T11:00:50Z</time>
+<link ></link>
+<extensions>
+<uv_raw>605.0</uv_raw>
+<temperature>40.15</temperature>
+<dew_point>26.06</dew_point>
+<timestamp>08:00:50</timestamp>
+<altitude>586.5</altitude>
+<uv>33.863</uv>
+<longitude>23.3526483333</longitude>
+<humidity>29.56</humidity>
+<pressure>950.345</pressure>
+<latitude>42.6666866667</latitude>
+<datetime>2017-06-04 11:00:48.312861</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666866667" lon="23.3526483333">
+<ele>586.5</ele>
+<time>2017-06-04T11:00:52Z</time>
+<link ></link>
+<extensions>
+<uv_raw>603.0</uv_raw>
+<temperature>40.12</temperature>
+<dew_point>26.02</dew_point>
+<timestamp>08:00:52</timestamp>
+<altitude>586.5</altitude>
+<uv>34.031</uv>
+<longitude>23.3526483333</longitude>
+<humidity>29.52</humidity>
+<pressure>950.338</pressure>
+<latitude>42.6666866667</latitude>
+<datetime>2017-06-04 11:00:50.716518</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666866667" lon="23.3526483333">
+<ele>586.5</ele>
+<time>2017-06-04T11:00:54Z</time>
+<link ></link>
+<extensions>
+<uv_raw>603.0</uv_raw>
+<temperature>40.11</temperature>
+<dew_point>26.04</dew_point>
+<timestamp>08:00:54</timestamp>
+<altitude>586.5</altitude>
+<uv>34.031</uv>
+<longitude>23.3526483333</longitude>
+<humidity>29.64</humidity>
+<pressure>950.341</pressure>
+<latitude>42.6666866667</latitude>
+<datetime>2017-06-04 11:00:52.421902</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666866667" lon="23.3526483333">
+<ele>586.5</ele>
+<time>2017-06-04T11:00:56Z</time>
+<link ></link>
+<extensions>
+<uv_raw>606.0</uv_raw>
+<temperature>40.12</temperature>
+<dew_point>26.03</dew_point>
+<timestamp>08:00:56</timestamp>
+<altitude>586.5</altitude>
+<uv>33.975</uv>
+<longitude>23.3526483333</longitude>
+<humidity>29.52</humidity>
+<pressure>950.342</pressure>
+<latitude>42.6666866667</latitude>
+<datetime>2017-06-04 11:00:54.429196</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6666866667" lon="23.3526483333">
+<ele>586.5</ele>
+<time>2017-06-04T11:01:03Z</time>
+<link ></link>
+<extensions>
+<uv_raw>609.0</uv_raw>
+<temperature>40.42</temperature>
+<dew_point>26.25</dew_point>
+<timestamp>08:00:56</timestamp>
+<altitude>586.5</altitude>
+<uv>34.313</uv>
+<longitude>23.3526483333</longitude>
+<humidity>29.16</humidity>
+<pressure>950.34</pressure>
+<latitude>42.6666866667</latitude>
+<datetime>2017-06-04 11:00:56.333016</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667116667" lon="23.3526483333">
+<ele>586.0</ele>
+<time>2017-06-04T11:01:05Z</time>
+<link ></link>
+<extensions>
+<uv_raw>608.0</uv_raw>
+<temperature>40.49</temperature>
+<dew_point>26.34</dew_point>
+<timestamp>08:01:05</timestamp>
+<altitude>586.0</altitude>
+<uv>34.369</uv>
+<longitude>23.3526483333</longitude>
+<humidity>29.25</humidity>
+<pressure>950.341</pressure>
+<latitude>42.6667116667</latitude>
+<datetime>2017-06-04 11:01:03.815413</datetime>
+<speed>0.447528</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667216667" lon="23.3526466667">
+<ele>585.7</ele>
+<time>2017-06-04T11:01:07Z</time>
+<link ></link>
+<extensions>
+<uv_raw>608.0</uv_raw>
+<temperature>40.52</temperature>
+<dew_point>26.36</dew_point>
+<timestamp>08:01:07</timestamp>
+<altitude>585.7</altitude>
+<uv>34.369</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.23</humidity>
+<pressure>950.339</pressure>
+<latitude>42.6667216667</latitude>
+<datetime>2017-06-04 11:01:05.420077</datetime>
+<speed>0.5144</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667283333" lon="23.352645">
+<ele>585.4</ele>
+<time>2017-06-04T11:01:09Z</time>
+<link ></link>
+<extensions>
+<uv_raw>610.0</uv_raw>
+<temperature>40.6</temperature>
+<dew_point>26.42</dew_point>
+<timestamp>08:01:09</timestamp>
+<altitude>585.4</altitude>
+<uv>34.256</uv>
+<longitude>23.352645</longitude>
+<humidity>29.09</humidity>
+<pressure>950.34</pressure>
+<latitude>42.6667283333</latitude>
+<datetime>2017-06-04 11:01:07.431801</datetime>
+<speed>0.48868</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667383333" lon="23.352645">
+<ele>585.4</ele>
+<time>2017-06-04T11:01:11Z</time>
+<link ></link>
+<extensions>
+<uv_raw>610.0</uv_raw>
+<temperature>40.62</temperature>
+<dew_point>26.46</dew_point>
+<timestamp>08:01:11</timestamp>
+<altitude>585.4</altitude>
+<uv>34.256</uv>
+<longitude>23.352645</longitude>
+<humidity>29.19</humidity>
+<pressure>950.338</pressure>
+<latitude>42.6667383333</latitude>
+<datetime>2017-06-04 11:01:09.429481</datetime>
+<speed>0.524688</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667416667" lon="23.3526466667">
+<ele>585.1</ele>
+<time>2017-06-04T11:01:13Z</time>
+<link ></link>
+<extensions>
+<uv_raw>609.0</uv_raw>
+<temperature>40.55</temperature>
+<dew_point>26.4</dew_point>
+<timestamp>08:01:13</timestamp>
+<altitude>585.1</altitude>
+<uv>34.256</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.28</humidity>
+<pressure>950.344</pressure>
+<latitude>42.6667416667</latitude>
+<datetime>2017-06-04 11:01:11.443605</datetime>
+<speed>0.401232</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667383333" lon="23.3526466667">
+<ele>584.6</ele>
+<time>2017-06-04T11:01:14Z</time>
+<link ></link>
+<extensions>
+<uv_raw>607.0</uv_raw>
+<temperature>40.44</temperature>
+<dew_point>26.33</dew_point>
+<timestamp>08:01:14</timestamp>
+<altitude>584.6</altitude>
+<uv>34.144</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.44</humidity>
+<pressure>950.349</pressure>
+<latitude>42.6667383333</latitude>
+<datetime>2017-06-04 11:01:13.432375</datetime>
+<speed>0.0</speed>
+<dust_particles>9.14</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:16Z</time>
+<link ></link>
+<extensions>
+<uv_raw>606.0</uv_raw>
+<temperature>40.4</temperature>
+<dew_point>26.31</dew_point>
+<timestamp>08:01:16</timestamp>
+<altitude>584.8</altitude>
+<uv>34.2</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.56</humidity>
+<pressure>950.354</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:14.661612</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:18Z</time>
+<link ></link>
+<extensions>
+<uv_raw>606.0</uv_raw>
+<temperature>40.31</temperature>
+<dew_point>26.22</dew_point>
+<timestamp>08:01:18</timestamp>
+<altitude>584.8</altitude>
+<uv>34.2</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.58</humidity>
+<pressure>950.359</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:16.441244</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:20Z</time>
+<link ></link>
+<extensions>
+<uv_raw>606.0</uv_raw>
+<temperature>40.23</temperature>
+<dew_point>26.15</dew_point>
+<timestamp>08:01:20</timestamp>
+<altitude>584.8</altitude>
+<uv>34.144</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.64</humidity>
+<pressure>950.358</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:18.420901</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:22Z</time>
+<link ></link>
+<extensions>
+<uv_raw>606.0</uv_raw>
+<temperature>40.15</temperature>
+<dew_point>26.09</dew_point>
+<timestamp>08:01:22</timestamp>
+<altitude>584.8</altitude>
+<uv>34.2</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.69</humidity>
+<pressure>950.364</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:20.315243</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:24Z</time>
+<link ></link>
+<extensions>
+<uv_raw>609.0</uv_raw>
+<temperature>40.05</temperature>
+<dew_point>26.02</dew_point>
+<timestamp>08:01:24</timestamp>
+<altitude>584.8</altitude>
+<uv>34.144</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.84</humidity>
+<pressure>950.361</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:22.425605</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:26Z</time>
+<link ></link>
+<extensions>
+<uv_raw>606.0</uv_raw>
+<temperature>39.93</temperature>
+<dew_point>25.92</dew_point>
+<timestamp>08:01:26</timestamp>
+<altitude>584.8</altitude>
+<uv>34.2</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.96</humidity>
+<pressure>950.351</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:24.432317</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:33Z</time>
+<link ></link>
+<extensions>
+<uv_raw>605.0</uv_raw>
+<temperature>39.98</temperature>
+<dew_point>25.89</dew_point>
+<timestamp>08:01:33</timestamp>
+<altitude>584.8</altitude>
+<uv>34.087</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.58</humidity>
+<pressure>950.343</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:26.544216</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:35Z</time>
+<link ></link>
+<extensions>
+<uv_raw>606.0</uv_raw>
+<temperature>40.03</temperature>
+<dew_point>25.93</dew_point>
+<timestamp>08:01:35</timestamp>
+<altitude>584.8</altitude>
+<uv>34.144</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.5</humidity>
+<pressure>950.345</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:33.444141</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:37Z</time>
+<link ></link>
+<extensions>
+<uv_raw>606.0</uv_raw>
+<temperature>40.09</temperature>
+<dew_point>25.97</dew_point>
+<timestamp>08:01:37</timestamp>
+<altitude>584.8</altitude>
+<uv>33.975</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.37</humidity>
+<pressure>950.344</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:35.443264</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:39Z</time>
+<link ></link>
+<extensions>
+<uv_raw>602.0</uv_raw>
+<temperature>40.19</temperature>
+<dew_point>26.04</dew_point>
+<timestamp>08:01:39</timestamp>
+<altitude>584.8</altitude>
+<uv>33.806</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.27</humidity>
+<pressure>950.343</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:37.599266</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:41Z</time>
+<link ></link>
+<extensions>
+<uv_raw>600.0</uv_raw>
+<temperature>40.29</temperature>
+<dew_point>26.11</dew_point>
+<timestamp>08:01:41</timestamp>
+<altitude>584.8</altitude>
+<uv>33.638</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.14</humidity>
+<pressure>950.344</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:39.480854</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:43Z</time>
+<link ></link>
+<extensions>
+<uv_raw>599.0</uv_raw>
+<temperature>40.38</temperature>
+<dew_point>26.18</dew_point>
+<timestamp>08:01:43</timestamp>
+<altitude>584.8</altitude>
+<uv>33.525</uv>
+<longitude>23.3526466667</longitude>
+<humidity>29.03</humidity>
+<pressure>950.335</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:41.440808</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:45Z</time>
+<link ></link>
+<extensions>
+<uv_raw>594.0</uv_raw>
+<temperature>40.49</temperature>
+<dew_point>26.28</dew_point>
+<timestamp>08:01:45</timestamp>
+<altitude>584.8</altitude>
+<uv>33.413</uv>
+<longitude>23.3526466667</longitude>
+<humidity>28.92</humidity>
+<pressure>950.332</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:43.441009</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.3526466667">
+<ele>584.8</ele>
+<time>2017-06-04T11:01:46Z</time>
+<link ></link>
+<extensions>
+<uv_raw>588.0</uv_raw>
+<temperature>40.64</temperature>
+<dew_point>26.4</dew_point>
+<timestamp>08:01:46</timestamp>
+<altitude>584.8</altitude>
+<uv>33.244</uv>
+<longitude>23.3526466667</longitude>
+<humidity>28.8</humidity>
+<pressure>950.33</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:45.456427</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.66673" lon="23.3526433333">
+<ele>583.8</ele>
+<time>2017-06-04T11:01:48Z</time>
+<link ></link>
+<extensions>
+<uv_raw>593.0</uv_raw>
+<temperature>40.71</temperature>
+<dew_point>26.46</dew_point>
+<timestamp>08:01:48</timestamp>
+<altitude>583.8</altitude>
+<uv>33.131</uv>
+<longitude>23.3526433333</longitude>
+<humidity>28.75</humidity>
+<pressure>950.331</pressure>
+<latitude>42.66673</latitude>
+<datetime>2017-06-04 11:01:46.434351</datetime>
+<speed>0.504112</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667366667" lon="23.352645">
+<ele>583.8</ele>
+<time>2017-06-04T11:01:50Z</time>
+<link ></link>
+<extensions>
+<uv_raw>588.0</uv_raw>
+<temperature>40.88</temperature>
+<dew_point>26.61</dew_point>
+<timestamp>08:01:50</timestamp>
+<altitude>583.8</altitude>
+<uv>32.962</uv>
+<longitude>23.352645</longitude>
+<humidity>28.63</humidity>
+<pressure>950.325</pressure>
+<latitude>42.6667366667</latitude>
+<datetime>2017-06-04 11:01:48.602937</datetime>
+<speed>0.452672</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.352645">
+<ele>583.7</ele>
+<time>2017-06-04T11:01:52Z</time>
+<link ></link>
+<extensions>
+<uv_raw>586.0</uv_raw>
+<temperature>41.02</temperature>
+<dew_point>26.73</dew_point>
+<timestamp>08:01:52</timestamp>
+<altitude>583.7</altitude>
+<uv>33.019</uv>
+<longitude>23.352645</longitude>
+<humidity>28.53</humidity>
+<pressure>950.316</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:50.440967</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.352645">
+<ele>583.6</ele>
+<time>2017-06-04T11:01:54Z</time>
+<link ></link>
+<extensions>
+<uv_raw>586.0</uv_raw>
+<temperature>41.17</temperature>
+<dew_point>26.86</dew_point>
+<timestamp>08:01:54</timestamp>
+<altitude>583.6</altitude>
+<uv>32.906</uv>
+<longitude>23.352645</longitude>
+<humidity>28.42</humidity>
+<pressure>950.303</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:52.343178</datetime>
+<speed>0.426952</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.352645">
+<ele>583.7</ele>
+<time>2017-06-04T11:01:56Z</time>
+<link ></link>
+<extensions>
+<uv_raw>588.0</uv_raw>
+<temperature>41.31</temperature>
+<dew_point>26.99</dew_point>
+<timestamp>08:01:56</timestamp>
+<altitude>583.7</altitude>
+<uv>33.019</uv>
+<longitude>23.352645</longitude>
+<humidity>28.36</humidity>
+<pressure>950.29</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:54.432159</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.352645">
+<ele>583.7</ele>
+<time>2017-06-04T11:01:58Z</time>
+<link ></link>
+<extensions>
+<uv_raw>588.0</uv_raw>
+<temperature>41.43</temperature>
+<dew_point>27.11</dew_point>
+<timestamp>08:01:58</timestamp>
+<altitude>583.7</altitude>
+<uv>33.131</uv>
+<longitude>23.352645</longitude>
+<humidity>28.36</humidity>
+<pressure>950.278</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:56.452009</datetime>
+<speed>0.0</speed>
+<dust_particles>10.66</dust_particles></extensions></trkpt>
+<trkpt lat="42.666735" lon="23.352645">
+<ele>583.7</ele>
+<time>2017-06-04T11:02:00Z</time>
+<link ></link>
+<extensions>
+<uv_raw>591.0</uv_raw>
+<temperature>41.54</temperature>
+<dew_point>27.2</dew_point>
+<timestamp>08:02:00</timestamp>
+<altitude>583.7</altitude>
+<uv>33.244</uv>
+<longitude>23.352645</longitude>
+<humidity>28.32</humidity>
+<pressure>950.265</pressure>
+<latitude>42.666735</latitude>
+<datetime>2017-06-04 11:01:58.671899</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667416667" lon="23.3526466667">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:02Z</time>
+<link ></link>
+<extensions>
+<uv_raw>595.0</uv_raw>
+<temperature>41.61</temperature>
+<dew_point>27.26</dew_point>
+<timestamp>08:02:02</timestamp>
+<altitude>583.4</altitude>
+<uv>33.3</uv>
+<longitude>23.3526466667</longitude>
+<humidity>28.27</humidity>
+<pressure>950.261</pressure>
+<latitude>42.6667416667</latitude>
+<datetime>2017-06-04 11:02:00.442068</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:04Z</time>
+<link ></link>
+<extensions>
+<uv_raw>593.0</uv_raw>
+<temperature>41.69</temperature>
+<dew_point>27.33</dew_point>
+<timestamp>08:02:04</timestamp>
+<altitude>583.4</altitude>
+<uv>33.413</uv>
+<longitude>23.352645</longitude>
+<humidity>28.18</humidity>
+<pressure>950.257</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:02.447333</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:06Z</time>
+<link ></link>
+<extensions>
+<uv_raw>596.0</uv_raw>
+<temperature>41.8</temperature>
+<dew_point>27.4</dew_point>
+<timestamp>08:02:06</timestamp>
+<altitude>583.4</altitude>
+<uv>33.469</uv>
+<longitude>23.352645</longitude>
+<humidity>28.04</humidity>
+<pressure>950.255</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:04.440030</datetime>
+<speed>0.0</speed>
+<dust_particles>13.71</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:08Z</time>
+<link ></link>
+<extensions>
+<uv_raw>598.0</uv_raw>
+<temperature>41.89</temperature>
+<dew_point>27.48</dew_point>
+<timestamp>08:02:08</timestamp>
+<altitude>583.4</altitude>
+<uv>33.525</uv>
+<longitude>23.352645</longitude>
+<humidity>27.93</humidity>
+<pressure>950.253</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:06.441060</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:10Z</time>
+<link ></link>
+<extensions>
+<uv_raw>596.0</uv_raw>
+<temperature>41.98</temperature>
+<dew_point>27.54</dew_point>
+<timestamp>08:02:10</timestamp>
+<altitude>583.4</altitude>
+<uv>33.581</uv>
+<longitude>23.352645</longitude>
+<humidity>27.81</humidity>
+<pressure>950.26</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:08.313212</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:12Z</time>
+<link ></link>
+<extensions>
+<uv_raw>596.0</uv_raw>
+<temperature>42.12</temperature>
+<dew_point>27.65</dew_point>
+<timestamp>08:02:12</timestamp>
+<altitude>583.4</altitude>
+<uv>33.581</uv>
+<longitude>23.352645</longitude>
+<humidity>27.66</humidity>
+<pressure>950.254</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:10.793007</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:14Z</time>
+<link ></link>
+<extensions>
+<uv_raw>596.0</uv_raw>
+<temperature>42.18</temperature>
+<dew_point>27.7</dew_point>
+<timestamp>08:02:14</timestamp>
+<altitude>583.4</altitude>
+<uv>33.638</uv>
+<longitude>23.352645</longitude>
+<humidity>27.61</humidity>
+<pressure>950.255</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:12.428290</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:16Z</time>
+<link ></link>
+<extensions>
+<uv_raw>597.0</uv_raw>
+<temperature>42.29</temperature>
+<dew_point>27.79</dew_point>
+<timestamp>08:02:16</timestamp>
+<altitude>583.4</altitude>
+<uv>33.469</uv>
+<longitude>23.352645</longitude>
+<humidity>27.5</humidity>
+<pressure>950.271</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:14.426393</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:18Z</time>
+<link ></link>
+<extensions>
+<uv_raw>596.0</uv_raw>
+<temperature>42.38</temperature>
+<dew_point>27.85</dew_point>
+<timestamp>08:02:16</timestamp>
+<altitude>583.4</altitude>
+<uv>33.525</uv>
+<longitude>23.352645</longitude>
+<humidity>27.39</humidity>
+<pressure>950.276</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:16.333503</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:20Z</time>
+<link ></link>
+<extensions>
+<uv_raw>595.0</uv_raw>
+<temperature>42.48</temperature>
+<dew_point>27.94</dew_point>
+<timestamp>08:02:20</timestamp>
+<altitude>583.4</altitude>
+<uv>33.469</uv>
+<longitude>23.352645</longitude>
+<humidity>27.31</humidity>
+<pressure>950.284</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:18.329535</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:22Z</time>
+<link ></link>
+<extensions>
+<uv_raw>594.0</uv_raw>
+<temperature>42.61</temperature>
+<dew_point>28.05</dew_point>
+<timestamp>08:02:22</timestamp>
+<altitude>583.4</altitude>
+<uv>33.413</uv>
+<longitude>23.352645</longitude>
+<humidity>27.17</humidity>
+<pressure>950.281</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:20.865727</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:24Z</time>
+<link ></link>
+<extensions>
+<uv_raw>593.0</uv_raw>
+<temperature>42.69</temperature>
+<dew_point>28.11</dew_point>
+<timestamp>08:02:24</timestamp>
+<altitude>583.4</altitude>
+<uv>33.244</uv>
+<longitude>23.352645</longitude>
+<humidity>27.12</humidity>
+<pressure>950.277</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:22.438640</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:32Z</time>
+<link ></link>
+<extensions>
+<uv_raw>593.0</uv_raw>
+<temperature>42.76</temperature>
+<dew_point>28.19</dew_point>
+<timestamp>08:02:32</timestamp>
+<altitude>583.4</altitude>
+<uv>33.413</uv>
+<longitude>23.352645</longitude>
+<humidity>27.15</humidity>
+<pressure>950.305</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:24.323606</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:34Z</time>
+<link ></link>
+<extensions>
+<uv_raw>593.0</uv_raw>
+<temperature>42.79</temperature>
+<dew_point>28.22</dew_point>
+<timestamp>08:02:32</timestamp>
+<altitude>583.4</altitude>
+<uv>33.244</uv>
+<longitude>23.352645</longitude>
+<humidity>27.12</humidity>
+<pressure>950.305</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:32.464459</datetime>
+<speed>0.0</speed>
+<dust_particles>12.18</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:37Z</time>
+<link ></link>
+<extensions>
+<uv_raw>590.0</uv_raw>
+<temperature>42.8</temperature>
+<dew_point>28.22</dew_point>
+<timestamp>08:02:37</timestamp>
+<altitude>583.4</altitude>
+<uv>33.075</uv>
+<longitude>23.352645</longitude>
+<humidity>27.07</humidity>
+<pressure>950.304</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:34.339104</datetime>
+<speed>0.0</speed>
+<dust_particles>16.76</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667433333" lon="23.352645">
+<ele>583.4</ele>
+<time>2017-06-04T11:02:44Z</time>
+<link ></link>
+<extensions>
+<uv_raw>561.0</uv_raw>
+<temperature>42.82</temperature>
+<dew_point>28.09</dew_point>
+<timestamp>08:02:37</timestamp>
+<altitude>583.4</altitude>
+<uv>31.5</uv>
+<longitude>23.352645</longitude>
+<humidity>27.07</humidity>
+<pressure>950.307</pressure>
+<latitude>42.6667433333</latitude>
+<datetime>2017-06-04 11:02:37.436417</datetime>
+<speed>0.0</speed>
+<dust_particles>16.76</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667516667" lon="23.3526666667">
+<ele>583.5</ele>
+<time>2017-06-04T11:02:47Z</time>
+<link ></link>
+<extensions>
+<uv_raw>560.0</uv_raw>
+<temperature>42.52</temperature>
+<dew_point>28.01</dew_point>
+<timestamp>08:02:47</timestamp>
+<altitude>583.5</altitude>
+<uv>31.5</uv>
+<longitude>23.3526666667</longitude>
+<humidity>27.46</humidity>
+<pressure>950.26</pressure>
+<latitude>42.6667516667</latitude>
+<datetime>2017-06-04 11:02:44.592246</datetime>
+<speed>0.473248</speed>
+<dust_particles>16.76</dust_particles></extensions></trkpt>
+<trkpt lat="42.6667566667" lon="23.35267">
+<ele>583.5</ele>
+<time>2017-06-04T11:02:49Z</time>
+<link ></link>
+<extensions>
+<uv_raw>555.0</uv_raw>
+<temperature>42.46</temperature>
+<dew_point>27.92</dew_point>
+<timestamp>08:02:49</timestamp>
+<altitude>583.5</altitude>
+<uv>31.219</uv>
+<longitude>23.35267</longitude>
+<humidity>27.31</humidity>
+<pressure>950.261</pressure>
+<latitude>42.6667566667</latitude>
+<datetime>2017-06-04 11:02:47.323444</datetime>
+<speed>0.426952</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt>
+<trkpt lat="42.66676" lon="23.3526766667">
+<ele>583.5</ele>
+<time>2017-06-04T11:02:51Z</time>
+<link ></link>
+<extensions>
+<uv_raw>554.0</uv_raw>
+<temperature>42.48</temperature>
+<dew_point>27.96</dew_point>
+<timestamp>08:02:51</timestamp>
+<altitude>583.5</altitude>
+<uv>31.05</uv>
+<longitude>23.3526766667</longitude>
+<humidity>27.36</humidity>
+<pressure>950.263</pressure>
+<latitude>42.66676</latitude>
+<datetime>2017-06-04 11:02:49.436677</datetime>
+<speed>0.0</speed>
+<dust_particles>15.23</dust_particles></extensions></trkpt></trkseg></trk></gpx>

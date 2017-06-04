@@ -15,31 +15,31 @@ DATA_FILE = '/home/pi/meteo/src/dump.json'
 def init_file():
     if not os.path.isfile(DATA_FILE):
         print "file initialized..."
-        with open(DATA_FILE, mode='w', encoding='utf-8') as f:
+        with open(DATA_FILE, mode='w') as f:
             json.dump([], f)
 
 
 def save_to_file(json_data):
     init_file()
-    with open(DATA_FILE, mode='r', encoding='utf-8') as f:
+    print "saving to fileas"
+    with open(DATA_FILE, mode='r') as f:
         feeds = json.load(f)
-
-    with open(DATA_FILE, mode='w', encoding='utf-8') as feedsjson:
+    with open(DATA_FILE, mode='w') as feedsjson:
         feeds.append(json_data)
         json.dump(feeds, feedsjson)
-
+    print "now feeds is %s" % len(feeds)
 
 def post_internet(json_data):
+    requests.post(TRACKER_URL, json=json_data)
     if os.path.isfile(DATA_FILE):
         print "data file exists"
-        with open(DATA_FILE, mode='r', encoding='utf-8') as f:
+        with open(DATA_FILE, mode='r') as f:
             feeds = json.load(f)
         print "len is: %s" % len(feeds)
         for i, feed in enumerate(feeds):
             requests.post(TRACKER_URL, json=feed)
             print "posting... %s" % i
         os.remove(DATA_FILE)
-    requests.post(TRACKER_URL, json=json_data)
     print "internet posted!"
 
 
