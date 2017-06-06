@@ -68,4 +68,8 @@ class GPS:
         if self.thread.isAlive():
             self.thread.stop()
 
+    @classmethod
+    def clear_data(cls):
+        cls.gps_dat_list = []
+
 

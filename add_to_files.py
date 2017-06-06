@@ -153,7 +153,7 @@ def main_loop():
                         print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
 
                 pld = {"name": datetime.datetime.now(), "line": [[data["latitude"], data["longitude"]]]}
-                client1.publish('gps/worldmap', payload=pld)
+                client1.publish('gps/worldmap', payload=json.dumps(pld))
                 # Create points in GPX file:
                 point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
                                                 data["longitude"],
@@ -168,7 +168,7 @@ def main_loop():
                         print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
                         f.write(gpx.to_xml(version="1.1"))
                     gpx, gpx_segment = new_gpx_file()
-            gps_dat_list = []
+            GPS.clear_data()
 
 
 try:
