@@ -161,13 +161,13 @@ def main_loop():
                                                 time=datetime.datetime.now())
                 point.extensions = dict(data)
                 gpx_segment.points.append(point)
-                if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
-                    start_time = datetime.datetime.now()
-                    fname = "../tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
-                    with open(fname, "w") as f:
-                        print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
-                        f.write(gpx.to_xml(version="1.1"))
-                    gpx, gpx_segment = new_gpx_file()
+            if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
+                start_time = datetime.datetime.now()
+                fname = "../tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
+                with open(fname, "w") as f:
+                    print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
+                    f.write(gpx.to_xml(version="1.1"))
+                gpx, gpx_segment = new_gpx_file()
         GPS.clear_data()
         time.sleep(3)
 
