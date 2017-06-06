@@ -75,9 +75,8 @@ def generate_template(gps_dat):
            "<br> Speed over ground: " + str(gps_dat["speed"]) + \
            "<br> Altitude: " + str(gps_dat["altitude"]) + "<br>"
 
-gps_dat = []
+gps_data_list = []
 gps = GPS()
-gps.start(gps_dat)
 
 def main_loop():
     # config bme sensor
@@ -131,7 +130,7 @@ def main_loop():
         # tmp_gps_dat = get_gps()
         # if tmp_gps_dat and not tmp_gps_dat["latitude"] == 0:
         #     gps_dat = tmp_gps_dat
-        for gps_dat in gps_dat_list:
+        for gps_dat in GPS.gps_dat_list:
             print gps_dat
             if gps_dat and not gps_dat["latitude"] == 0:
                 data.update(gps_dat)

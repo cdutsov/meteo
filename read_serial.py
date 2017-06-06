@@ -29,13 +29,14 @@ class MyThread(threading.Thread):
         return self._stop.isSet()
 
 
-class GPS():
+class GPS:
+    gps_dat_list = []
+
     def __init__(self):
         # init gps
         self.gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
 
-        self.gps_dat_list = []
-        self.thread = threading.MyThread(target=self.get_gps, args=(self.gps_serial, self.gps_dat_list))
+        self.thread = MyThread(target=self.start, args=(self.gps_serial, self.gps_dat_list))
 
         self.thread.start()
 
