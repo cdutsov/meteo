@@ -170,6 +170,7 @@ def main_loop():
                         f.write(gpx.to_xml(version="1.1"))
                     gpx, gpx_segment = new_gpx_file()
         GPS.clear_data()
+        time.sleep(3)
 
 
 try:
