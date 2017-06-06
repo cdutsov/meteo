@@ -88,8 +88,8 @@ def main_loop():
     #init gps
     gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
 
-    gps_dat = []
-    thread = threading.Thread(target=get_gps, args=(gps_serial, gps_dat))
+    gps_dat_list = []
+    thread = threading.Thread(target=get_gps, args=(gps_serial, gps_dat_list))
     thread.start()
 
     # gpx file
@@ -132,8 +132,8 @@ def main_loop():
         # tmp_gps_dat = get_gps()
         # if tmp_gps_dat and not tmp_gps_dat["latitude"] == 0:
         #     gps_dat = tmp_gps_dat
-        for data in gps_dat:
-            print data
+        for gps_dat in gps_dat_list:
+            print gps_dat
             if gps_dat and not gps_dat["latitude"] == 0:
                 data.update(gps_dat)
 
