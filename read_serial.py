@@ -32,7 +32,7 @@ def get_gps():
                 gps_dat["longitude"] = msg.longitude
                 gps_dat["timestamp"] = msg.timestamp
                 no_spd = False
-                gps_dat["speed"] = msg.spd_over_grnd*0.5144
+                gps_dat["speed"] = msg.spd_over_grnd * 0.5144
             elif 'GGA' in sentence:
                 msg = pynmea2.parse(sentence)
                 gps_dat["altitude"] = msg.altitude
