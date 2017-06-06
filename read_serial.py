@@ -63,6 +63,7 @@ class GPS:
                     data["altitude"] = msg.altitude
                     no_alt = False
             gps_dat.append(data)
+            print gps_dat
 
     def stop(self):
         if self.thread.isAlive():

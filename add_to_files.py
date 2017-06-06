@@ -126,10 +126,6 @@ def main_loop():
         # Publish to MQTT server
         publish_data(client=client1, data=data)
 
-        # Do not get gps data if there is none
-        # tmp_gps_dat = get_gps()
-        # if tmp_gps_dat and not tmp_gps_dat["latitude"] == 0:
-        #     gps_dat = tmp_gps_dat
         for gps_dat in GPS.gps_dat_list:
             print gps_dat
             if gps_dat and not gps_dat["latitude"] == 0:
@@ -168,7 +164,7 @@ def main_loop():
                         print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
                         f.write(gpx.to_xml(version="1.1"))
                     gpx, gpx_segment = new_gpx_file()
-            GPS.clear_data()
+        GPS.clear_data()
 
 
 try:
