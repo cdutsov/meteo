@@ -39,13 +39,15 @@ def new_gpx_file():
 
 
 def publish_data(client, data):
-    client.publish("sensors/temperature", "%0.3f" % (data["temperature"]), retain=True)
+    temp = {'tstamp': time.time(), 'data': "%0.3f" % (data["temperature"])}
+    client.publish("sensors/temperature", payload=temp, retain=True)
     client.publish("sensors/pressure", "%0.3f" % data["pressure"])
     client.publish("sensors/humidity", "%0.3f" % data["humidity"])
     client.publish("sensors/dewpoint", "%0.3f" % data["dew_point"])
     client.publish("sensors/uv", "%0.3f" % data["uv"])
     client.publish("sensors/uv_raw", "%0.3f" % data["uv_raw"])
     client.publish("sensors/dust_particles", "%0.3f" % data["dust_particles"])
+    client.publish('gps/worldmap', payload="{name:\"Joe\", lat:51, lon:-1.05}")
 
 
 def publish_template(client, template):
