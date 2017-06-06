@@ -21,8 +21,8 @@ def get_gps():
         no_spd = True
         no_alt = True
         while no_alt or no_spd:
-            sentence = ser.readline().split('$', 1)
-            if len(sentence) == 2:
+            sentence = ser.readline().split('$')
+            if len(sentence) >= 2:
                 sentence = sentence[1]
             else:
                 sentence = ''
