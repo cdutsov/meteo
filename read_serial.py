@@ -36,11 +36,11 @@ class GPS:
         # init gps
         self.gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
 
-        self.thread = MyThread(target=self.start, args=(self.gps_serial, self.gps_dat_list))
+        self.thread = MyThread(target=self.start, args=(self.gps_serial))
 
         self.thread.start()
 
-    def start(self, ser, gps_dat):
+    def start(self, ser):
         while not self.thread.stopped():
             no_spd = True
             no_alt = True
@@ -62,8 +62,7 @@ class GPS:
                     msg = pynmea2.parse(sentence)
                     data["altitude"] = msg.altitude
                     no_alt = False
-            gps_dat.append(data)
-            print gps_dat
+            self.gps_dat_list.append(data)
 
     def stop(self):
         if self.thread.isAlive():
