@@ -52,6 +52,7 @@ class GPS:
                 else:
                     sentence = ''
                 if 'RMC' in sentence:
+                    print sentence
                     msg = pynmea2.parse(sentence)
                     data["latitude"] = msg.latitude
                     data["longitude"] = msg.longitude

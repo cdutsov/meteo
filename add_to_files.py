@@ -131,7 +131,6 @@ def main_loop():
         #     gps_dat = {"latitude": 1, "longitude": 1, "speed": 1, "altitude": 1}
 
             if gps_dat and not gps_dat["latitude"] == 0:
-                print gps_dat
                 data.update(gps_dat)
 
                 # Publish on MQTT server
