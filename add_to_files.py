@@ -88,7 +88,7 @@ def main_loop():
     #init gps
     gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
 
-    gps_dat = {}
+    gps_dat = []
     thread = threading.Thread(target=get_gps, args=(gps_serial, gps_dat))
     thread.start()
 
@@ -97,7 +97,6 @@ def main_loop():
 
     data_list = []
     particles_mean = []
-    gps_dat = None
 
     start_time = datetime.datetime.now()
     data_published_time = datetime.datetime.now()
@@ -133,42 +132,45 @@ def main_loop():
         # tmp_gps_dat = get_gps()
         # if tmp_gps_dat and not tmp_gps_dat["latitude"] == 0:
         #     gps_dat = tmp_gps_dat
-        if gps_dat and not gps_dat["latitude"] == 0:
-            data.update(gps_dat)
+        for data in gps_dat:
+            print data
+            if gps_dat and not gps_dat["latitude"] == 0:
+                data.update(gps_dat)
 
-            # Publish on MQTT server
-            publish_template(client=client1,
-                             template=generate_template(gps_dat))
-            if gps_dat["speed"] > 0.5:
-                update_interval = 20
-            else:
-                update_interval = 120
+                # Publish on MQTT server
+                publish_template(client=client1,
+                                 template=generate_template(gps_dat))
+                if gps_dat["speed"] > 0.5:
+                    update_interval = 20
+                else:
+                    update_interval = 120
 
-            # Post to external tracker
-            if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
-                data_published_time = datetime.datetime.now()
-                try:
-                    post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
-                    print "data posted to: " + TRACKER_URL
-                except:
-                    print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
+                # Post to external tracker
+                if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
+                    data_published_time = datetime.datetime.now()
+                    try:
+                        post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
+                        print "data posted to: " + TRACKER_URL
+                    except:
+                        print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
 
-            pld = {"name": datetime.datetime.now(), "line": [[data["latitude"], data["longitude"]]]}
-            client1.publish('gps/worldmap', payload=pld)
-            # Create points in GPX file:
-            point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
-                                            data["longitude"],
-                                            elevation=data["altitude"],
-                                            time=datetime.datetime.now())
-            point.extensions = dict(data)
-            gpx_segment.points.append(point)
-            if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
-                start_time = datetime.datetime.now()
-                fname = "../tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
-                with open(fname, "w") as f:
-                    print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
-                    f.write(gpx.to_xml(version="1.1"))
-                gpx, gpx_segment = new_gpx_file()
+                pld = {"name": datetime.datetime.now(), "line": [[data["latitude"], data["longitude"]]]}
+                client1.publish('gps/worldmap', payload=pld)
+                # Create points in GPX file:
+                point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
+                                                data["longitude"],
+                                                elevation=data["altitude"],
+                                                time=datetime.datetime.now())
+                point.extensions = dict(data)
+                gpx_segment.points.append(point)
+                if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
+                    start_time = datetime.datetime.now()
+                    fname = "../tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
+                    with open(fname, "w") as f:
+                        print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
+                        f.write(gpx.to_xml(version="1.1"))
+                    gpx, gpx_segment = new_gpx_file()
+            gps_dat = []
 
 
 main_loop()
