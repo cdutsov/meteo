@@ -32,6 +32,7 @@ def get_gps():
                 except:
                     print "Error in reading file"
                     return None
+                print gps_dat
                 gps_dat["latitude"] = msg.latitude
                 gps_dat["longitude"] = msg.longitude
                 gps_dat["timestamp"] = msg.timestamp
