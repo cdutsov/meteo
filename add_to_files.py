@@ -2,6 +2,7 @@ import json
 import os
 
 import datetime
+import threading
 
 import gpxpy
 import gpxpy.gpx
@@ -12,8 +13,9 @@ import veml6070
 import time
 
 from external_tracker import post_update, TRACKER_URL
-from read_serial import get_dust_particles, get_gps
+from read_serial import get_dust_particles, get_gps, gps_dat
 import pickle
+import serial
 
 broker = "127.0.0.1"
 port = 1883
@@ -83,6 +85,12 @@ def main_loop():
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
 
+    #init gps
+    gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
+
+    thread = threading.Thread(target=get_gps, args=(gps_serial,))
+    thread.start()
+
     # gpx file
     gpx, gpx_segment = new_gpx_file()
 
@@ -118,9 +126,10 @@ def main_loop():
         publish_data(client=client1, data=data)
 
         # Do not get gps data if there is none
-        tmp_gps_dat = get_gps()
-        if tmp_gps_dat and not tmp_gps_dat["latitude"] == 0:
-            gps_dat = tmp_gps_dat
+        # tmp_gps_dat = get_gps()
+        # if tmp_gps_dat and not tmp_gps_dat["latitude"] == 0:
+        #     gps_dat = tmp_gps_dat
+        print gps_dat
         if gps_dat and not gps_dat["latitude"] == 0:
             data.update(gps_dat)
 
