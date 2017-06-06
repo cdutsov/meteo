@@ -48,7 +48,7 @@ def publish_data(client, data):
     client.publish("sensors/uv", "%0.3f" % data["uv"])
     client.publish("sensors/uv_raw", "%0.3f" % data["uv_raw"])
     client.publish("sensors/dust_particles", "%0.3f" % data["dust_particles"])
-    client.publish('gps/worldmap', payload="{name:\"Joe\", lat:51, lon:-1.05}")
+    client.publish('gps/worldmap', payload="{name:\"Joe\", lat:51, lon:-1.05, radius:500}")
 
 
 def publish_template(client, template):
