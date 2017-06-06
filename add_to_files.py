@@ -127,6 +127,11 @@ def main_loop():
         publish_data(client=client1, data=data)
 
         for gps_dat in GPS.gps_dat_list:
+            gps_dat["latitude"] = 1
+            gps_dat["longitude"] = 1
+            gps_dat["speed"] = 1
+            gps_dat["altitude"] = 1
+
             if gps_dat and not gps_dat["latitude"] == 0:
                 data.update(gps_dat)
 
