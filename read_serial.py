@@ -38,8 +38,3 @@ def get_gps():
                 gps_dat["altitude"] = msg.altitude
                 no_alt = False
         return gps_dat
-
-# while True:
-#     with serial.Serial('/dev/ttyS0', 9600, timeout=1) as ser:
-#         line = ser.readline()
-#         print line

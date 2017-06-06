@@ -10,7 +10,7 @@ import paho.mqtt.client as paho
 import veml6070
 import time
 
-from dani import post_update, TRACKER_URL
+from external_tracker import post_update, TRACKER_URL
 from read_serial import get_dust_particles, get_gps
 import pickle
 
@@ -72,7 +72,7 @@ def generate_template(gps_dat):
            "<br> Altitude: " + str(gps_dat["altitude"]) + "<br>"
 
 
-def main():
+def main_loop():
     # config bme sensor
     sensor = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
     tstart = time.time()
@@ -94,14 +94,15 @@ def main():
 
     while True:
         data["datetime"] = datetime.datetime.now()
-        data["temperature"] = round(sensor.read_temperature() - 8, 2)
+        data["temperature"] = round(sensor.read_temperature(), 2)
         data["pressure"] = round(sensor.read_pressure() / 100, 3)
         data["humidity"] = round(sensor.read_humidity(), 2)
         data["dew_point"] = round(sensor.read_dewpoint(), 2)
         data["uv_raw"] = round(veml.get_uva_light_intensity_raw(), 3)
         data["uv"] = round(veml.get_uva_light_intensity(), 3)
         data["dust_particles"] = round(get_dust_particles(), 2)
-        # data["dust_particles"] = 0
+
+        # Average out dust particles
         particles_mean.append(data["dust_particles"])
         if len(particles_mean) > 9:
             del particles_mean[0]
@@ -112,14 +113,17 @@ def main():
 
         data_list.append(data)
 
+        # Publish to MQTT server
         publish_data(client=client1, data=data)
 
+        # Do not get gps data if there is none
         tmp_gps_dat = get_gps()
-        print tmp_gps_dat
         if tmp_gps_dat and not tmp_gps_dat["latitude"] == 0:
             gps_dat = tmp_gps_dat
         if gps_dat and not gps_dat["latitude"] == 0:
             data.update(gps_dat)
+
+            # Publish on MQTT server
             publish_template(client=client1,
                              template=generate_template(gps_dat))
             if gps_dat["speed"] > 0.5:
@@ -127,6 +131,7 @@ def main():
             else:
                 update_interval = 120
 
+            # Post to external tracker
             if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
                 data_published_time = datetime.datetime.now()
                 try:
@@ -135,7 +140,7 @@ def main():
                 except:
                     print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
 
-            # Create points:
+            # Create points in GPX file:
             point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
                                             data["longitude"],
                                             elevation=data["altitude"],
@@ -151,4 +156,4 @@ def main():
                 gpx, gpx_segment = new_gpx_file()
 
 
-main()
+main_loop()

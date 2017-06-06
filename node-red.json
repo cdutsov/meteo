@@ -1,0 +1,857 @@
+[
+  {
+    "id": "de18f787.5c6138",
+    "type": "tab",
+    "label": "Meteo v2"
+  },
+  {
+    "id": "79ca8d03.907234",
+    "type": "mqtt-broker",
+    "z": "",
+    "broker": "127.0.0.1",
+    "port": "1883",
+    "clientid": "",
+    "usetls": false,
+    "compatmode": true,
+    "keepalive": "60",
+    "cleansession": true,
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": "",
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": ""
+  },
+  {
+    "id": "14ca5ef9.375371",
+    "type": "ui_tab",
+    "z": "",
+    "name": "Awesome Meteorological Station",
+    "icon": "dashboard"
+  },
+  {
+    "id": "30611a28.d5a7f6",
+    "type": "ui_group",
+    "z": "",
+    "name": "BME280",
+    "tab": "14ca5ef9.375371",
+    "order": 1,
+    "disp": true,
+    "width": "10"
+  },
+  {
+    "id": "4f47584f.d53a48",
+    "type": "ui_base",
+    "theme": {
+      "name": "theme-light",
+      "lightTheme": {
+        "default": "#0094CE",
+        "baseColor": "#0094CE",
+        "baseFont": "Helvetica Neue",
+        "edited": true,
+        "reset": false
+      },
+      "darkTheme": {
+        "default": "#097479",
+        "baseColor": "#097479",
+        "baseFont": "Helvetica Neue",
+        "edited": true,
+        "reset": false
+      },
+      "customTheme": {
+        "name": "Untitled Theme 1",
+        "default": "#4B7930",
+        "baseColor": "#4B7930",
+        "baseFont": "Helvetica Neue"
+      },
+      "themeState": {
+        "base-color": {
+          "default": "#0094CE",
+          "value": "#0094CE",
+          "edited": false
+        },
+        "page-titlebar-backgroundColor": {
+          "value": "#0094CE",
+          "edited": false
+        },
+        "page-backgroundColor": {
+          "value": "#fafafa",
+          "edited": false
+        },
+        "page-sidebar-backgroundColor": {
+          "value": "#ffffff",
+          "edited": false
+        },
+        "group-textColor": {
+          "value": "#1bbfff",
+          "edited": false
+        },
+        "group-borderColor": {
+          "value": "#ffffff",
+          "edited": false
+        },
+        "group-backgroundColor": {
+          "value": "#ffffff",
+          "edited": false
+        },
+        "widget-textColor": {
+          "value": "#111111",
+          "edited": false
+        },
+        "widget-backgroundColor": {
+          "value": "#0094ce",
+          "edited": false
+        },
+        "widget-borderColor": {
+          "value": "#ffffff",
+          "edited": false
+        }
+      }
+    },
+    "site": {
+      "name": "Node-RED Dashboard",
+      "hideToolbar": "false",
+      "allowSwipe": "false",
+      "dateFormat": "DD/MM/YYYY",
+      "sizes": {
+        "sx": 48,
+        "sy": 48,
+        "gx": 6,
+        "gy": 6,
+        "cx": 6,
+        "cy": 6,
+        "px": 0,
+        "py": 0
+      }
+    }
+  },
+  {
+    "id": "e1c24c67.aaa4",
+    "type": "ui_group",
+    "z": "",
+    "name": "VEML6070 and WSH-10500",
+    "tab": "14ca5ef9.375371",
+    "order": 2,
+    "disp": true,
+    "width": "10"
+  },
+  {
+    "id": "8a32fafd.aee558",
+    "type": "ui_group",
+    "z": "",
+    "name": "Random Values",
+    "tab": "14ca5ef9.375371",
+    "order": 3,
+    "disp": true,
+    "width": "6"
+  },
+  {
+    "id": "13303502.55b0ab",
+    "type": "mqtt in",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "topic": "sensors/temperature",
+    "qos": "2",
+    "broker": "79ca8d03.907234",
+    "x": 299,
+    "y": 227,
+    "wires": [
+      [
+        "c76e1eba.f4a55",
+        "4639bada.a133d4",
+        "46d4fed0.a3e5e",
+        "cf815c89.465bf",
+        "6d775458.d011fc"
+      ]
+    ]
+  },
+  {
+    "id": "c76e1eba.f4a55",
+    "type": "ui_chart",
+    "z": "de18f787.5c6138",
+    "name": "{{value}}",
+    "group": "30611a28.d5a7f6",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "label": "Temperature (Celsius)",
+    "chartType": "line",
+    "legend": "false",
+    "xformat": "HH:mm:ss",
+    "interpolate": "linear",
+    "nodata": "waiting for connection",
+    "ymin": "",
+    "ymax": "",
+    "removeOlder": 1,
+    "removeOlderPoints": "100",
+    "removeOlderUnit": "60",
+    "cutout": 0,
+    "colors": [
+      "#1f77b4",
+      "#aec7e8",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5"
+    ],
+    "x": 855,
+    "y": 286,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "9267e77.3c7a618",
+    "type": "mqtt in",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "topic": "sensors/humidity",
+    "qos": "2",
+    "broker": "79ca8d03.907234",
+    "x": 517,
+    "y": 330,
+    "wires": [
+      [
+        "cc049f12.6ba82"
+      ]
+    ]
+  },
+  {
+    "id": "cc049f12.6ba82",
+    "type": "ui_chart",
+    "z": "de18f787.5c6138",
+    "name": "{{value}}",
+    "group": "30611a28.d5a7f6",
+    "order": 3,
+    "width": 0,
+    "height": 0,
+    "label": "Humidity (%)",
+    "chartType": "line",
+    "legend": "false",
+    "xformat": "HH:mm:ss",
+    "interpolate": "linear",
+    "nodata": "",
+    "ymin": "0",
+    "ymax": "100",
+    "removeOlder": 1,
+    "removeOlderPoints": "100",
+    "removeOlderUnit": "60",
+    "cutout": 0,
+    "colors": [
+      "#1f77b4",
+      "#aec7e8",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5"
+    ],
+    "x": 857,
+    "y": 330,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "24b4c147.e5209e",
+    "type": "mqtt in",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "topic": "sensors/pressure",
+    "qos": "2",
+    "broker": "79ca8d03.907234",
+    "x": 517,
+    "y": 390,
+    "wires": [
+      [
+        "46a64b9f.4290e4"
+      ]
+    ]
+  },
+  {
+    "id": "46a64b9f.4290e4",
+    "type": "ui_chart",
+    "z": "de18f787.5c6138",
+    "name": "{{value}}",
+    "group": "30611a28.d5a7f6",
+    "order": 5,
+    "width": 0,
+    "height": 0,
+    "label": "Pressure (hPa)",
+    "chartType": "line",
+    "legend": "false",
+    "xformat": "HH:mm:ss",
+    "interpolate": "linear",
+    "nodata": "",
+    "ymin": "",
+    "ymax": "",
+    "removeOlder": 1,
+    "removeOlderPoints": "100",
+    "removeOlderUnit": "60",
+    "cutout": 0,
+    "colors": [
+      "#1f77b4",
+      "#aec7e8",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5"
+    ],
+    "x": 857,
+    "y": 390,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "7ba08f26.3a49",
+    "type": "mqtt in",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "topic": "sensors/uv",
+    "qos": "2",
+    "broker": "79ca8d03.907234",
+    "x": 488,
+    "y": 533,
+    "wires": [
+      [
+        "c6bccae5.42d928",
+        "d18ccc4e.a9d1b"
+      ]
+    ]
+  },
+  {
+    "id": "c6bccae5.42d928",
+    "type": "ui_chart",
+    "z": "de18f787.5c6138",
+    "name": "{{value}}",
+    "group": "e1c24c67.aaa4",
+    "order": 1,
+    "width": 0,
+    "height": 0,
+    "label": "UV Light Intensity (mW/m2)",
+    "chartType": "line",
+    "legend": "false",
+    "xformat": "HH:mm",
+    "interpolate": "linear",
+    "nodata": "",
+    "ymin": "",
+    "ymax": "",
+    "removeOlder": 1,
+    "removeOlderPoints": "100",
+    "removeOlderUnit": "60",
+    "cutout": 0,
+    "colors": [
+      "#1f77b4",
+      "#aec7e8",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5"
+    ],
+    "x": 858,
+    "y": 533,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "465b280f.9bbb68",
+    "type": "mqtt in",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "topic": "sensors/uv_raw",
+    "qos": "2",
+    "broker": "79ca8d03.907234",
+    "x": 499,
+    "y": 600,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "6f576c2a.a337d4",
+    "type": "mqtt in",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "topic": "sensors/dewpoint",
+    "qos": "2",
+    "broker": "79ca8d03.907234",
+    "x": 410.5,
+    "y": 707,
+    "wires": [
+      [
+        "dfa270f8.c2a4a",
+        "6d775458.d011fc"
+      ]
+    ]
+  },
+  {
+    "id": "6d775458.d011fc",
+    "type": "ui_chart",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "group": "30611a28.d5a7f6",
+    "order": 7,
+    "width": 0,
+    "height": 0,
+    "label": "Dew point (Celsius)",
+    "chartType": "line",
+    "legend": "true",
+    "xformat": "HH:mm:ss",
+    "interpolate": "linear",
+    "nodata": "",
+    "ymin": "",
+    "ymax": "",
+    "removeOlder": 1,
+    "removeOlderPoints": "100",
+    "removeOlderUnit": "60",
+    "cutout": 0,
+    "colors": [
+      "#1f77b4",
+      "#eaaae8",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5"
+    ],
+    "x": 898,
+    "y": 693,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "dfa270f8.c2a4a",
+    "type": "ui_gauge",
+    "z": "de18f787.5c6138",
+    "name": "{{value}}",
+    "group": "30611a28.d5a7f6",
+    "order": 9,
+    "width": 0,
+    "height": 0,
+    "gtype": "gage",
+    "title": "Dew Point",
+    "label": "deg C",
+    "format": "{{value}}",
+    "min": "-5",
+    "max": "30",
+    "colors": [
+      "#00b500",
+      "#e6e600",
+      "#ca3838"
+    ],
+    "seg1": "",
+    "seg2": "",
+    "x": 868,
+    "y": 733,
+    "wires": []
+  },
+  {
+    "id": "dbc0a624.91f4e8",
+    "type": "ui_button",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "group": "30611a28.d5a7f6",
+    "order": 2,
+    "width": 0,
+    "height": 0,
+    "passthru": false,
+    "label": "Reset",
+    "color": "",
+    "bgcolor": "",
+    "icon": "",
+    "payload": "[]",
+    "payloadType": "json",
+    "topic": "sensors/temperature",
+    "x": 687,
+    "y": 250,
+    "wires": [
+      [
+        "c76e1eba.f4a55"
+      ]
+    ]
+  },
+  {
+    "id": "6f5649c5.d8a108",
+    "type": "ui_button",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "group": "30611a28.d5a7f6",
+    "order": 4,
+    "width": 0,
+    "height": 0,
+    "passthru": false,
+    "label": "Reset",
+    "color": "",
+    "bgcolor": "",
+    "icon": "",
+    "payload": "[]",
+    "payloadType": "json",
+    "topic": "sensors/humidity",
+    "x": 687,
+    "y": 310,
+    "wires": [
+      [
+        "cc049f12.6ba82"
+      ]
+    ]
+  },
+  {
+    "id": "7fe38a85.204024",
+    "type": "ui_button",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "group": "30611a28.d5a7f6",
+    "order": 6,
+    "width": 0,
+    "height": 0,
+    "passthru": false,
+    "label": "Reset",
+    "color": "",
+    "bgcolor": "",
+    "icon": "",
+    "payload": "[]",
+    "payloadType": "json",
+    "topic": "sensors/pressure",
+    "x": 687,
+    "y": 370,
+    "wires": [
+      [
+        "46a64b9f.4290e4"
+      ]
+    ]
+  },
+  {
+    "id": "63d3f5a2.947dec",
+    "type": "ui_button",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "group": "e1c24c67.aaa4",
+    "order": 2,
+    "width": 0,
+    "height": 0,
+    "passthru": false,
+    "label": "Reset",
+    "color": "",
+    "bgcolor": "",
+    "icon": "",
+    "payload": "[]",
+    "payloadType": "json",
+    "topic": "sensors/uv",
+    "x": 678,
+    "y": 513,
+    "wires": [
+      [
+        "c6bccae5.42d928"
+      ]
+    ]
+  },
+  {
+    "id": "5d4c854.30e0e7c",
+    "type": "ui_button",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "group": "30611a28.d5a7f6",
+    "order": 8,
+    "width": 0,
+    "height": 0,
+    "passthru": false,
+    "label": "Reset",
+    "color": "",
+    "bgcolor": "",
+    "icon": "",
+    "payload": "[]",
+    "payloadType": "json",
+    "topic": "sensors/dewpoint",
+    "x": 679,
+    "y": 655,
+    "wires": [
+      [
+        "6d775458.d011fc"
+      ]
+    ]
+  },
+  {
+    "id": "4639bada.a133d4",
+    "type": "smooth",
+    "z": "de18f787.5c6138",
+    "name": "Avg temp",
+    "action": "mean",
+    "count": "10",
+    "round": "",
+    "x": 670,
+    "y": 157,
+    "wires": [
+      [
+        "6b03b6ce.73c8e8"
+      ]
+    ]
+  },
+  {
+    "id": "46d4fed0.a3e5e",
+    "type": "smooth",
+    "z": "de18f787.5c6138",
+    "name": "max temp",
+    "action": "max",
+    "count": "3000",
+    "round": "",
+    "x": 666,
+    "y": 113,
+    "wires": [
+      [
+        "2fccc81.fca3638"
+      ]
+    ]
+  },
+  {
+    "id": "cf815c89.465bf",
+    "type": "smooth",
+    "z": "de18f787.5c6138",
+    "name": "min temp",
+    "action": "min",
+    "count": "300",
+    "round": "",
+    "x": 667,
+    "y": 72,
+    "wires": [
+      [
+        "3069a166.60001e"
+      ]
+    ]
+  },
+  {
+    "id": "3069a166.60001e",
+    "type": "ui_text",
+    "z": "de18f787.5c6138",
+    "group": "8a32fafd.aee558",
+    "order": 0,
+    "width": 0,
+    "height": 0,
+    "name": "Min_temp",
+    "label": "Min_temp",
+    "format": "{{value | number:1 }}",
+    "layout": "row-spread",
+    "x": 888,
+    "y": 68,
+    "wires": []
+  },
+  {
+    "id": "2fccc81.fca3638",
+    "type": "ui_text",
+    "z": "de18f787.5c6138",
+    "group": "8a32fafd.aee558",
+    "order": 0,
+    "width": 0,
+    "height": 0,
+    "name": "Max_temp",
+    "label": "Max_temp",
+    "format": "{{value | number:1 }}",
+    "layout": "row-spread",
+    "x": 860,
+    "y": 115,
+    "wires": []
+  },
+  {
+    "id": "6b03b6ce.73c8e8",
+    "type": "ui_text",
+    "z": "de18f787.5c6138",
+    "group": "8a32fafd.aee558",
+    "order": 0,
+    "width": 0,
+    "height": 0,
+    "name": "Avg_temp",
+    "label": "Avg_temp",
+    "format": "{{value | number:1 }}",
+    "layout": "row-spread",
+    "x": 854,
+    "y": 170,
+    "wires": []
+  },
+  {
+    "id": "cddb2d72.e1521",
+    "type": "ui_chart",
+    "z": "de18f787.5c6138",
+    "name": "{{value}}",
+    "group": "e1c24c67.aaa4",
+    "order": 5,
+    "width": 0,
+    "height": 0,
+    "label": "Dust particles concentration (ug/m3)",
+    "chartType": "line",
+    "legend": "false",
+    "xformat": "HH:mm:ss",
+    "interpolate": "linear",
+    "nodata": "",
+    "ymin": "",
+    "ymax": "",
+    "removeOlder": 1,
+    "removeOlderPoints": "100",
+    "removeOlderUnit": "60",
+    "cutout": 0,
+    "colors": [
+      "#1f77b4",
+      "#aec7e8",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5"
+    ],
+    "x": 842,
+    "y": 905,
+    "wires": [
+      [],
+      []
+    ]
+  },
+  {
+    "id": "5cfdeb0b.28f164",
+    "type": "mqtt in",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "topic": "sensors/dust_particles",
+    "qos": "2",
+    "broker": "79ca8d03.907234",
+    "x": 527,
+    "y": 836,
+    "wires": [
+      [
+        "cddb2d72.e1521",
+        "d269c4bb.08b0d8"
+      ]
+    ]
+  },
+  {
+    "id": "7d605640.03d678",
+    "type": "ui_button",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "group": "e1c24c67.aaa4",
+    "order": 6,
+    "width": 0,
+    "height": 0,
+    "passthru": false,
+    "label": "Reset",
+    "color": "",
+    "bgcolor": "",
+    "icon": "",
+    "payload": "[]",
+    "payloadType": "json",
+    "topic": "sensors/dust_particles",
+    "x": 715,
+    "y": 957,
+    "wires": [
+      [
+        "cddb2d72.e1521"
+      ]
+    ]
+  },
+  {
+    "id": "d18ccc4e.a9d1b",
+    "type": "ui_gauge",
+    "z": "de18f787.5c6138",
+    "name": "Untitled Theme 1",
+    "group": "8a32fafd.aee558",
+    "order": 3,
+    "width": 0,
+    "height": 0,
+    "gtype": "donut",
+    "title": "UV intensity",
+    "label": "UV index",
+    "format": "{{value/25 | number:1}}",
+    "min": 0,
+    "max": "300",
+    "colors": [
+      "#00b500",
+      "#e6e600",
+      "#ca3838"
+    ],
+    "seg1": "",
+    "seg2": "",
+    "x": 884,
+    "y": 584,
+    "wires": []
+  },
+  {
+    "id": "d269c4bb.08b0d8",
+    "type": "ui_gauge",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "group": "8a32fafd.aee558",
+    "order": 7,
+    "width": 0,
+    "height": 0,
+    "gtype": "gage",
+    "title": "Dust particles",
+    "label": "ug/m3",
+    "format": "",
+    "min": 0,
+    "max": "600",
+    "colors": [
+      "#00b500",
+      "#e6e600",
+      "#ca3838"
+    ],
+    "seg1": "0",
+    "seg2": "",
+    "x": 846,
+    "y": 844,
+    "wires": []
+  },
+  {
+    "id": "2be3e978.172dc6",
+    "type": "ui_template",
+    "z": "de18f787.5c6138",
+    "group": "8a32fafd.aee558",
+    "name": "",
+    "order": 0,
+    "width": 0,
+    "height": 0,
+    "format": "<div ng-bind-html=\"msg.payload\"></div>",
+    "storeOutMessages": true,
+    "fwdInMessages": true,
+    "x": 700,
+    "y": 1077,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "5dc8b98a.dc5ce8",
+    "type": "mqtt in",
+    "z": "de18f787.5c6138",
+    "name": "",
+    "topic": "template/html_template",
+    "qos": "2",
+    "broker": "79ca8d03.907234",
+    "x": 168,
+    "y": 1077,
+    "wires": [
+      [
+        "2be3e978.172dc6"
+      ]
+    ]
+  }
+]
