@@ -88,7 +88,8 @@ def main_loop():
     #init gps
     gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
 
-    thread = threading.Thread(target=get_gps, args=(gps_serial,))
+    gps_dat = {}
+    thread = threading.Thread(target=get_gps, args=(gps_serial, gps_dat))
     thread.start()
 
     # gpx file

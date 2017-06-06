@@ -14,10 +14,7 @@ def get_dust_particles():
         return 0
 
 
-gps_dat = {}
-
-
-def get_gps(ser):
+def get_gps(ser, gps_dat):
     no_spd = True
     no_alt = True
     while True:
