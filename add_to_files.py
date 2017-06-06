@@ -150,9 +150,8 @@ def main_loop():
                     except:
                         print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
 
-                pld = [{"name": "point"}, {"lat": data["latitude"]}, {"lon": data["longitude"]}, {"radius": 10},{"command": [
-                    {"lat": data["latitude"]}, {"lon": data["longitude"]}, {"zoom": 18}]
-                }]
+                pld = {"name": "point", "lat": data["latitude"], "lon": data["longitude"], "radius": 10,
+                       "command": {"lat": data["latitude"], "lon": data["longitude"], "zoom": 18}}
                 print pld
                 client1.publish('gps/worldmap', payload=json.dumps(pld, indent=2))
                 # Create points in GPX file:
