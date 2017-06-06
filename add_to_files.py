@@ -47,7 +47,6 @@ def publish_data(client, data):
     client.publish("sensors/uv", "%0.3f" % data["uv"])
     client.publish("sensors/uv_raw", "%0.3f" % data["uv_raw"])
     client.publish("sensors/dust_particles", "%0.3f" % data["dust_particles"])
-    client.publish('gps/worldmap', payload="{name:\"Joe\", lat:51, lon:-1.05, radius:500}")
 
 
 def publish_template(client, template):
@@ -142,6 +141,8 @@ def main_loop():
                 except:
                     print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
 
+            pld = {"name": datetime.datetime.now(), "line": [[data["latitude"], data["longitude"]]]}
+            client1.publish('gps/worldmap', payload=pld)
             # Create points in GPX file:
             point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
                                             data["longitude"],
