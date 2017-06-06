@@ -74,6 +74,14 @@ def generate_template(gps_dat):
            "<br> Speed over ground: " + str(gps_dat["speed"]) + \
            "<br> Altitude: " + str(gps_dat["altitude"]) + "<br>"
 
+# init gps
+gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
+
+gps_dat_list = []
+thread = threading.Thread(target=get_gps, args=(gps_serial, gps_dat_list))
+
+thread.start()
+
 
 def main_loop():
     # config bme sensor
@@ -84,13 +92,6 @@ def main_loop():
     client1.connect(broker, port)  # establish connection
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
-
-    #init gps
-    gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
-
-    gps_dat_list = []
-    thread = threading.Thread(target=get_gps, args=(gps_serial, gps_dat_list))
-    thread.start()
 
     # gpx file
     gpx, gpx_segment = new_gpx_file()
@@ -173,4 +174,8 @@ def main_loop():
             gps_dat_list = []
 
 
-main_loop()
+try:
+    main_loop()
+except:
+    thread.join()
+    exit(1)
