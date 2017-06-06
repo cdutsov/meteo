@@ -107,9 +107,12 @@ def main_loop():
         data["pressure"] = round(sensor.read_pressure() / 100, 3)
         data["humidity"] = round(sensor.read_humidity(), 2)
         data["dew_point"] = round(sensor.read_dewpoint(), 2)
+        print "Data from BME280 read!"
         data["uv_raw"] = round(veml.get_uva_light_intensity_raw(), 3)
         data["uv"] = round(veml.get_uva_light_intensity(), 3)
+        print "Data form UV read!"
         data["dust_particles"] = round(get_dust_particles(), 2)
+        print "Dust particles read!"
 
         # Average out dust particles
         particles_mean.append(data["dust_particles"])
