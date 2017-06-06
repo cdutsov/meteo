@@ -40,7 +40,7 @@ def new_gpx_file():
 
 
 def publish_data(client, data):
-    temp = {'tstamp': time.time(), 'data': "%0.3f" % (data["temperature"])}
+    temp = {'x': time.time(), 'y': "%0.3f" % (data["temperature"])}
     client.publish("sensors/temperature", payload=json.dumps(temp), retain=True)
     client.publish("sensors/pressure", "%0.3f" % data["pressure"])
     client.publish("sensors/humidity", "%0.3f" % data["humidity"])
