@@ -13,7 +13,7 @@ import veml6070
 import time
 
 from external_tracker import post_update, TRACKER_URL
-from read_serial import get_dust_particles, get_gps, gps_dat
+from read_serial import get_dust_particles, get_gps
 import pickle
 import serial
 
