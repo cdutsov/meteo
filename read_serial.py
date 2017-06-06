@@ -15,9 +15,9 @@ def get_dust_particles():
 
 
 def get_gps(ser, gps_dat):
-    no_spd = True
-    no_alt = True
     while True:
+        no_spd = True
+        no_alt = True
         while no_alt or no_spd:
             sentence = ser.readline().split('$')
             print sentence
