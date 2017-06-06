@@ -13,9 +13,10 @@ import veml6070
 import time
 
 from external_tracker import post_update, TRACKER_URL
-from read_serial import get_dust_particles, get_gps
+from read_serial import get_dust_particles, GPS
 import pickle
 import serial
+
 
 broker = "127.0.0.1"
 port = 1883
@@ -74,14 +75,9 @@ def generate_template(gps_dat):
            "<br> Speed over ground: " + str(gps_dat["speed"]) + \
            "<br> Altitude: " + str(gps_dat["altitude"]) + "<br>"
 
-# init gps
-gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
-
-gps_dat_list = []
-thread = threading.Thread(target=get_gps, args=(gps_serial, gps_dat_list))
-
-thread.start()
-
+gps_dat = []
+gps = GPS()
+gps.start(gps_dat)
 
 def main_loop():
     # config bme sensor
@@ -98,6 +94,8 @@ def main_loop():
 
     data_list = []
     particles_mean = []
+
+
 
     start_time = datetime.datetime.now()
     data_published_time = datetime.datetime.now()
@@ -177,5 +175,5 @@ def main_loop():
 try:
     main_loop()
 except:
-    thread.join()
-    exit(1)
+    gps.stop()
+    raise

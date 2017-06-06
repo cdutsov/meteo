@@ -14,26 +14,57 @@ def get_dust_particles():
         return 0
 
 
-def get_gps(ser, gps_dat):
-    while True:
-        no_spd = True
-        no_alt = True
-        data = {}
-        while no_alt or no_spd:
-            sentence = ser.readline().split('$')
-            if len(sentence) >= 2:
-                sentence = sentence[1]
-            else:
-                sentence = ''
-            if 'RMC' in sentence:
-                msg = pynmea2.parse(sentence)
-                data["latitude"] = msg.latitude
-                data["longitude"] = msg.longitude
-                data["timestamp"] = msg.timestamp
-                no_spd = False
-                data["speed"] = msg.spd_over_grnd * 0.5144
-            elif 'GGA' in sentence:
-                msg = pynmea2.parse(sentence)
-                data["altitude"] = msg.altitude
-                no_alt = False
-        gps_dat.append(data)
+class MyThread(threading.Thread):
+    """Thread class with a stop() method. The thread itself has to check
+    regularly for the stopped() condition."""
+
+    def __init__(self, *args, **kwargs):
+        super(MyThread, self).__init__(*args, **kwargs)
+        self._stop = threading.Event()
+
+    def stop(self):
+        self._stop.set()
+
+    def stopped(self):
+        return self._stop.isSet()
+
+
+class GPS():
+    def __init__(self):
+        # init gps
+        self.gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
+
+        self.gps_dat_list = []
+        self.thread = threading.MyThread(target=self.get_gps, args=(self.gps_serial, self.gps_dat_list))
+
+        self.thread.start()
+
+    def start(self, ser, gps_dat):
+        while not self.thread.stopped():
+            no_spd = True
+            no_alt = True
+            data = {}
+            while no_alt or no_spd:
+                sentence = ser.readline().split('$')
+                if len(sentence) >= 2:
+                    sentence = sentence[1]
+                else:
+                    sentence = ''
+                if 'RMC' in sentence:
+                    msg = pynmea2.parse(sentence)
+                    data["latitude"] = msg.latitude
+                    data["longitude"] = msg.longitude
+                    data["timestamp"] = msg.timestamp
+                    no_spd = False
+                    data["speed"] = msg.spd_over_grnd * 0.5144
+                elif 'GGA' in sentence:
+                    msg = pynmea2.parse(sentence)
+                    data["altitude"] = msg.altitude
+                    no_alt = False
+            gps_dat.append(data)
+
+    def stop(self):
+        if self.thread.isAlive():
+            self.thread.stop()
+
+
