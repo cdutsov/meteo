@@ -170,7 +170,7 @@ def main_loop():
                         print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
                         f.write(gpx.to_xml(version="1.1"))
                     gpx, gpx_segment = new_gpx_file()
-            gps_dat = []
+            gps_dat_list = []
 
 
 main_loop()
