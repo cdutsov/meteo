@@ -27,7 +27,11 @@ def get_gps():
             else:
                 sentence = ''
             if 'RMC' in sentence:
-                msg = pynmea2.parse(sentence)
+                try:
+                    msg = pynmea2.parse(sentence)
+                except:
+                    print "Error in reading file"
+                    return None
                 gps_dat["latitude"] = msg.latitude
                 gps_dat["longitude"] = msg.longitude
                 gps_dat["timestamp"] = msg.timestamp
