@@ -121,6 +121,7 @@ def post_external(data, data_published_time, update_interval):
         except:
             print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
             return data_published_time
+    return data_published_time
 
 def speed_based_interval(speed):
     if speed > 0.5:
@@ -157,7 +158,6 @@ def main_loop():
         # Publish sensor data to MQTT server
         publish_sensor_data(client=client, sensor_data=data)
 
-        print "GPS signal lost: ", gps.gps_signal_lost
         if not gps.gps_signal_lost:
             for gps_dat in gps.gps_dat_list:
                 data.update(gps_dat)
