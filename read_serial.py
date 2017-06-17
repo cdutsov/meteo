@@ -46,6 +46,7 @@ class GPS:
             no_spd = True
             no_alt = True
             data = {}
+            print "GPS started!"
             while no_alt or no_spd:
                 sentence = ser.readline().split('$')
                 print sentence
