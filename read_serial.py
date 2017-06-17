@@ -49,7 +49,6 @@ class GPS:
             data = {}
             while no_alt or no_spd:
                 sentence = ser.readline().split('$')
-                print sentence
                 if len(sentence) >= 2:
                     sentence = sentence[1]
                 else:
@@ -76,7 +75,7 @@ class GPS:
         cls.gps_dat_list = []
 
     def append_gps(self, data):
-        if not data["longitude"] or data["latitude"] == 0:
+        if not data["longitude"] == 0 or not data["latitude"] == 0:
             self.gps_dat_list.append(data)
             if self.gps_signal_lost:
                 print datetime.datetime.now().isoformat(), "GPS signal acquired!"
