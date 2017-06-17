@@ -118,9 +118,9 @@ def post_external(data, data_published_time, update_interval):
         try:
             post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
             print "data posted to: " + TRACKER_URL
+            return data_published_time
         except:
             print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
-
 
 def speed_based_interval(speed):
     if speed > 0.5:
@@ -166,7 +166,7 @@ def main_loop():
                 update_interval = speed_based_interval(speed=gps_dat["speed"])
 
                 # Post to external tracker
-                post_external(data, data_published_time, update_interval)
+                data_published_time = post_external(data, data_published_time, update_interval)
                 publish_gps_data(client=client, gps_data=gps_dat, point_number=i)
 
                 # Create points in GPX file:
@@ -180,7 +180,7 @@ def main_loop():
                 start_time = datetime.datetime.now()
                 fn = "/home/pi/meteo/tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
                 with open(fn, "w") as f:
-                    print datetime.datetime.now().isoformat() + "GPX file printed! Filename: " + fn
+                    print datetime.datetime.now().isoformat(), "GPX file printed! Filename: " + fn
                     f.write(gpx.to_xml(version="1.1"))
                 gpx, gpx_segment = new_gpx_file()
 

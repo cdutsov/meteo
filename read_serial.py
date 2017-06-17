@@ -80,7 +80,6 @@ class GPS:
             if self.gps_signal_lost:
                 print datetime.datetime.now().isoformat(), "GPS signal acquired!"
             self.gps_signal_lost = False
-            print "GPS signal is lost?:", self.gps_signal_lost
         else:
             if not self.gps_signal_lost:
                 print datetime.datetime.now().isoformat(), "GPS signal lost!"
