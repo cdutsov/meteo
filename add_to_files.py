@@ -157,7 +157,7 @@ def main_loop():
         # Publish sensor data to MQTT server
         publish_sensor_data(client=client, sensor_data=data)
 
-        print data, GPS.gps_signal_lost
+        print data, "GPS signal lost: ", GPS.gps_signal_lost
         if not GPS.gps_signal_lost:
             for gps_dat in GPS.gps_dat_list:
                 data.update(gps_dat)
