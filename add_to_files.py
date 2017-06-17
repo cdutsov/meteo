@@ -114,13 +114,13 @@ def smooth_data(particles_mean):
 
 def post_external(data, data_published_time, update_interval):
     if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
-        data_published_time = datetime.datetime.now()
         try:
             post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
             print "data posted to: " + TRACKER_URL
-            return data_published_time
+            return datetime.datetime.now()
         except:
             print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
+            return data_published_time
 
 def speed_based_interval(speed):
     if speed > 0.5:
