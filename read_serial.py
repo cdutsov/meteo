@@ -46,7 +46,10 @@ class GPS:
             no_spd = True
             no_alt = True
             data = {}
+            lock = threading.Lock()
+            lock.acquire()
             print "GPS started!"
+            lock.release()
             while no_alt or no_spd:
                 sentence = ser.readline().split('$')
                 print sentence
