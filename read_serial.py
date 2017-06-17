@@ -76,6 +76,10 @@ class GPS:
     def append_gps(self, data):
         if not data["longitude"] or data["latitude"] == 0:
             self.gps_dat_list.append(data)
+            if self.gps_signal_lost:
+                print datetime.datetime.now().isoformat(), "GPS signal acquired!"
             self.gps_signal_lost = False
         else:
+            if not self.gps_signal_lost:
+                print datetime.datetime.now().isoformat(), "GPS signal lost!"
             self.gps_signal_lost = True
