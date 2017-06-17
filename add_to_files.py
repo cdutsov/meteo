@@ -17,16 +17,13 @@ from read_serial import get_dust_particles, GPS
 import pickle
 import serial
 
-
 broker = "127.0.0.1"
 port = 1883
 filename = datetime.datetime.now().isoformat() + ".log"
 data = {}
 
-
-def on_publish(client, userdata, result):  # create function for callback
-    # print("data published \n")
-    pass
+gps_data_list = []
+gps = GPS()
 
 
 def new_gpx_file():
@@ -42,15 +39,26 @@ def new_gpx_file():
     return gpx, gpx_segment
 
 
-def publish_data(client, data):
-    client.publish("sensors/temperature", "%0.3f" % (data["temperature"]), retain=True)
-    client.publish("sensors/pressure", "%0.3f" % data["pressure"])
-    client.publish("sensors/humidity", "%0.3f" % data["humidity"])
-    client.publish("sensors/dewpoint", "%0.3f" % data["dew_point"])
-    client.publish("sensors/uv", "%0.3f" % data["uv"])
-    client.publish("sensors/uv_raw", "%0.3f" % data["uv_raw"])
-    client.publish("sensors/dust_particles", "%0.3f" % data["dust_particles"])
+def on_publish(client, userdata, result):  # create function for callback
+    # print("data published \n")
+    pass
 
+
+def publish_sensor_data(client, sensor_data):
+    client.publish("sensors/temperature", "%0.3f" % (sensor_data["temperature"]), retain=True)
+    client.publish("sensors/pressure", "%0.3f" % sensor_data["pressure"])
+    client.publish("sensors/humidity", "%0.3f" % sensor_data["humidity"])
+    client.publish("sensors/dewpoint", "%0.3f" % sensor_data["dew_point"])
+    client.publish("sensors/uv", "%0.3f" % sensor_data["uv"])
+    client.publish("sensors/uv_raw", "%0.3f" % sensor_data["uv_raw"])
+    client.publish("sensors/dust_particles", "%0.3f" % sensor_data["dust_particles"])
+
+
+def init_mqtt_client():
+    client = paho.Client("control1")  # create client object
+    client.on_publish = on_publish  # assign function to callback
+    client.connect(broker, port)  # establish connection
+    return client
 
 def publish_template(client, template):
     client.publish("template/html_template", "<div ng-bind-html=\"msg.payload\"> "
@@ -75,16 +83,33 @@ def generate_template(gps_dat):
            "<br> Speed over ground: " + str(gps_dat["speed"]) + \
            "<br> Altitude: " + str(gps_dat["altitude"]) + "<br>"
 
-gps_data_list = []
-gps = GPS()
+
+def get_sensor_data(sensor, veml):
+    data["datetime"] = datetime.datetime.now()
+    data["temperature"] = round(sensor.read_temperature(), 2)
+    data["pressure"] = round(sensor.read_pressure() / 100, 3)
+    data["humidity"] = round(sensor.read_humidity(), 2)
+    data["dew_point"] = round(sensor.read_dewpoint(), 2)
+    data["uv_raw"] = round(veml.get_uva_light_intensity_raw(), 3)
+    data["uv"] = round(veml.get_uva_light_intensity(), 3)
+    data["dust_particles"] = round(get_dust_particles(), 2)
+    return
+
+
+def smooth_data(particles_mean):
+    particles_mean.append(data["dust_particles"])
+    if len(particles_mean) > 9:
+        del particles_mean[0]
+    particles_set = list(particles_mean)
+    particles_set.sort()
+    particles = particles_set[len(particles_set) // 2]
+    data["dust_particles"] = particles if particles else 0
+    return
+
 
 def main_loop():
-    # config bme sensor
-    sensor = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
-    tstart = time.time()
-    client1 = paho.Client("control1")  # create client object
-    client1.on_publish = on_publish  # assign function to callback
-    client1.connect(broker, port)  # establish connection
+    client = init_mqtt_client()
+    bme = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
     veml = veml6070.Veml6070()
     veml.set_integration_time(veml6070.INTEGRATIONTIME_1T)
 
@@ -94,8 +119,6 @@ def main_loop():
     data_list = []
     particles_mean = []
 
-
-
     start_time = datetime.datetime.now()
     data_published_time = datetime.datetime.now()
 
@@ -104,75 +127,55 @@ def main_loop():
     while True:
         i += 1
 
-        data["datetime"] = datetime.datetime.now()
-        data["temperature"] = round(sensor.read_temperature(), 2)
-        data["pressure"] = round(sensor.read_pressure() / 100, 3)
-        data["humidity"] = round(sensor.read_humidity(), 2)
-        data["dew_point"] = round(sensor.read_dewpoint(), 2)
-        print "Data from BME280 read!"
-        data["uv_raw"] = round(veml.get_uva_light_intensity_raw(), 3)
-        data["uv"] = round(veml.get_uva_light_intensity(), 3)
-        print "Data form UV read!"
-        data["dust_particles"] = round(get_dust_particles(), 2)
-        print "Dust particles read!"
-
-        # Average out dust particles
-        particles_mean.append(data["dust_particles"])
-        if len(particles_mean) > 9:
-            del particles_mean[0]
-        particles_set = list(particles_mean)
-        particles_set.sort()
-        particles = particles_set[len(particles_set) // 2]
-        data["dust_particles"] = particles if particles else 0
-
+        get_sensor_data(sensor=bme, veml=veml)
+        smooth_data(particles_mean)
         data_list.append(data)
 
-        # Publish to MQTT server
-        publish_data(client=client1, data=data)
+        # Publish sensor data to MQTT server
+        publish_sensor_data(client=client, sensor_data=data)
 
-        for gps_dat in GPS.gps_dat_list:
-        # if True:
-        #     gps_dat = {"latitude": 1, "longitude": 1, "speed": 1, "altitude": 1}
+        if not GPS.gps_signal_lost:
+            for gps_dat in GPS.gps_dat_list:
+                if gps_dat and not gps_dat["latitude"] == 0:
+                    data.update(gps_dat)
 
-            if gps_dat and not gps_dat["latitude"] == 0:
-                data.update(gps_dat)
+                    # Publish on MQTT server
+                    publish_template(client=client,
+                                     template=generate_template(gps_dat))
+                    if gps_dat["speed"] > 0.5:
+                        update_interval = 20
+                    else:
+                        update_interval = 120
 
-                # Publish on MQTT server
-                publish_template(client=client1,
-                                 template=generate_template(gps_dat))
-                if gps_dat["speed"] > 0.5:
-                    update_interval = 20
-                else:
-                    update_interval = 120
+                    # Post to external tracker
+                    if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
+                        data_published_time = datetime.datetime.now()
+                        try:
+                            post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
+                            print "data posted to: " + TRACKER_URL
+                        except:
+                            print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
 
-                # Post to external tracker
-                if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
-                    data_published_time = datetime.datetime.now()
-                    try:
-                        post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
-                        print "data posted to: " + TRACKER_URL
-                    except:
-                        print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
+                    pld = {"name": "point" + str(i), "lat": data["latitude"], "lon": data["longitude"], "radius": 10,
+                           "command": {"lat": data["latitude"], "lon": data["longitude"], "zoom": 18}}
+                    client.publish('gps/worldmap', payload=json.dumps(pld, indent=2))
+                    # Create points in GPX file:
+                    point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
+                                                    data["longitude"],
+                                                    elevation=data["altitude"],
+                                                    time=datetime.datetime.now())
+                    point.extensions = dict(data)
+                    gpx_segment.points.append(point)
+                if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=1):
+                    start_time = datetime.datetime.now()
+                    fname = "tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
+                    with open(fname, "w") as f:
+                        print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
+                        f.write(gpx.to_xml(version="1.1"))
+                    gpx, gpx_segment = new_gpx_file()
 
-                pld = {"name": "point" + str(i), "lat": data["latitude"], "lon": data["longitude"], "radius": 10,
-                       "command": {"lat": data["latitude"], "lon": data["longitude"], "zoom": 18}}
-                print pld
-                client1.publish('gps/worldmap', payload=json.dumps(pld, indent=2))
-                # Create points in GPX file:
-                point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
-                                                data["longitude"],
-                                                elevation=data["altitude"],
-                                                time=datetime.datetime.now())
-                point.extensions = dict(data)
-                gpx_segment.points.append(point)
-            if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=60):
-                start_time = datetime.datetime.now()
-                fname = "tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
-                with open(fname, "w") as f:
-                    print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
-                    f.write(gpx.to_xml(version="1.1"))
-                gpx, gpx_segment = new_gpx_file()
-        GPS.clear_data()
+            GPS.clear_data()
+
         time.sleep(3)
 
 

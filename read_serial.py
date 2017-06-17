@@ -31,6 +31,7 @@ class MyThread(threading.Thread):
 
 class GPS:
     gps_dat_list = []
+    gps_signal_lost = True
 
     def __init__(self):
         # init gps
@@ -40,7 +41,7 @@ class GPS:
 
         self.thread.start()
 
-    def start(self, ser, gps_dat):
+    def start(self, ser):
         while not self.thread.stopped():
             no_spd = True
             no_alt = True
@@ -64,7 +65,6 @@ class GPS:
                     no_alt = False
             self.append_gps(data)
 
-
     def stop(self):
         if self.thread.isAlive():
             self.thread.stop()
@@ -74,5 +74,8 @@ class GPS:
         cls.gps_dat_list = []
 
     def append_gps(self, data):
-        self.gps_dat_list.append(data)
-
+        if not data["longitude"] or data["latitude"] == 0:
+            self.gps_dat_list.append(data)
+            self.gps_signal_lost = False
+        else:
+            self.gps_signal_lost = True
