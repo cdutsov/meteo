@@ -37,7 +37,7 @@ class GPS:
         # init gps
         self.gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
 
-        self.thread = MyThread(target=self.start, args=(self.gps_serial, self.gps_dat_list))
+        self.thread = MyThread(target=self.start, args=self.gps_serial)
 
         self.thread.start()
 
