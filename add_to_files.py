@@ -60,7 +60,12 @@ def init_mqtt_client():
     client.connect(broker, port)  # establish connection
     return client
 
-def publish_template(client, template):
+
+def publish_gps_data(client, gps_data, point_number):
+    template = generate_template(gps_data)
+    pld = {"name": "point" + str(point_number), "lat": gps_data["latitude"], "lon": gps_data["longitude"], "radius": 10,
+           "command": {"lat": gps_data["latitude"], "lon": gps_data["longitude"], "zoom": 18}}
+    client.publish('gps/worldmap', payload=json.dumps(pld, indent=2))
     client.publish("template/html_template", "<div ng-bind-html=\"msg.payload\"> "
                    + template + "</div>")
 
@@ -107,6 +112,24 @@ def smooth_data(particles_mean):
     return
 
 
+def post_external(data, data_published_time, update_interval):
+    if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
+        data_published_time = datetime.datetime.now()
+        try:
+            post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
+            print "data posted to: " + TRACKER_URL
+        except:
+            print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
+
+
+def speed_based_interval(speed):
+    if speed > 0.5:
+        update_interval = 20
+    else:
+        update_interval = 120
+    return update_interval
+
+
 def main_loop():
     client = init_mqtt_client()
     bme = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
@@ -136,43 +159,30 @@ def main_loop():
 
         if not GPS.gps_signal_lost:
             for gps_dat in GPS.gps_dat_list:
-                if gps_dat and not gps_dat["latitude"] == 0:
-                    data.update(gps_dat)
+                data.update(gps_dat)
 
-                    # Publish on MQTT server
-                    publish_template(client=client,
-                                     template=generate_template(gps_dat))
-                    if gps_dat["speed"] > 0.5:
-                        update_interval = 20
-                    else:
-                        update_interval = 120
+                # Publish on MQTT server
+                update_interval = speed_based_interval(speed=gps_dat["speed"])
 
-                    # Post to external tracker
-                    if (datetime.datetime.now() - data_published_time) > datetime.timedelta(seconds=update_interval):
-                        data_published_time = datetime.datetime.now()
-                        try:
-                            post_update(latitude=data["latitude"], longitude=data["longitude"], timestamp=data["datetime"])
-                            print "data posted to: " + TRACKER_URL
-                        except:
-                            print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
+                # Post to external tracker
+                post_external(data, data_published_time, update_interval)
+                publish_gps_data(client=client, gps_data=gps_dat, point_number=i)
 
-                    pld = {"name": "point" + str(i), "lat": data["latitude"], "lon": data["longitude"], "radius": 10,
-                           "command": {"lat": data["latitude"], "lon": data["longitude"], "zoom": 18}}
-                    client.publish('gps/worldmap', payload=json.dumps(pld, indent=2))
-                    # Create points in GPX file:
-                    point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
-                                                    data["longitude"],
-                                                    elevation=data["altitude"],
-                                                    time=datetime.datetime.now())
-                    point.extensions = dict(data)
-                    gpx_segment.points.append(point)
-                if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=1):
-                    start_time = datetime.datetime.now()
-                    fname = "tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
-                    with open(fname, "w") as f:
-                        print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
-                        f.write(gpx.to_xml(version="1.1"))
-                    gpx, gpx_segment = new_gpx_file()
+
+                # Create points in GPX file:
+                point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
+                                                data["longitude"],
+                                                elevation=data["altitude"],
+                                                time=datetime.datetime.now())
+                point.extensions = dict(data)
+                gpx_segment.points.append(point)
+            if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=1):
+                start_time = datetime.datetime.now()
+                fname = "tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
+                with open(fname, "w") as f:
+                    print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
+                    f.write(gpx.to_xml(version="1.1"))
+                gpx, gpx_segment = new_gpx_file()
 
             GPS.clear_data()
 
