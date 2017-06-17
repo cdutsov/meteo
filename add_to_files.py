@@ -123,6 +123,7 @@ def post_external(data, data_published_time, update_interval):
             return datetime.datetime.now()
     return data_published_time
 
+
 def speed_based_interval(speed):
     if speed > 0.5:
         update_interval = 20
@@ -176,7 +177,7 @@ def main_loop():
                                                 time=datetime.datetime.now())
                 point.extensions = dict(data)
                 gpx_segment.points.append(point)
-            if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=1):
+            if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
                 start_time = datetime.datetime.now()
                 fn = "/home/pi/meteo/tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
                 with open(fn, "w") as f:
