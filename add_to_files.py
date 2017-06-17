@@ -158,6 +158,7 @@ def main_loop():
         publish_sensor_data(client=client, sensor_data=data)
 
         # print data, "GPS signal lost: ", GPS.gps_signal_lost
+        print GPS.gps_dat_list
         if not GPS.gps_signal_lost:
             for gps_dat in GPS.gps_dat_list:
                 data.update(gps_dat)
