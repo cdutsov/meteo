@@ -157,6 +157,7 @@ def main_loop():
         # Publish sensor data to MQTT server
         publish_sensor_data(client=client, sensor_data=data)
 
+        print data, GPS.gps_signal_lost
         if not GPS.gps_signal_lost:
             for gps_dat in GPS.gps_dat_list:
                 data.update(gps_dat)
@@ -168,7 +169,6 @@ def main_loop():
                 post_external(data, data_published_time, update_interval)
                 publish_gps_data(client=client, gps_data=gps_dat, point_number=i)
 
-
                 # Create points in GPX file:
                 point = gpxpy.gpx.GPXTrackPoint(data["latitude"],
                                                 data["longitude"],
@@ -178,8 +178,8 @@ def main_loop():
                 gpx_segment.points.append(point)
             if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=1):
                 start_time = datetime.datetime.now()
-                fname = "tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
-                with open(fname, "w") as f:
+                f = "tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
+                with open(f, "w") as f:
                     print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fname
                     f.write(gpx.to_xml(version="1.1"))
                 gpx, gpx_segment = new_gpx_file()
