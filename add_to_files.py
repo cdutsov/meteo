@@ -157,9 +157,9 @@ def main_loop():
         # Publish sensor data to MQTT server
         publish_sensor_data(client=client, sensor_data=data)
 
-        print "GPS signal lost: ", GPS.gps_signal_lost
-        if not GPS.gps_signal_lost:
-            for gps_dat in GPS.gps_dat_list:
+        print "GPS signal lost: ", gps.gps_signal_lost
+        if not gps.gps_signal_lost:
+            for gps_dat in gps.gps_dat_list:
                 data.update(gps_dat)
 
                 # Publish on MQTT server
@@ -184,7 +184,7 @@ def main_loop():
                     f.write(gpx.to_xml(version="1.1"))
                 gpx, gpx_segment = new_gpx_file()
 
-            GPS.clear_data()
+            gps.clear_data()
 
         time.sleep(3)
 
