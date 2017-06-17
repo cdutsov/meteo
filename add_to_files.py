@@ -63,7 +63,7 @@ def init_mqtt_client():
 
 def publish_gps_data(client, gps_data, point_number):
     template = generate_template(gps_data)
-    pld = {"name": "point" + str(point_number), "lat": gps_data["latitude"], "lon": gps_data["longitude"], "radius": 10,
+    pld = {"name": "point" + str(point_number), "lat": gps_data["latitude"], "lon": gps_data["longitude"], "radius": 2,
            "command": {"lat": gps_data["latitude"], "lon": gps_data["longitude"], "zoom": 18}}
     client.publish('gps/worldmap', payload=json.dumps(pld, indent=2))
     client.publish("template/html_template", "<div ng-bind-html=\"msg.payload\"> "
@@ -120,7 +120,7 @@ def post_external(data, data_published_time, update_interval):
             return datetime.datetime.now()
         except:
             print datetime.datetime.now().isoformat() + "\tNo route to host: " + TRACKER_URL
-            return data_published_time
+            return datetime.datetime.now()
     return data_published_time
 
 def speed_based_interval(speed):

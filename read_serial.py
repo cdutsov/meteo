@@ -42,7 +42,7 @@ class GPS:
         self.thread.start()
 
     def start(self, ser, data):
-        print datetime.datetime.now().isoformat(), ': GPS initialized!'
+        print datetime.datetime.now().isoformat(), 'GPS initialized!'
         while not self.thread.stopped():
             no_spd = True
             no_alt = True
