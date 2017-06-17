@@ -37,11 +37,11 @@ class GPS:
         # init gps
         self.gps_serial = serial.Serial('/dev/ttyS0', 9600, timeout=1)
 
-        self.thread = MyThread(target=self.start, args=self.gps_serial)
+        self.thread = MyThread(target=self.start, args=(self.gps_serial, self.gps_dat_list))
 
         self.thread.start()
 
-    def start(self, ser):
+    def start(self, ser, data):
         while not self.thread.stopped():
             no_spd = True
             no_alt = True
