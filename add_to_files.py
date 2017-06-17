@@ -178,9 +178,9 @@ def main_loop():
                 gpx_segment.points.append(point)
             if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=1):
                 start_time = datetime.datetime.now()
-                fn = "tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
+                fn = "/home/pi/meteo/tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
                 with open(fn, "w") as f:
-                    print datetime.datetime.now().isoformat() + "GPX file printed! Fname: " + fn
+                    print datetime.datetime.now().isoformat() + "GPX file printed! Filename: " + fn
                     f.write(gpx.to_xml(version="1.1"))
                 gpx, gpx_segment = new_gpx_file()
 
