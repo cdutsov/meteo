@@ -48,6 +48,7 @@ class GPS:
             data = {}
             while no_alt or no_spd:
                 sentence = ser.readline().split('$')
+                print sentence
                 if len(sentence) >= 2:
                     sentence = sentence[1]
                 else:
