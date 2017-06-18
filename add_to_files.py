@@ -134,12 +134,12 @@ def speed_based_interval(speed):
 
 def init_data_file(filename):
     f = open(filename, 'w')
-    f.write("Datetime, Lat, Lon, Alt, Speed, Temp, Hum, Press, DewP, UV")
+    f.write("Datetime, Lat, Lon, Alt, Speed, Temp, Hum, Press, DewP, UV\n")
     return f
 
 
 def write_to_csv(data_file, data):
-    data_file.write("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s" %
+    data_file.write("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s\n" %
                     (data['datetime'],
                     data['latitude'],
                     data['longitude'],
