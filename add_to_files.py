@@ -132,6 +132,26 @@ def speed_based_interval(speed):
     return update_interval
 
 
+def init_data_file(filename):
+    f = open(filename, 'w')
+    f.write("Datetime, Lat, Lon, Alt, Speed, Temp, Hum, Press, DewP, UV")
+    return f
+
+
+def write_to_csv(data_file, data):
+    data_file.write("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s" %
+                    (data['datetime'],
+                    data['latitude'],
+                    data['longitude'],
+                    data['altitude'],
+                    data['speed'],
+                    data['temperature'],
+                    data['humidity'],
+                    data['pressure'],
+                    data['dew_point'],
+                    data['uv_raw']))
+
+
 def main_loop():
     client = init_mqtt_client()
     bme = BME280(p_mode=BME280_OSAMPLE_8, t_mode=BME280_OSAMPLE_2, h_mode=BME280_OSAMPLE_1, filter=BME280_FILTER_16)
@@ -149,6 +169,8 @@ def main_loop():
 
     i = 0
 
+    data_file = init_data_file(filename='../raw_data' + datetime.datetime.now().strftime('-%H%M-%d%m'))
+
     while True:
         i += 1
 
@@ -162,7 +184,7 @@ def main_loop():
         if not gps.gps_signal_lost:
             for gps_dat in gps.gps_dat_list:
                 data.update(gps_dat)
-
+                write_to_csv(data_file, data)
                 # Publish on MQTT server
                 update_interval = speed_based_interval(speed=gps_dat["speed"])
 
