@@ -169,7 +169,7 @@ def main_loop():
 
     i = 0
 
-    data_file = init_data_file(filename='../raw_data' + datetime.datetime.now().strftime('-%H%M-%d%m'))
+    data_file = init_data_file(filename='/home/pi/meteo/tracks/raw_data' + datetime.datetime.now().strftime('-%H%M-%d%m'))
 
     while True:
         i += 1
