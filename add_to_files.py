@@ -134,7 +134,7 @@ def speed_based_interval(speed):
 
 
 def init_data_file(filename):
-    f = open(filename, 'w')
+    f = open(filename, 'a+')
     f.write("Datetime, Lat, Lon, Alt, Speed, Temp, Hum, Press, DewP, UV\n\r")
     return f
 
@@ -160,6 +160,7 @@ def write_to_csv(data_file):
                          data['pressure'],
                          data['dew_point'],
                          data['uv_raw']))
+    data_file.flush()
 
 
 def main_loop():
@@ -193,7 +194,6 @@ def main_loop():
         publish_sensor_data(client=client, sensor_data=data)
         print data
         write_to_csv(data_file)
-        data_file.close()
         # Push data file to server @krasi
         call(["scp", "-P 2020", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/"])
 
