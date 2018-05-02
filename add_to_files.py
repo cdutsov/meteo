@@ -190,7 +190,7 @@ def main_loop():
                 write_to_csv(data_file, data)
 
                 # Push data file to server @krasi
-                call(["scp", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/"])
+                call(["scp", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/", "-p 2020"])
 
                 # Publish on MQTT server
                 update_interval = speed_based_interval(speed=gps_dat["speed"])
