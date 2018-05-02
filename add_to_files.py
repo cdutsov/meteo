@@ -141,7 +141,7 @@ def init_data_file(filename):
 
 def write_to_csv(data_file):
     if not gps.gps_signal_lost:
-        data_file.write("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s\n" %
+        data_file.write("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s" %
                     (data['datetime'],
                     data['latitude'],
                     data['longitude'],
