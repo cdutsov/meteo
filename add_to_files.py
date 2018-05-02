@@ -135,13 +135,13 @@ def speed_based_interval(speed):
 
 def init_data_file(filename):
     f = open(filename, 'a+', 1)
-    f.write("Datetime, Lat, Lon, Alt, Speed, Temp, Hum, Press, DewP, UV\n\r")
+    f.write("Datetime, Lat, Lon, Alt, Speed, Temp, Hum, Press, DewP, UV\n")
     return f
 
 
 def write_to_csv(data_file):
     if not gps.gps_signal_lost:
-        data_file.write("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s" %
+        data_file.write("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s\n" %
                     (data['datetime'],
                     data['latitude'],
                     data['longitude'],
@@ -153,7 +153,7 @@ def write_to_csv(data_file):
                     data['dew_point'],
                     data['uv_raw']))
     else:
-        data_file.write("%s, %s, %s, %s, %s, %s" %
+        data_file.write("%s, %s, %s, %s, %s, %s\n" %
                         (data['datetime'],
                          data['temperature'],
                          data['humidity'],
