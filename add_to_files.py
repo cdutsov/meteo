@@ -153,7 +153,7 @@ def write_to_csv(data_file):
                     data['dew_point'],
                     data['uv_raw']))
     else:
-        data_file.write("%s, %s, %s, %s, %s, %s\n\r" %
+        data_file.write("%s, %s, %s, %s, %s, %s" %
                         (data['datetime'],
                          data['temperature'],
                          data['humidity'],
