@@ -185,7 +185,7 @@ def main_loop():
         write_to_csv(data_file, data)
 
         # Push data file to server @krasi
-        call(["scp", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/", "-p 2020"])
+        call(["scp", "-P 2020", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/"])
 
         if not gps.gps_signal_lost:
             for gps_dat in gps.gps_dat_list:
