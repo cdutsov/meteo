@@ -134,7 +134,7 @@ def speed_based_interval(speed):
 
 
 def init_data_file(filename):
-    f = open(filename, 'w')
+    f = open(filename, 'a')
     f.write("Datetime, Lat, Lon, Alt, Speed, Temp, Hum, Press, DewP, UV\n\r")
     return f
 
