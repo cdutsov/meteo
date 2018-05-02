@@ -191,6 +191,7 @@ def main_loop():
 
         # Publish sensor data to MQTT server
         publish_sensor_data(client=client, sensor_data=data)
+        print  data
         write_to_csv(data_file, data)
 
         # Push data file to server @krasi
