@@ -134,12 +134,12 @@ def speed_based_interval(speed):
 
 
 def init_data_file(filename):
-    f = open(filename, 'a')
+    f = open(filename, 'w')
     f.write("Datetime, Lat, Lon, Alt, Speed, Temp, Hum, Press, DewP, UV\n\r")
     return f
 
 
-def write_to_csv(data_file, data):
+def write_to_csv(data_file):
     if not gps.gps_signal_lost:
         data_file.write("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s\n\r" %
                     (data['datetime'],
@@ -191,9 +191,9 @@ def main_loop():
 
         # Publish sensor data to MQTT server
         publish_sensor_data(client=client, sensor_data=data)
-        print  data
-        write_to_csv(data_file, data)
-
+        print data
+        write_to_csv(data_file)
+        data_file.close()
         # Push data file to server @krasi
         call(["scp", "-P 2020", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/"])
 
@@ -201,7 +201,7 @@ def main_loop():
             for gps_dat in gps.gps_dat_list:
                 data.update(gps_dat)
 
-                write_to_csv(data_file, data)
+                write_to_csv(data_file)
 
                 # Push data file to server @krasi
                 call(["scp", "-P 2020", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/"])
