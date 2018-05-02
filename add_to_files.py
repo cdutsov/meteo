@@ -134,7 +134,7 @@ def speed_based_interval(speed):
 
 
 def init_data_file(filename):
-    f = open(filename, 'a+')
+    f = open(filename, 'a+', 1)
     f.write("Datetime, Lat, Lon, Alt, Speed, Temp, Hum, Press, DewP, UV\n\r")
     return f
 
@@ -160,7 +160,6 @@ def write_to_csv(data_file):
                          data['pressure'],
                          data['dew_point'],
                          data['uv_raw']))
-    data_file.flush()
 
 
 def main_loop():
