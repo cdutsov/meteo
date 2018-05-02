@@ -16,6 +16,7 @@ from external_tracker import post_update, TRACKER_URL
 from read_serial import get_dust_particles, GPS
 import pickle
 import serial
+from subprocess import call
 
 broker = "127.0.0.1"
 port = 1883
@@ -169,7 +170,8 @@ def main_loop():
 
     i = 0
 
-    data_file = init_data_file(filename='/home/pi/meteo/tracks/raw_data' + datetime.datetime.now().strftime('-%H%M-%d%m'))
+    fname = '/home/pi/meteo/tracks/raw_data' + datetime.datetime.now().strftime('-%m%d-%H%M')
+    data_file = init_data_file(filename=fname)
 
     while True:
         i += 1
@@ -181,10 +183,15 @@ def main_loop():
         # Publish sensor data to MQTT server
         publish_sensor_data(client=client, sensor_data=data)
 
-        if not gps.gps_signal_lost:
+        #if not gps.gps_signal_lost:
+        if True:
             for gps_dat in gps.gps_dat_list:
                 data.update(gps_dat)
                 write_to_csv(data_file, data)
+
+                # Push data file to server @krasi
+                call(["scp", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/"])
+
                 # Publish on MQTT server
                 update_interval = speed_based_interval(speed=gps_dat["speed"])
 
@@ -201,7 +208,7 @@ def main_loop():
                 gpx_segment.points.append(point)
             if (datetime.datetime.now() - start_time) > datetime.timedelta(minutes=10):
                 start_time = datetime.datetime.now()
-                fn = "/home/pi/meteo/tracks/track" + datetime.datetime.now().strftime("-%H%M-%d%m") + ".gpx"
+                fn = "/home/pi/meteo/tracks/track" + datetime.datetime.now().strftime("-%d%m-%H%M") + ".gpx"
                 with open(fn, "w") as f:
                     print datetime.datetime.now().isoformat(), "GPX file printed! Filename: " + fn
                     f.write(gpx.to_xml(version="1.1"))
