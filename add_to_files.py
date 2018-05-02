@@ -153,8 +153,8 @@ def write_to_csv(data_file):
                     data['dew_point'],
                     data['uv_raw']))
     else:
-        data_file.write("%s, %s, %s, %s, %s, %s\n" %
-                        (data['datetime'],
+        data_file.write("%s, %s, %s, %s, %s, %s, %s, %s, %s, %s\n" %
+                        (data['datetime'], " ", " ", " ", " ",
                          data['temperature'],
                          data['humidity'],
                          data['pressure'],
@@ -229,7 +229,7 @@ def main_loop():
 
             gps.clear_data()
 
-        time.sleep(3)
+        time.sleep(60)
 
 
 try:
