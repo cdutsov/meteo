@@ -182,15 +182,15 @@ def main_loop():
 
         # Publish sensor data to MQTT server
         publish_sensor_data(client=client, sensor_data=data)
+        write_to_csv(data_file, data)
 
-        #if not gps.gps_signal_lost:
-        if True:
+        # Push data file to server @krasi
+        call(["scp", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/", "-p 2020"])
+
+        if not gps.gps_signal_lost:
             for gps_dat in gps.gps_dat_list:
                 data.update(gps_dat)
-                write_to_csv(data_file, data)
 
-                # Push data file to server @krasi
-                call(["scp", fname, "chavdar@62.44.98.23:/home/chavdar/Programs/meteo-data/", "-p 2020"])
 
                 # Publish on MQTT server
                 update_interval = speed_based_interval(speed=gps_dat["speed"])
