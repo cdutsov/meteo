@@ -13,7 +13,7 @@ import veml6070
 import time
 
 from external_tracker import post_update, TRACKER_URL
-from read_serial import get_dust_particles, GPS
+from read_serial import get_dust_particles, GPS, get_emf
 import pickle
 import serial
 from subprocess import call
@@ -52,7 +52,8 @@ def publish_sensor_data(client, sensor_data):
     client.publish("sensors/dewpoint", "%0.3f" % sensor_data["dew_point"])
     client.publish("sensors/uv", "%0.3f" % sensor_data["uv"])
     client.publish("sensors/uv_raw", "%0.3f" % sensor_data["uv_raw"])
-    client.publish("sensors/dust_particles", "%0.3f" % sensor_data["dust_particles"])
+    # client.publish("sensors/dust_particles", "%0.3f" % sensor_data["dust_particles"])
+    client.publish("sensors/emf", "%0.3f" % sensor_data["emf"])
 
 
 def init_mqtt_client():
@@ -98,7 +99,8 @@ def get_sensor_data(sensor, veml):
     data["dew_point"] = round(sensor.read_dewpoint(), 2)
     data["uv_raw"] = round(veml.get_uva_light_intensity_raw(), 3)
     data["uv"] = round(veml.get_uva_light_intensity(), 3)
-    data["dust_particles"] = round(get_dust_particles(), 2)
+    # data["dust_particles"] = round(get_dust_particles(), 2)
+    data["emf"] = round(get_emf(), 2)
     return
 
 

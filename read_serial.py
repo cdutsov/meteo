@@ -13,6 +13,15 @@ def get_dust_particles():
     except:
         return 0
 
+def get_emf():
+    try:
+        with serial.Serial('/dev/ttyUSB0', 9600, timeout=1) as ser:
+            sentence = ser.readline()[1:6]
+            print float(sentence)
+            return float(sentence)
+    except:
+        return 0
+
 
 class MyThread(threading.Thread):
     """Thread class with a stop() method. The thread itself has to check
